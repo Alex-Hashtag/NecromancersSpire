@@ -1,0 +1,41 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Ore_Mornum.name",
+    "Description": "server.items.Ore_Mornum.description"
+  },
+  "Categories": [
+    "Blocks.Ores",
+    "Necros.Ores"
+  ],
+  "Model": "Resources/Ores/Ore_Large.blockymodel",
+  "Texture": "Resources/Ores/Ore_Textures/Mornum.png",
+  "ItemLevel": 80,
+  "PlayerAnimationsId": "Block",
+  "IconProperties": {
+    "Scale": 0.57323,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      -3.6,
+      -16.2
+    ]
+  },
+  "Icon": "Icons/ItemsGenerated/Ore_Mornum.png",
+  "Tags": {
+    "Type": [
+      "Ore"
+    ],
+    "Family": [
+      "Mornum"
+    ]
+  },
+  "ItemEntity": {
+    "ParticleSystemId": null
+  },
+  "MaxStack": 25,
+  "ItemSoundSetId": "ISS_Blocks_Stone",
+  "DropOnDeath": true
+}

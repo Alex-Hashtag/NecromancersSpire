@@ -1,0 +1,60 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Light_Crack.name"
+  },
+  "ItemLevel": 0,
+  "Categories": [
+    "Blocks.Deco",
+    "Necros.Deco"
+  ],
+  "PlayerAnimationsId": "Block",
+  "Set": "Deco",
+  "BlockType": {
+    "Material": "Empty",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "Group": "Deco",
+    "Flags": {
+      "IsStackable": false
+    },
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "SoftBlocks",
+        "ItemId": "Light_Crack"
+      }
+    },
+    "BlockParticleSetId": "Stone",
+    "CustomModel": "Blocks/light_crack.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "BlockTextures/light_crack.png"
+      }
+    ],
+    "ParticleColor": "#b9dcff",
+    "BlockSoundSetId": "Stone",
+    "CubeShadingMode": "Fullbright",
+    "Light": {
+      "Color": "#bfe0ff",
+      "Radius": 6
+    },
+    "VariantRotation": "NESW"
+  },
+  "Tags": {
+    "Type": [
+      "Deco"
+    ]
+  },
+  "IconProperties": {
+    "Scale": 0.58823,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -13.5
+    ]
+  },
+  "Icon": "Icons/ItemsGenerated/Light_Crack.png"
+}

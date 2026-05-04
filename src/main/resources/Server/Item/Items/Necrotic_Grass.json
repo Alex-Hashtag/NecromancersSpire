@@ -1,0 +1,54 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Necrotic_Grass.name"
+  },
+  "ItemLevel": 0,
+  "Categories": [
+    "Blocks.Deco",
+    "Necros.Deco"
+  ],
+  "PlayerAnimationsId": "Block",
+  "Set": "Deco",
+  "BlockType": {
+    "Material": "Empty",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "Group": "Deco",
+    "Flags": {
+      "IsStackable": false
+    },
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "SoftBlocks",
+        "ItemId": "Necrotic_Grass"
+      }
+    },
+    "BlockParticleSetId": "Leaves_Branches",
+    "CustomModel": "Blocks/necrotic_grass.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "BlockTextures/necros_deco_atlas.png"
+      }
+    ],
+    "ParticleColor": "#4a6a3a",
+    "BlockSoundSetId": "Bush"
+  },
+  "Tags": {
+    "Type": [
+      "Deco"
+    ]
+  },
+  "IconProperties": {
+    "Scale": 0.9,
+    "Rotation": [
+      22.5,
+      33,
+      19
+    ],
+    "Translation": [
+      -1,
+      -10
+    ]
+  },
+  "Icon": "Icons/ItemsGenerated/Necrotic_Grass.png"
+}

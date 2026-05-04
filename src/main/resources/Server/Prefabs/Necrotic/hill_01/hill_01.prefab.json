@@ -1,0 +1,9062 @@
+{
+  "version": 8,
+  "blockIdVersion": 11,
+  "anchorX": 0,
+  "anchorY": 7,
+  "anchorZ": 7,
+  "blocks": [
+    {
+      "x": -7,
+      "y": 6,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -7,
+      "y": 7,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -7,
+      "y": 8,
+      "z": -1,
+      "name": "Plant_Bush_Winter",
+      "support": 15
+    },
+    {
+      "x": -7,
+      "y": 6,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -7,
+      "y": 7,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -7,
+      "y": 8,
+      "z": 0,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": -7,
+      "y": 6,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -7,
+      "y": 7,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -7,
+      "y": 8,
+      "z": 1,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": -6,
+      "y": 6,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -6,
+      "y": 7,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -6,
+      "y": 8,
+      "z": -3,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": -6,
+      "y": 9,
+      "z": -3,
+      "name": "Plant_Vine_Wall_Dead",
+      "support": 15,
+      "rotation": 3
+    },
+    {
+      "x": -6,
+      "y": 6,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -6,
+      "y": 7,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -6,
+      "y": 8,
+      "z": -2,
+      "name": "Rock_Slate_Stalactite_Small"
+    },
+    {
+      "x": -6,
+      "y": 9,
+      "z": -2,
+      "name": "Plant_Vine_Wall_Dead",
+      "support": 15,
+      "rotation": 3
+    },
+    {
+      "x": -6,
+      "y": 10,
+      "z": -2,
+      "name": "Plant_Vine_Wall_Dead",
+      "support": 15,
+      "rotation": 3
+    },
+    {
+      "x": -6,
+      "y": 4,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -6,
+      "y": 5,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -6,
+      "y": 6,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -6,
+      "y": 7,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -6,
+      "y": 8,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -6,
+      "y": 9,
+      "z": -1,
+      "name": "Rock_Slate_Stalactite_Large"
+    },
+    {
+      "x": -6,
+      "y": 10,
+      "z": -1,
+      "name": "Rock_Slate_Stalactite_Large",
+      "filler": 1024
+    },
+    {
+      "x": -6,
+      "y": 6,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -6,
+      "y": 7,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -6,
+      "y": 8,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -6,
+      "y": 9,
+      "z": 0,
+      "name": "Plant_Bush_Winter",
+      "support": 15
+    },
+    {
+      "x": -6,
+      "y": 5,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -6,
+      "y": 6,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -6,
+      "y": 7,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -6,
+      "y": 8,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -6,
+      "y": 9,
+      "z": 1,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": -6,
+      "y": 6,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -6,
+      "y": 7,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -6,
+      "y": 9,
+      "z": 2,
+      "name": "Plant_Vine_Wall_Dead",
+      "support": 15,
+      "rotation": 3
+    },
+    {
+      "x": -6,
+      "y": 6,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -6,
+      "y": 7,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -6,
+      "y": 8,
+      "z": 3,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": -6,
+      "y": 9,
+      "z": 3,
+      "name": "Plant_Vine_Wall_Dead",
+      "support": 15,
+      "rotation": 3
+    },
+    {
+      "x": -5,
+      "y": 6,
+      "z": -5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -5,
+      "y": 7,
+      "z": -5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -5,
+      "y": 8,
+      "z": -5,
+      "name": "Rock_Slate_Stalactite_Small"
+    },
+    {
+      "x": -5,
+      "y": 4,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -5,
+      "y": 5,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -5,
+      "y": 6,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -5,
+      "y": 7,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -5,
+      "y": 8,
+      "z": -4,
+      "name": "Rock_Slate_Stalactite_Small"
+    },
+    {
+      "x": -5,
+      "y": 6,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -5,
+      "y": 7,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -5,
+      "y": 8,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -5,
+      "y": 9,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -5,
+      "y": 10,
+      "z": -3,
+      "name": "Rock_Slate_Stalactite_Small"
+    },
+    {
+      "x": -5,
+      "y": 4,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -5,
+      "y": 5,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -5,
+      "y": 6,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -5,
+      "y": 7,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -5,
+      "y": 8,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -5,
+      "y": 9,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -5,
+      "y": 10,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -5,
+      "y": 12,
+      "z": -2,
+      "name": "Plant_Vine_Wall_Dead",
+      "support": 15,
+      "rotation": 3
+    },
+    {
+      "x": -5,
+      "y": 4,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -5,
+      "y": 5,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -5,
+      "y": 6,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -5,
+      "y": 7,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -5,
+      "y": 8,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -5,
+      "y": 9,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -5,
+      "y": 10,
+      "z": -1,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": -5,
+      "y": 11,
+      "z": -1,
+      "name": "Plant_Vine_Wall_Dead",
+      "support": 15,
+      "rotation": 3
+    },
+    {
+      "x": -5,
+      "y": 12,
+      "z": -1,
+      "name": "Plant_Vine_Wall_Dead",
+      "support": 15,
+      "rotation": 3
+    },
+    {
+      "x": -5,
+      "y": 4,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -5,
+      "y": 5,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -5,
+      "y": 6,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -5,
+      "y": 7,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -5,
+      "y": 8,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -5,
+      "y": 9,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -5,
+      "y": 10,
+      "z": 0,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": -5,
+      "y": 12,
+      "z": 0,
+      "name": "Plant_Vine_Wall_Dead",
+      "support": 15,
+      "rotation": 3
+    },
+    {
+      "x": -5,
+      "y": 5,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -5,
+      "y": 6,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -5,
+      "y": 7,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -5,
+      "y": 8,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -5,
+      "y": 9,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -5,
+      "y": 10,
+      "z": 1,
+      "name": "Rock_Slate_Stalactite_Small"
+    },
+    {
+      "x": -5,
+      "y": 5,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -5,
+      "y": 6,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -5,
+      "y": 7,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -5,
+      "y": 8,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -5,
+      "y": 9,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -5,
+      "y": 11,
+      "z": 2,
+      "name": "Plant_Vine_Wall_Dead",
+      "support": 15,
+      "rotation": 3
+    },
+    {
+      "x": -5,
+      "y": 6,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -5,
+      "y": 7,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -5,
+      "y": 8,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -5,
+      "y": 9,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -5,
+      "y": 10,
+      "z": 3,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": -5,
+      "y": 6,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -5,
+      "y": 7,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -5,
+      "y": 8,
+      "z": 4,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": -5,
+      "y": 9,
+      "z": 4,
+      "name": "Plant_Vine_Wall_Poisoned",
+      "support": 15,
+      "rotation": 3
+    },
+    {
+      "x": -4,
+      "y": 4,
+      "z": -5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 5,
+      "z": -5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 6,
+      "z": -5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 7,
+      "z": -5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 8,
+      "z": -5,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": -4,
+      "y": 4,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 5,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 6,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 7,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 8,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 9,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 10,
+      "z": -4,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": -4,
+      "y": 4,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 5,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 6,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 7,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 8,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 9,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 10,
+      "z": -3,
+      "name": "Ore_Mornum_Necrotic_Stone"
+    },
+    {
+      "x": -4,
+      "y": 12,
+      "z": -3,
+      "name": "Plant_Vine_Wall_Dead",
+      "support": 15,
+      "rotation": 3
+    },
+    {
+      "x": -4,
+      "y": 4,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 5,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 6,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 7,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 8,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 9,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 10,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 11,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 12,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 4,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 5,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 6,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 7,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 8,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 9,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 10,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 11,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 12,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 13,
+      "z": -1,
+      "name": "Rock_Slate_Stalactite_Small"
+    },
+    {
+      "x": -4,
+      "y": 4,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 5,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 6,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 7,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 8,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 9,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 10,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 11,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 12,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 13,
+      "z": 0,
+      "name": "Prickly_Bush"
+    },
+    {
+      "x": -4,
+      "y": 3,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 4,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 5,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 6,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 7,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 8,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 9,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 10,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 11,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 12,
+      "z": 1,
+      "name": "Prickly_Bush"
+    },
+    {
+      "x": -4,
+      "y": 13,
+      "z": 1,
+      "name": "Plant_Vine_Wall_Poisoned",
+      "support": 15,
+      "rotation": 3
+    },
+    {
+      "x": -4,
+      "y": 4,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 5,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 6,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 7,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 8,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 9,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 10,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 11,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 12,
+      "z": 2,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": -4,
+      "y": 5,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 6,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 7,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 8,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 9,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 10,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 11,
+      "z": 3,
+      "name": "Prickly_Bush"
+    },
+    {
+      "x": -4,
+      "y": 5,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 6,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 7,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 8,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 9,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 6,
+      "z": 5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 7,
+      "z": 5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -4,
+      "y": 8,
+      "z": 5,
+      "name": "Rock_Slate_Stalactite_Large"
+    },
+    {
+      "x": -4,
+      "y": 9,
+      "z": 5,
+      "name": "Rock_Slate_Stalactite_Large",
+      "filler": 1024
+    },
+    {
+      "x": -4,
+      "y": 7,
+      "z": 7,
+      "name": "Sword_Cemetery_3"
+    },
+    {
+      "x": -3,
+      "y": 6,
+      "z": -6,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 7,
+      "z": -6,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 8,
+      "z": -6,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": -3,
+      "y": 9,
+      "z": -6,
+      "name": "Plant_Vine_Wall_Dead",
+      "support": 15,
+      "rotation": 2
+    },
+    {
+      "x": -3,
+      "y": 6,
+      "z": -5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 7,
+      "z": -5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 8,
+      "z": -5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 9,
+      "z": -5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 10,
+      "z": -5,
+      "name": "Rock_Slate_Stalactite_Large"
+    },
+    {
+      "x": -3,
+      "y": 11,
+      "z": -5,
+      "name": "Rock_Slate_Stalactite_Large",
+      "filler": 1024
+    },
+    {
+      "x": -3,
+      "y": 4,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 5,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 6,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 7,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 8,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 9,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 10,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 11,
+      "z": -4,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": -3,
+      "y": 3,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 4,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 5,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 6,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 7,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 8,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 9,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 10,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 11,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 12,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 2,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 3,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 4,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 5,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 6,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 7,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 8,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 9,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 10,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 11,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 12,
+      "z": -2,
+      "name": "Ore_Mornum_Necrotic_Stone"
+    },
+    {
+      "x": -3,
+      "y": 3,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 4,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 5,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 6,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 7,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 8,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 9,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 10,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 11,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 12,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 13,
+      "z": -1,
+      "name": "Rock_Slate_Stalactite_Small"
+    },
+    {
+      "x": -3,
+      "y": 3,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 4,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 5,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 6,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 7,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 8,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 9,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 10,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 11,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 12,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 3,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 4,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 5,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 6,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 7,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 8,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 9,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 10,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 11,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 12,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 13,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 14,
+      "z": 1,
+      "name": "Plant_Crop_Mushroom_Flatcap_Green",
+      "components": {
+        "Components": {
+          "FarmingBlock": {
+            "LastTickGameTime": "0001-01-01T12:00:00Z"
+          }
+        }
+      }
+    },
+    {
+      "x": -3,
+      "y": 3,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 4,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 5,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 6,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 7,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 8,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 9,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 10,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 11,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 12,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 13,
+      "z": 2,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": -3,
+      "y": 14,
+      "z": 2,
+      "name": "Plant_Vine_Wall_Poisoned",
+      "support": 15,
+      "rotation": 3
+    },
+    {
+      "x": -3,
+      "y": 15,
+      "z": 2,
+      "name": "Plant_Vine_Wall_Poisoned",
+      "support": 15,
+      "rotation": 3
+    },
+    {
+      "x": -3,
+      "y": 4,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 5,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 6,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 7,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 8,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 9,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 10,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 11,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 12,
+      "z": 3,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": -3,
+      "y": 14,
+      "z": 3,
+      "name": "Plant_Vine_Wall_Poisoned",
+      "support": 15,
+      "rotation": 3
+    },
+    {
+      "x": -3,
+      "y": 15,
+      "z": 3,
+      "name": "Plant_Vine_Wall_Poisoned",
+      "support": 15,
+      "rotation": 3
+    },
+    {
+      "x": -3,
+      "y": 4,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 5,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 6,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 7,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 8,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 9,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 10,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 11,
+      "z": 4,
+      "name": "Rock_Slate_Stalactite_Small"
+    },
+    {
+      "x": -3,
+      "y": 13,
+      "z": 4,
+      "name": "Plant_Vine_Wall_Dead",
+      "support": 15,
+      "rotation": 3
+    },
+    {
+      "x": -3,
+      "y": 5,
+      "z": 5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 6,
+      "z": 5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 7,
+      "z": 5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 8,
+      "z": 5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 9,
+      "z": 5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 10,
+      "z": 5,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": -3,
+      "y": 6,
+      "z": 6,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 7,
+      "z": 6,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -3,
+      "y": 8,
+      "z": 6,
+      "name": "Plant_Crop_Mushroom_Flatcap_Green",
+      "components": {
+        "Components": {
+          "FarmingBlock": {
+            "LastTickGameTime": "0001-01-01T12:00:00Z"
+          }
+        }
+      }
+    },
+    {
+      "x": -2,
+      "y": 6,
+      "z": -6,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 7,
+      "z": -6,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 8,
+      "z": -6,
+      "name": "Plant_Crop_Mushroom_Flatcap_Green",
+      "components": {
+        "Components": {
+          "FarmingBlock": {
+            "LastTickGameTime": "0001-01-01T12:00:00Z"
+          }
+        }
+      }
+    },
+    {
+      "x": -2,
+      "y": 9,
+      "z": -6,
+      "name": "Plant_Vine_Wall_Dead",
+      "support": 15,
+      "rotation": 2
+    },
+    {
+      "x": -2,
+      "y": 10,
+      "z": -6,
+      "name": "Plant_Vine_Wall_Dead",
+      "support": 15,
+      "rotation": 2
+    },
+    {
+      "x": -2,
+      "y": 6,
+      "z": -5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 7,
+      "z": -5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 8,
+      "z": -5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 9,
+      "z": -5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 10,
+      "z": -5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 11,
+      "z": -5,
+      "name": "Rock_Slate_Stalactite_Large"
+    },
+    {
+      "x": -2,
+      "y": 12,
+      "z": -5,
+      "name": "Rock_Slate_Stalactite_Large",
+      "filler": 1024
+    },
+    {
+      "x": -2,
+      "y": 6,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 7,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 8,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 9,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 10,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 11,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 12,
+      "z": -4,
+      "name": "Rock_Slate_Stalactite_Small"
+    },
+    {
+      "x": -2,
+      "y": 4,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 5,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 6,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 7,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 8,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 9,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 10,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 11,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 12,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 13,
+      "z": -3,
+      "name": "Rock_Slate_Stalactite_Large"
+    },
+    {
+      "x": -2,
+      "y": 14,
+      "z": -3,
+      "name": "Rock_Slate_Stalactite_Large",
+      "filler": 1024
+    },
+    {
+      "x": -2,
+      "y": 0,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 1,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 2,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 3,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 4,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 5,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 6,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 7,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 8,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 9,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 10,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 11,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 12,
+      "z": -2,
+      "name": "Ore_Mornum_Necrotic_Stone"
+    },
+    {
+      "x": -2,
+      "y": 1,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 2,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 3,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 4,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 5,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 6,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 7,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 8,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 9,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 10,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 11,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 12,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 13,
+      "z": -1,
+      "name": "Ore_Mornum_Necrotic_Stone"
+    },
+    {
+      "x": -2,
+      "y": 14,
+      "z": -1,
+      "name": "Plant_Vine_Wall_Poisoned",
+      "support": 15,
+      "rotation": 3
+    },
+    {
+      "x": -2,
+      "y": 0,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 1,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 2,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 3,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 4,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 5,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 6,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 7,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 8,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 9,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 10,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 11,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 12,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 13,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 14,
+      "z": 0,
+      "name": "Plant_Vine_Wall_Poisoned",
+      "support": 15,
+      "rotation": 3
+    },
+    {
+      "x": -2,
+      "y": 1,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 2,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 3,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 4,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 5,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 6,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 7,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 8,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 9,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 10,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 11,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 12,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 13,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 14,
+      "z": 1,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": -2,
+      "y": 2,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 3,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 4,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 5,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 6,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 7,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 8,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 9,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 10,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 11,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 12,
+      "z": 2,
+      "name": "Necrotic_Crystal",
+      "rotation": 5
+    },
+    {
+      "x": -2,
+      "y": 14,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 15,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 16,
+      "z": 2,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": -2,
+      "y": 3,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 4,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 5,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 6,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 7,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 8,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 9,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 10,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 11,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 12,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 13,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 14,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 15,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 16,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 17,
+      "z": 3,
+      "name": "Dead_Branch"
+    },
+    {
+      "x": -2,
+      "y": 3,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 4,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 5,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 6,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 7,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 8,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 9,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 10,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 11,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 12,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 13,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 14,
+      "z": 4,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": -2,
+      "y": 15,
+      "z": 4,
+      "name": "Plant_Vine_Wall_Dead",
+      "support": 15
+    },
+    {
+      "x": -2,
+      "y": 16,
+      "z": 4,
+      "name": "Plant_Vine_Wall_Dead",
+      "support": 15
+    },
+    {
+      "x": -2,
+      "y": 3,
+      "z": 5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 4,
+      "z": 5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 5,
+      "z": 5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 6,
+      "z": 5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 7,
+      "z": 5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 8,
+      "z": 5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 9,
+      "z": 5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 10,
+      "z": 5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 11,
+      "z": 5,
+      "name": "Rock_Slate_Stalactite_Small"
+    },
+    {
+      "x": -2,
+      "y": 12,
+      "z": 5,
+      "name": "Plant_Vine_Wall_Dead",
+      "support": 15
+    },
+    {
+      "x": -2,
+      "y": 13,
+      "z": 5,
+      "name": "Plant_Vine_Wall_Dead",
+      "support": 15
+    },
+    {
+      "x": -2,
+      "y": 4,
+      "z": 6,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 5,
+      "z": 6,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 6,
+      "z": 6,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 7,
+      "z": 6,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 8,
+      "z": 6,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 9,
+      "z": 6,
+      "name": "Rock_Slate_Stalactite_Small"
+    },
+    {
+      "x": -2,
+      "y": 6,
+      "z": 7,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 7,
+      "z": 7,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -2,
+      "y": 8,
+      "z": 7,
+      "name": "Plant_Bush_Winter",
+      "support": 15
+    },
+    {
+      "x": -1,
+      "y": 6,
+      "z": -7,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 7,
+      "z": -7,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 8,
+      "z": -7,
+      "name": "Plant_Vine_Wall_Poisoned",
+      "support": 15,
+      "rotation": 2
+    },
+    {
+      "x": -1,
+      "y": 6,
+      "z": -6,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 7,
+      "z": -6,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 8,
+      "z": -6,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 9,
+      "z": -6,
+      "name": "Rock_Slate_Stalactite_Small"
+    },
+    {
+      "x": -1,
+      "y": 10,
+      "z": -6,
+      "name": "Plant_Vine_Wall_Dead",
+      "support": 15,
+      "rotation": 2
+    },
+    {
+      "x": -1,
+      "y": 2,
+      "z": -5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 3,
+      "z": -5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 4,
+      "z": -5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 6,
+      "z": -5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 7,
+      "z": -5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 8,
+      "z": -5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 9,
+      "z": -5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 10,
+      "z": -5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 11,
+      "z": -5,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": -1,
+      "y": 12,
+      "z": -5,
+      "name": "Plant_Vine_Wall_Dead",
+      "support": 15,
+      "rotation": 2
+    },
+    {
+      "x": -1,
+      "y": 3,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 4,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 5,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 6,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 7,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 8,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 9,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 10,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 11,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 12,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 3,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 4,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 5,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 6,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 7,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 8,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 9,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 10,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 11,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 12,
+      "z": -3,
+      "name": "Ore_Mornum_Necrotic_Stone"
+    },
+    {
+      "x": -1,
+      "y": 2,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 3,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 4,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 5,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 6,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 7,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 8,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 9,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 10,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 11,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 12,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 13,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 14,
+      "z": -2,
+      "name": "Rock_Slate_Stalactite_Large"
+    },
+    {
+      "x": -1,
+      "y": 15,
+      "z": -2,
+      "name": "Rock_Slate_Stalactite_Large",
+      "filler": 1024
+    },
+    {
+      "x": -1,
+      "y": 1,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 2,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 3,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 4,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 5,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 6,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 7,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 8,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 9,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 10,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 11,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 12,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 13,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 14,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 15,
+      "z": -1,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": -1,
+      "y": 16,
+      "z": -1,
+      "name": "Plant_Vine_Wall_Dead",
+      "support": 15,
+      "rotation": 3
+    },
+    {
+      "x": -1,
+      "y": 17,
+      "z": -1,
+      "name": "Plant_Vine_Wall_Dead",
+      "support": 15,
+      "rotation": 3
+    },
+    {
+      "x": -1,
+      "y": 1,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 2,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 3,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 4,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 5,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 6,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 7,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 8,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 9,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 10,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 11,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 12,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 13,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 14,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 15,
+      "z": 0,
+      "name": "Rock_Slate_Stalactite_Large"
+    },
+    {
+      "x": -1,
+      "y": 16,
+      "z": 0,
+      "name": "Rock_Slate_Stalactite_Large",
+      "filler": 1024
+    },
+    {
+      "x": -1,
+      "y": 1,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 2,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 3,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 4,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 5,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 6,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 7,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 8,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 9,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 10,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 11,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 12,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 13,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 14,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 15,
+      "z": 1,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": -1,
+      "y": 1,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 2,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 3,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 4,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 5,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 6,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 7,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 8,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 9,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 10,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 11,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 12,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 13,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 14,
+      "z": 2,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": -1,
+      "y": 2,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 3,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 4,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 5,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 6,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 7,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 8,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 9,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 10,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 11,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 12,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 13,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 14,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 15,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 16,
+      "z": 3,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": -1,
+      "y": 1,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 2,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 3,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 4,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 5,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 6,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 7,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 8,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 9,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 10,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 11,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 12,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 13,
+      "z": 4,
+      "name": "Rock_Slate_Stalactite_Small"
+    },
+    {
+      "x": -1,
+      "y": 15,
+      "z": 4,
+      "name": "Plant_Vine_Wall_Dead",
+      "support": 15
+    },
+    {
+      "x": -1,
+      "y": 3,
+      "z": 5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 4,
+      "z": 5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 5,
+      "z": 5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 6,
+      "z": 5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 7,
+      "z": 5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 8,
+      "z": 5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 9,
+      "z": 5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 10,
+      "z": 5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 11,
+      "z": 5,
+      "name": "Rock_Slate_Stalactite_Small"
+    },
+    {
+      "x": -1,
+      "y": 3,
+      "z": 6,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 4,
+      "z": 6,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 5,
+      "z": 6,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 6,
+      "z": 6,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 7,
+      "z": 6,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 8,
+      "z": 6,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 9,
+      "z": 6,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": -1,
+      "y": 6,
+      "z": 7,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 7,
+      "z": 7,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": -1,
+      "y": 8,
+      "z": 7,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "z": -7,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "z": -7,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 8,
+      "z": -7,
+      "name": "Plant_Vine_Wall_Dead",
+      "support": 15,
+      "rotation": 2
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "z": -6,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "z": -6,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "z": -6,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "z": -6,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "z": -6,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 8,
+      "z": -6,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 9,
+      "z": -6,
+      "name": "Plant_Vine_Wall_Poisoned",
+      "support": 15,
+      "rotation": 2
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "z": -5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "z": -5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "z": -5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "z": -5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "z": -5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "z": -5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 8,
+      "z": -5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 9,
+      "z": -5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 10,
+      "z": -5,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": 0,
+      "y": 11,
+      "z": -5,
+      "name": "Plant_Vine_Wall_Poisoned",
+      "support": 15,
+      "rotation": 2
+    },
+    {
+      "x": 0,
+      "y": 12,
+      "z": -5,
+      "name": "Plant_Vine_Wall_Dead",
+      "support": 15,
+      "rotation": 2
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 8,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 9,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 10,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 11,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 12,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 13,
+      "z": -4,
+      "name": "Prickly_Bush"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 8,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 9,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 10,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 11,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 12,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 13,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 8,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 9,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 10,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 11,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 12,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 13,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 14,
+      "z": -2,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": 0,
+      "y": 15,
+      "z": -2,
+      "name": "Plant_Vine_Wall_Poisoned",
+      "support": 15,
+      "rotation": 2
+    },
+    {
+      "x": 0,
+      "y": 16,
+      "z": -2,
+      "name": "Plant_Vine_Wall_Poisoned",
+      "support": 15,
+      "rotation": 2
+    },
+    {
+      "x": 0,
+      "y": 17,
+      "z": -2,
+      "name": "Plant_Vine_Wall_Poisoned",
+      "support": 15,
+      "rotation": 2
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 8,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 9,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 10,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 11,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 12,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 13,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 14,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 15,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 16,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 17,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 18,
+      "z": -1,
+      "name": "Rock_Slate_Stalactite_Large"
+    },
+    {
+      "x": 0,
+      "y": 19,
+      "z": -1,
+      "name": "Rock_Slate_Stalactite_Large",
+      "filler": 1024
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 8,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 9,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 10,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 11,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 12,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 13,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 14,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 15,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 16,
+      "z": 0,
+      "name": "Necrotic_Crystal"
+    },
+    {
+      "x": 0,
+      "y": 17,
+      "z": 0,
+      "name": "Plant_Vine_Wall_Dead",
+      "support": 15,
+      "rotation": 3
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 8,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 9,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 10,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 11,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 12,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 13,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 14,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 15,
+      "z": 1,
+      "name": "Rock_Slate_Stalactite_Large"
+    },
+    {
+      "x": 0,
+      "y": 16,
+      "z": 1,
+      "name": "Rock_Slate_Stalactite_Large",
+      "filler": 1024
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 8,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 9,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 10,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 11,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 12,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 13,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 14,
+      "z": 2,
+      "name": "Dead_Branch"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 8,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 9,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 10,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 11,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 12,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 13,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 14,
+      "z": 3,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 8,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 9,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 10,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 11,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 12,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 13,
+      "z": 4,
+      "name": "Rock_Slate_Stalactite_Small"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "z": 5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "z": 5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "z": 5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "z": 5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "z": 5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 8,
+      "z": 5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 9,
+      "z": 5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 10,
+      "z": 5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 11,
+      "z": 5,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": 0,
+      "y": 12,
+      "z": 5,
+      "name": "Plant_Vine_Wall_Dead",
+      "support": 15
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "z": 6,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "z": 6,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "z": 6,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "z": 6,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 8,
+      "z": 6,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 9,
+      "z": 6,
+      "name": "Plant_Bush_Winter",
+      "support": 15
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "z": 7,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "z": 7,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": -7,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "z": -7,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 8,
+      "z": -7,
+      "name": "Plant_Vine_Wall_Poisoned",
+      "support": 15,
+      "rotation": 2
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "z": -6,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "z": -6,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "z": -6,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": -6,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "z": -6,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 8,
+      "z": -6,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": -6,
+      "name": "Rock_Slate_Stalactite_Small"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "z": -5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "z": -5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "z": -5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "z": -5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": -5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "z": -5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 8,
+      "z": -5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": -5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 10,
+      "z": -5,
+      "name": "Rock_Slate_Stalactite_Small"
+    },
+    {
+      "x": 1,
+      "y": 11,
+      "z": -5,
+      "name": "Plant_Vine_Wall_Dead",
+      "support": 15,
+      "rotation": 2
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 8,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 10,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 11,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 12,
+      "z": -4,
+      "name": "Ore_Mornum_Necrotic_Stone"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 8,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 10,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 11,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 12,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 13,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 14,
+      "z": -3,
+      "name": "Banner_1",
+      "rotation": 2
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 8,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 10,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 11,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 12,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 13,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 14,
+      "z": -2,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": 1,
+      "y": 15,
+      "z": -2,
+      "name": "Plant_Vine_Wall_Poisoned",
+      "support": 15,
+      "rotation": 2
+    },
+    {
+      "x": 1,
+      "y": 16,
+      "z": -2,
+      "name": "Plant_Vine_Wall_Dead",
+      "support": 15,
+      "rotation": 2
+    },
+    {
+      "x": 1,
+      "y": 17,
+      "z": -2,
+      "name": "Plant_Vine_Wall_Dead",
+      "support": 15,
+      "rotation": 2
+    },
+    {
+      "x": 1,
+      "y": 18,
+      "z": -2,
+      "name": "Plant_Vine_Wall_Poisoned",
+      "support": 15,
+      "rotation": 2
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 8,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 10,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 11,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 12,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 13,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 14,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 15,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 16,
+      "z": -1,
+      "name": "Necrotic_Crystal"
+    },
+    {
+      "x": 1,
+      "y": 17,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 18,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 19,
+      "z": -1,
+      "name": "Rock_Slate_Stalactite_Large"
+    },
+    {
+      "x": 1,
+      "y": 20,
+      "z": -1,
+      "name": "Rock_Slate_Stalactite_Large",
+      "filler": 1024
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 8,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 10,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 11,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 12,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 13,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 14,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 15,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 16,
+      "z": 0,
+      "name": "Ore_Mornum_Necrotic_Stone"
+    },
+    {
+      "x": 1,
+      "y": 17,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 18,
+      "z": 0,
+      "name": "Rock_Slate_Stalactite_Small"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 8,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 10,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 11,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 12,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 13,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 14,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 15,
+      "z": 1,
+      "name": "Rock_Slate_Stalactite_Small"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 8,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 10,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 11,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 12,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 13,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 14,
+      "z": 2,
+      "name": "Rock_Slate_Stalactite_Small"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 8,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 10,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 11,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 12,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 13,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 14,
+      "z": 3,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 8,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 10,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 11,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 12,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 13,
+      "z": 4,
+      "name": "Plant_Vine_Wall_Dead",
+      "support": 15
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "z": 5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "z": 5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": 5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "z": 5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 8,
+      "z": 5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": 5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 10,
+      "z": 5,
+      "name": "Rock_Slate_Stalactite_Small"
+    },
+    {
+      "x": 1,
+      "y": 11,
+      "z": 5,
+      "name": "Plant_Vine_Wall_Dead",
+      "support": 15
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "z": 6,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": 6,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "z": 6,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 8,
+      "z": 6,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": 6,
+      "name": "Rock_Slate_Stalactite_Small"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": 7,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "z": 7,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 1,
+      "y": 8,
+      "z": 7,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "z": -6,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": -6,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "z": -6,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "z": -6,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 8,
+      "z": -6,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "z": -6,
+      "name": "Plant_Vine_Wall_Dead",
+      "support": 15,
+      "rotation": 2
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "z": -5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "z": -5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "z": -5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": -5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "z": -5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "z": -5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 8,
+      "z": -5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "z": -5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 10,
+      "z": -5,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": 2,
+      "y": 11,
+      "z": -5,
+      "name": "Plant_Vine_Wall_Poisoned",
+      "support": 15,
+      "rotation": 2
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 8,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 10,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 11,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 12,
+      "z": -4,
+      "name": "Rock_Slate_Stalactite_Small"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 8,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 10,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 11,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 12,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 13,
+      "z": -3,
+      "name": "Rock_Slate_Stalactite_Small"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 8,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 10,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 11,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 12,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 13,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 8,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 10,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 11,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 12,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 13,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 14,
+      "z": -1,
+      "name": "Rock_Slate_Stalactite_Large"
+    },
+    {
+      "x": 2,
+      "y": 15,
+      "z": -1,
+      "name": "Rock_Slate_Stalactite_Large",
+      "filler": 1024
+    },
+    {
+      "x": 2,
+      "y": 16,
+      "z": -1,
+      "name": "Plant_Vine_Wall_Poisoned",
+      "support": 15,
+      "rotation": 1
+    },
+    {
+      "x": 2,
+      "y": 17,
+      "z": -1,
+      "name": "Plant_Vine_Wall_Poisoned",
+      "support": 15,
+      "rotation": 1
+    },
+    {
+      "x": 2,
+      "y": 18,
+      "z": -1,
+      "name": "Plant_Vine_Wall_Dead",
+      "support": 15,
+      "rotation": 1
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 8,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 10,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 11,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 12,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 13,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 14,
+      "z": 0,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": 2,
+      "y": 15,
+      "z": 0,
+      "name": "Plant_Vine_Wall_Poisoned",
+      "support": 15,
+      "rotation": 1
+    },
+    {
+      "x": 2,
+      "y": 16,
+      "z": 0,
+      "name": "Plant_Vine_Wall_Poisoned",
+      "support": 15,
+      "rotation": 1
+    },
+    {
+      "x": 2,
+      "y": 17,
+      "z": 0,
+      "name": "Plant_Vine_Wall_Dead",
+      "support": 15,
+      "rotation": 1
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 8,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 10,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 11,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 12,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 13,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 14,
+      "z": 1,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 8,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 10,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 11,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 12,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 13,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 14,
+      "z": 2,
+      "name": "Dead_Branch"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 8,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 10,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 11,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 12,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 13,
+      "z": 3,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 8,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 10,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 11,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 12,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 13,
+      "z": 4,
+      "name": "Prickly_Bush"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "z": 5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": 5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "z": 5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "z": 5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 8,
+      "z": 5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "z": 5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 10,
+      "z": 5,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": 2,
+      "y": 12,
+      "z": 5,
+      "name": "Plant_Vine_Wall_Dead",
+      "support": 15
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": 6,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "z": 6,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "z": 6,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 8,
+      "z": 6,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "z": 6,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "z": 7,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "z": 7,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "z": -6,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "z": -6,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 8,
+      "z": -6,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "z": -6,
+      "name": "Plant_Vine_Wall_Dead",
+      "support": 15,
+      "rotation": 2
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "z": -5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "z": -5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "z": -5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "z": -5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 8,
+      "z": -5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "z": -5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 10,
+      "z": -5,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 8,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 10,
+      "z": -4,
+      "name": "Dead_Branch"
+    },
+    {
+      "x": 3,
+      "y": 11,
+      "z": -4,
+      "name": "Plant_Vine_Wall_Dead",
+      "support": 15,
+      "rotation": 2
+    },
+    {
+      "x": 3,
+      "y": 12,
+      "z": -4,
+      "name": "Plant_Vine_Wall_Dead",
+      "support": 15,
+      "rotation": 2
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 8,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 10,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 11,
+      "z": -3,
+      "name": "Necrotic_Crystal"
+    },
+    {
+      "x": 3,
+      "y": 12,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 13,
+      "z": -3,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 8,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 10,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 11,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 12,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 13,
+      "z": -2,
+      "name": "Prickly_Bush"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 8,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 10,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 11,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 12,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 13,
+      "z": -1,
+      "name": "Rock_Slate_Stalactite_Small"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 8,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 10,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 11,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 12,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 13,
+      "z": 0,
+      "name": "Ore_Mornum_Necrotic_Stone"
+    },
+    {
+      "x": 3,
+      "y": 14,
+      "z": 0,
+      "name": "Rock_Slate_Stalactite_Large"
+    },
+    {
+      "x": 3,
+      "y": 15,
+      "z": 0,
+      "name": "Rock_Slate_Stalactite_Large",
+      "filler": 1024
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 8,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 10,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 11,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 12,
+      "z": 1,
+      "name": "Necrotic_Crystal",
+      "rotation": 5
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 8,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 10,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 11,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 12,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 13,
+      "z": 2,
+      "name": "Rock_Slate_Stalactite_Large"
+    },
+    {
+      "x": 3,
+      "y": 14,
+      "z": 2,
+      "name": "Rock_Slate_Stalactite_Large",
+      "filler": 1024
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 8,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 10,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 11,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 12,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 13,
+      "z": 3,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 8,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 10,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 11,
+      "z": 4,
+      "name": "Prickly_Bush"
+    },
+    {
+      "x": 3,
+      "y": 12,
+      "z": 4,
+      "name": "Plant_Vine_Wall_Dead",
+      "support": 15
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "z": 5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "z": 5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "z": 5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 8,
+      "z": 5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "z": 5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 10,
+      "z": 5,
+      "name": "Rock_Slate_Stalactite_Small"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "z": 6,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "z": 6,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 3,
+      "y": 8,
+      "z": 6,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "z": -5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "z": -5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 8,
+      "z": -5,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "z": -5,
+      "name": "Plant_Vine_Wall_Dead",
+      "support": 15,
+      "rotation": 2
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 8,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 10,
+      "z": -4,
+      "name": "Rock_Slate_Stalactite_Small"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 8,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 10,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 11,
+      "z": -3,
+      "name": "Rock_Slate_Stalactite_Large"
+    },
+    {
+      "x": 4,
+      "y": 12,
+      "z": -3,
+      "name": "Rock_Slate_Stalactite_Large",
+      "filler": 1024
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 8,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 10,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 11,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 12,
+      "z": -2,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 8,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 10,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 11,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 12,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 13,
+      "z": -1,
+      "name": "Rock_Slate_Stalactite_Small"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 8,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 10,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 11,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 12,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 13,
+      "z": 0,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 8,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 10,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 11,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 12,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 13,
+      "z": 1,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 8,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 10,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 11,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 12,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 13,
+      "z": 2,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 8,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 10,
+      "z": 3,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": 4,
+      "y": 11,
+      "z": 3,
+      "name": "Plant_Vine_Wall_Dead",
+      "support": 15
+    },
+    {
+      "x": 4,
+      "y": 12,
+      "z": 3,
+      "name": "Plant_Vine_Wall_Dead",
+      "support": 15
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 8,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 10,
+      "z": 4,
+      "name": "Rock_Slate_Stalactite_Small"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "z": 5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "z": 5,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 4,
+      "y": 8,
+      "z": 5,
+      "name": "Rock_Slate_Stalactite_Small"
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "z": 5,
+      "name": "Plant_Vine_Wall_Dead",
+      "support": 15,
+      "rotation": 1
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "z": -4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 5,
+      "y": 8,
+      "z": -4,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "z": -4,
+      "name": "Plant_Vine_Wall_Poisoned",
+      "support": 15,
+      "rotation": 1
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 5,
+      "y": 8,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 5,
+      "y": 10,
+      "z": -3,
+      "name": "Rock_Slate_Stalactite_Small"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 5,
+      "y": 8,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 5,
+      "y": 10,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 5,
+      "y": 11,
+      "z": -2,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 5,
+      "y": 8,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 5,
+      "y": 10,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 5,
+      "y": 11,
+      "z": -1,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": 5,
+      "y": 12,
+      "z": -1,
+      "name": "Plant_Vine_Wall_Dead",
+      "support": 15,
+      "rotation": 1
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 5,
+      "y": 8,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 5,
+      "y": 10,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 5,
+      "y": 11,
+      "z": 0,
+      "name": "Rock_Slate_Stalactite_Large"
+    },
+    {
+      "x": 5,
+      "y": 12,
+      "z": 0,
+      "name": "Rock_Slate_Stalactite_Large",
+      "filler": 1024
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 5,
+      "y": 8,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 5,
+      "y": 10,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 5,
+      "y": 11,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 5,
+      "y": 12,
+      "z": 1,
+      "name": "Rock_Slate_Stalactite_Large"
+    },
+    {
+      "x": 5,
+      "y": 13,
+      "z": 1,
+      "name": "Rock_Slate_Stalactite_Large",
+      "filler": 1024
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 5,
+      "y": 8,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 5,
+      "y": 10,
+      "z": 2,
+      "name": "Rock_Slate_Stalactite_Small"
+    },
+    {
+      "x": 5,
+      "y": 11,
+      "z": 2,
+      "name": "Plant_Vine_Wall_Dead",
+      "support": 15,
+      "rotation": 1
+    },
+    {
+      "x": 5,
+      "y": 12,
+      "z": 2,
+      "name": "Plant_Vine_Wall_Dead",
+      "support": 15,
+      "rotation": 1
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 5,
+      "y": 8,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 5,
+      "y": 10,
+      "z": 3,
+      "name": "Rock_Slate_Stalactite_Small"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "z": 4,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 5,
+      "y": 8,
+      "z": 4,
+      "name": "Prickly_Bush"
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "z": 4,
+      "name": "Plant_Vine_Wall_Dead",
+      "support": 15
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "z": -3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 6,
+      "y": 8,
+      "z": -3,
+      "name": "Rock_Slate_Stalactite_Small"
+    },
+    {
+      "x": 6,
+      "y": 9,
+      "z": -3,
+      "name": "Plant_Vine_Wall_Poisoned",
+      "support": 15,
+      "rotation": 1
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 6,
+      "y": 8,
+      "z": -2,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": 6,
+      "y": 9,
+      "z": -2,
+      "name": "Plant_Vine_Wall_Poisoned",
+      "support": 15,
+      "rotation": 1
+    },
+    {
+      "x": 6,
+      "y": 10,
+      "z": -2,
+      "name": "Plant_Vine_Wall_Dead",
+      "support": 15,
+      "rotation": 1
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 6,
+      "y": 8,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 6,
+      "y": 9,
+      "z": -1,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": 6,
+      "y": 10,
+      "z": -1,
+      "name": "Plant_Vine_Wall_Poisoned",
+      "support": 15,
+      "rotation": 1
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 6,
+      "y": 8,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 6,
+      "y": 9,
+      "z": 0,
+      "name": "Rock_Slate_Stalactite_Small"
+    },
+    {
+      "x": 6,
+      "y": 10,
+      "z": 0,
+      "name": "Plant_Vine_Wall_Poisoned",
+      "support": 15,
+      "rotation": 1
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 6,
+      "y": 8,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 6,
+      "y": 9,
+      "z": 1,
+      "name": "Rock_Slate_Stalactite_Small"
+    },
+    {
+      "x": 6,
+      "y": 10,
+      "z": 1,
+      "name": "Plant_Vine_Wall_Poisoned",
+      "support": 15,
+      "rotation": 1
+    },
+    {
+      "x": 6,
+      "y": 11,
+      "z": 1,
+      "name": "Plant_Vine_Wall_Poisoned",
+      "support": 15,
+      "rotation": 1
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 6,
+      "y": 8,
+      "z": 2,
+      "name": "Rock_Slate_Stalactite_Large"
+    },
+    {
+      "x": 6,
+      "y": 9,
+      "z": 2,
+      "name": "Rock_Slate_Stalactite_Large",
+      "filler": 1024
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "z": 3,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 6,
+      "y": 8,
+      "z": 3,
+      "name": "Plant_Crop_Mushroom_Flatcap_Green",
+      "components": {
+        "Components": {
+          "FarmingBlock": {
+            "LastTickGameTime": "0001-01-01T12:00:00Z",
+            "Generation": 1,
+            "Executions": 1
+          },
+          "PlacedByInteraction": {
+            "WhoPlacedUuid": {
+              "$binary": "bJ0Z/pHxT/WyhVA6z1mjfg==",
+              "$type": "04"
+            }
+          }
+        }
+      }
+    },
+    {
+      "x": 6,
+      "y": 9,
+      "z": 3,
+      "name": "Plant_Vine_Wall_Dead",
+      "support": 15,
+      "rotation": 1
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "z": -2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 7,
+      "y": 8,
+      "z": -2,
+      "name": "Rock_Slate_Stalactite_Small"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "z": -1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "z": 0,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 7,
+      "y": 8,
+      "z": 0,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "z": 1,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 7,
+      "y": 8,
+      "z": 1,
+      "name": "Necrotic_Grass"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "z": 2,
+      "name": "Necrotic_Sand"
+    },
+    {
+      "x": 7,
+      "y": 8,
+      "z": 2,
+      "name": "Rock_Slate_Stalactite_Small"
+    }
+  ],
+  "entities": [
+    {
+      "Components": {
+        "Nameplate": {
+          "Text": "Necros_Aggro"
+        },
+        "HiddenFromAdventurePlayer": {},
+        "DisplayName": {
+          "DisplayName": {
+            "RawText": "Necros_Aggro",
+            "Bold": null,
+            "Italic": null,
+            "Monospace": null,
+            "Underline": null
+          }
+        },
+        "RefId": {
+          "Count": 0
+        },
+        "Transform": {
+          "Position": {
+            "X": -4.473670959472656,
+            "Y": 1.1522064208984375,
+            "Z": -1.672454833984375
+          },
+          "Rotation": {
+            "Pitch": 0.0,
+            "Yaw": 10.24614429473877,
+            "Roll": 0.0
+          }
+        },
+        "Velocity": {
+          "Velocity": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          }
+        },
+        "PrefabCopyable": {},
+        "Model": {
+          "Model": {
+            "Id": "NPC_Spawn_Marker",
+            "Scale": 1.0,
+            "Static": false
+          }
+        },
+        "UUID": {
+          "UUID": {
+            "$binary": "lExTEByPNKudvUDhG/I6Fw==",
+            "$type": "04"
+          }
+        },
+        "LocalSpawnBeacon": {},
+        "LegacySpawnBeacon": {
+          "Version": 5,
+          "UUID": {
+            "$binary": "H0MjuHULPi2KdDp9ycU80A==",
+            "$type": "04"
+          },
+          "SpawnConfiguration": "Necros_Aggro",
+          "NextSpawnAfter": "0001-01-07T20:21:13.776802537Z",
+          "NextSpawnAfterRealtime": false,
+          "DespawnSelfAfter": "0001-01-07T20:36:14.623112796Z",
+          "LastPlayerCount": 0
+        }
+      }
+    },
+    {
+      "Components": {
+        "Nameplate": {
+          "Text": "Necros_Passive"
+        },
+        "HiddenFromAdventurePlayer": {},
+        "DisplayName": {
+          "DisplayName": {
+            "RawText": "Necros_Passive",
+            "Bold": null,
+            "Italic": null,
+            "Monospace": null,
+            "Underline": null
+          }
+        },
+        "RefId": {
+          "Count": 0
+        },
+        "Transform": {
+          "Position": {
+            "X": -4.473670959472656,
+            "Y": 1.1522064208984375,
+            "Z": -1.672454833984375
+          },
+          "Rotation": {
+            "Pitch": 0.0,
+            "Yaw": 10.24614429473877,
+            "Roll": 0.0
+          }
+        },
+        "Velocity": {
+          "Velocity": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          }
+        },
+        "PrefabCopyable": {},
+        "Model": {
+          "Model": {
+            "Id": "NPC_Spawn_Marker",
+            "Scale": 1.0,
+            "Static": false
+          }
+        },
+        "UUID": {
+          "UUID": {
+            "$binary": "A8ToJAyVPoK4Mt8YpPbtww==",
+            "$type": "04"
+          }
+        },
+        "LocalSpawnBeacon": {},
+        "LegacySpawnBeacon": {
+          "Version": 5,
+          "UUID": {
+            "$binary": "EQmgg9vUOd+rbtAErSGz5Q==",
+            "$type": "04"
+          },
+          "SpawnConfiguration": "Necros_Passive",
+          "NextSpawnAfter": "0001-01-07T20:13:39.497143542Z",
+          "NextSpawnAfterRealtime": false,
+          "DespawnSelfAfter": "0001-01-07T20:30:35.619083836Z",
+          "LastPlayerCount": 0
+        }
+      }
+    }
+  ]
+}

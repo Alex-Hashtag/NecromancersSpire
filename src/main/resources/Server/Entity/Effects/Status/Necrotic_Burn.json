@@ -1,0 +1,25 @@
+{
+  "ApplicationEffects": {
+    "EntityBottomTint": "#002200",
+    "EntityTopTint": "#1aff1a",
+    "WorldSoundEventId": "SFX_Effect_Burn_World",
+    "LocalSoundEventId": "SFX_Effect_Burn_Local",
+    "ModelVFXId": "Burn"
+  },
+  "DamageCalculatorCooldown": 1,
+  "DamageCalculator": {
+    "BaseDamage": {
+      "Fire": 10
+    }
+  },
+  "DamageEffects": {
+    "WorldSoundEventId": "SFX_Effect_Burn_World",
+    "PlayerSoundEventId": "SFX_Effect_Burn_Local"
+  },
+  "OverlapBehavior": "Overwrite",
+  "Infinite": false,
+  "Debuff": true,
+  "StatusEffectIcon": "UI/StatusEffects/Burn.png",
+  "Duration": 5,
+  "DeathMessageKey": "server.general.deathCause.lavaBurn"
+}

@@ -1,0 +1,48 @@
+{
+  "Type": "NoiseRange",
+  "DefaultBiome": "Necros",
+  "MaxBiomeEdgeDistance": 32,
+  "DefaultTransitionDistance": 32,
+  "Density": {
+    "Type": "Constant",
+    "Value": 0
+  },
+  "Framework": [
+    {
+      "Type": "DecimalConstants",
+      "Entries": [
+        {
+          "Name": "Base",
+          "Value": 80
+        },
+        {
+          "Name": "Water",
+          "Value": 60
+        },
+        {
+          "Name": "Bedrock",
+          "Value": 0
+        }
+      ]
+    },
+    {
+      "Type": "Positions",
+      "Entries": [
+        {
+          "Name": "Spawns",
+          "Positions": {
+            "Type": "List",
+            "ExportAs": "Spawns",
+            "Positions": [
+              {
+                "X": 0,
+                "Y": 60,
+                "Z": 0
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

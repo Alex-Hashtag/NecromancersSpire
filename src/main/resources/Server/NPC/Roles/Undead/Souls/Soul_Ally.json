@@ -1,0 +1,166 @@
+{
+  "Type": "Generic",
+  "Appearance": "Skeleton",
+  "StartState": "Idle",
+  "BusyStates": ["Idle", "Combat"],
+  "MaxHealth": 90,
+  "DefaultPlayerAttitude": "Ignore",
+  "DefaultNPCAttitude": "Hostile",
+  "DisableDamageGroups": ["Self", "Player"],
+  "DisableDamageFlock": true,
+  "FlockSpawnTypes": ["Soul_Ally"],
+  "FlockAllowedNPC": ["Soul_Ally"],
+  "ApplySeparation": true,
+  "SeparationDistance": 2,
+  "SeparationWeight": 1,
+  "SeparationDistanceTarget": 0.5,
+  "SeparationNearRadiusTarget": 2,
+  "SeparationFarRadiusTarget": 7,
+  "KnockbackScale": 0.5,
+  "HotbarItems": ["Weapon_Sword_Steel_Rusty"],
+  "HotbarSize": 3,
+  "OffHandItems": [],
+  "OffHandSlots": 2,
+  "DefaultOffHandSlot": -1,
+  "MotionControllerList": [
+    {
+      "Type": "Walk",
+      "MaxWalkSpeed": 10,
+      "Gravity": 10,
+      "RunThreshold": 0.3,
+      "MaxFallSpeed": 15,
+      "MaxRotationSpeed": 360,
+      "Acceleration": 10,
+      "MaxClimbHeight": 3,
+      "MaxDropHeight": 5
+    }
+  ],
+  "StateTransitions": [
+    {
+      "States": [
+        { "To": ["Idle"], "From": [] }
+      ],
+      "Actions": [
+        { "Type": "ReleaseTarget" },
+        { "Type": "ResetInstructions" }
+      ]
+    },
+    {
+      "States": [
+        { "To": ["Idle", "Combat"], "From": [] }
+      ],
+      "Actions": [
+        { "Type": "Inventory", "Operation": "EquipHotbar", "UseTarget": false, "Slot": 0 }
+      ]
+    }
+  ],
+  "InteractionVars": {
+    "Melee_Damage": {
+      "Interactions": [
+        {
+          "Parent": "NPC_Attack_Melee_Damage",
+          "DamageCalculator": {
+            "Type": "Absolute",
+            "BaseDamage": { "Physical": 10 },
+            "RandomPercentageModifier": 0.1
+          }
+        }
+      ]
+    }
+  },
+  "Instructions": [
+    {
+      "Continue": true,
+      "Instructions": [
+        {
+          "Continue": true,
+          "Sensor": { "Type": "Any", "Once": true },
+          "Actions": [
+            {
+              "Type": "TimerStart",
+              "Name": "DespawnTimer",
+              "StartValueRange": [300, 300],
+              "RestartValueRange": [300, 300]
+            }
+          ]
+        },
+        {
+          "Continue": true,
+          "Sensor": { "Type": "Timer", "Name": "DespawnTimer", "State": "Stopped" },
+          "Actions": [{ "Type": "Despawn" }]
+        },
+        {
+          "Continue": true,
+          "Sensor": { "Type": "Damage" },
+          "Actions": [
+            { "Type": "OverrideAttitude", "Attitude": "Hostile", "Duration": 60 }
+          ]
+        },
+        {
+          "Sensor": { "Type": "State", "State": "Idle" },
+          "Instructions": [
+            {
+              "Reference": "Component_Instruction_Damage_Check",
+              "Modify": {
+                "_ExportStates": ["Combat", "Idle"],
+                "AlertedRange": 24
+              }
+            },
+            {
+              "Sensor": { "Type": "Target", "Range": 24, "LockOnTarget": true },
+              "Actions": [{ "Type": "State", "State": "Combat" }]
+            },
+            {
+              "Sensor": { "Type": "Player", "Range": 30 },
+              "BodyMotion": {
+                "Type": "Seek",
+                "StopDistance": 3,
+                "SlowDownDistance": 6,
+                "RelativeSpeed": 0.85
+              },
+              "HeadMotion": { "Type": "Watch" }
+            }
+          ]
+        },
+        {
+          "Sensor": { "Type": "State", "State": "Combat" },
+          "Instructions": [
+            {
+              "Reference": "Component_Instruction_Damage_Check",
+              "Modify": {
+                "_ExportStates": ["Combat", "Idle"],
+                "AlertedRange": 20
+              }
+            },
+            {
+              "Sensor": {
+                "Type": "Target",
+                "Range": 2,
+                "Filters": [{ "Type": "LineOfSight" }]
+              },
+              "ActionsBlocking": true,
+              "Actions": [
+                {
+                  "Type": "Attack",
+                  "Attack": "Root_NPC_Attack_Melee",
+                  "AttackPauseRange": [0.8, 1.5]
+                }
+              ],
+              "HeadMotion": { "Type": "Aim", "RelativeTurnSpeed": 2.0 }
+            },
+            {
+              "Reference": "Component_Instruction_Intelligent_Chase",
+              "Modify": {
+                "_ExportStates": ["Idle", "Idle", "Idle"],
+                "ViewRange": 24,
+                "HearingRange": 10,
+                "RelativeSpeed": 0.85
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "NameTranslationKey": "server.npcRoles.Soul_Ally.name"
+}

@@ -1,0 +1,62 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Necrotic_Fence.name"
+  },
+  "ItemLevel": 0,
+  "Categories": [
+    "Blocks.Deco",
+    "Necros.Deco"
+  ],
+  "PlayerAnimationsId": "Block",
+  "Set": "Deco",
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "Group": "Deco",
+    "VariantRotation": "NESW",
+    "Flags": {},
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Rocks",
+        "ItemId": "Necrotic_Fence"
+      }
+    },
+    "BlockParticleSetId": "Stone",
+    "CustomModel": "Blocks/necrotic_fence.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "BlockTextures/necrotic_fence_01.png",
+        "Weight": 40
+      },
+      {
+        "Texture": "BlockTextures/necrotic_fence_02.png",
+        "Weight": 40
+      },
+      {
+        "Texture": "BlockTextures/necrotic_fence_03.png",
+        "Weight": 20
+      }
+    ],
+    "ParticleColor": "#4a4a4a",
+    "BlockSoundSetId": "Stone"
+  },
+  "Tags": {
+    "Type": [
+      "Deco"
+    ]
+  },
+  "Icon": "Icons/ItemsGenerated/Necrotic_Fence.png",
+  "IconProperties": {
+    "Scale": 0.5,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -19
+    ]
+  }
+}

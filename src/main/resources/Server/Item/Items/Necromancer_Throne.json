@@ -1,0 +1,72 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Necromancer_Throne.name"
+  },
+  "ItemLevel": 600,
+  "Categories": [
+    "Blocks.Deco",
+    "Necros.Deco"
+  ],
+  "PlayerAnimationsId": "Block",
+  "Set": "Deco",
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "Group": "Deco",
+    "VariantRotation": "NESW",
+    "Flags": {},
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Woods",
+        "ItemId": "Necromancer_Throne"
+      }
+    },
+    "BlockParticleSetId": "Wood",
+    "CustomModel": "Blocks/necromancer_throne.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "BlockTextures/necromancer_throne.png"
+      }
+    ],
+    "ParticleColor": "#8b7355",
+    "BlockSoundSetId": "Wood",
+    "HitboxType": "Chair_Small",
+    "Seats": [
+      {
+        "Offset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Yaw": 0
+      }
+    ],
+    "Interactions": {
+      "Use": "Block_Seat"
+    }
+  },
+  "Interactions": {
+    "Primary": "Block_Primary",
+    "Secondary": "Block_Secondary"
+  },
+  "ItemSoundSetId": "ISS_Blocks_Wood",
+  "Tags": {
+    "Type": [
+      "Deco"
+    ]
+  },
+  "Icon": "Icons/ItemsGenerated/Necromancer_Throne.png",
+  "IconProperties": {
+    "Scale": 0.3,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -46
+    ]
+  }
+}

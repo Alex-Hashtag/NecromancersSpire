@@ -1,0 +1,61 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Long_Roots.name"
+  },
+  "ItemLevel": 0,
+  "Categories": [
+    "Blocks.Deco",
+    "Necros.Deco"
+  ],
+  "PlayerAnimationsId": "Block",
+  "Set": "Deco",
+  "BlockType": {
+    "Material": "Empty",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "Group": "Deco",
+    "Flags": {
+      "IsStackable": false
+    },
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Woods",
+        "ItemId": "Long_Roots"
+      }
+    },
+    "BlockParticleSetId": "Wood",
+    "CustomModel": "Blocks/long_roots.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "BlockTextures/long_roots.png"
+      }
+    ],
+    "ParticleColor": "#4a3a2a",
+    "BlockSoundSetId": "Wood",
+    "Support": {
+      "Up": [
+        {
+          "FaceType": "Full"
+        }
+      ]
+    }
+  },
+  "Tags": {
+    "Type": [
+      "Deco"
+    ]
+  },
+  "IconProperties": {
+    "Scale": 0.25,
+    "Rotation": [
+      22.5,
+      42,
+      22.5
+    ],
+    "Translation": [
+      -1,
+      -59
+    ]
+  },
+  "Icon": "Icons/ItemsGenerated/Long_Roots.png"
+}

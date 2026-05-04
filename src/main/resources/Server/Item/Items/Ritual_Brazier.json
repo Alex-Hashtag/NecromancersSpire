@@ -1,0 +1,68 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Ritual_Brazier.name"
+  },
+  "ItemLevel": 600,
+  "Categories": [
+    "Blocks.Deco",
+    "Necros.Deco"
+  ],
+  "PlayerAnimationsId": "Block",
+  "Set": "Deco",
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "Group": "Deco",
+    "Flags": {},
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Rocks"
+      }
+    },
+    "BlockParticleSetId": "Stone",
+    "CustomModel": "Blocks/ritual_brazier.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "BlockTextures/ritual_brazier.png"
+      }
+    ],
+    "ParticleColor": "#3a3a3a",
+    "BlockSoundSetId": "Stone",
+    "VariantRotation": "NESW",
+    "Interactions": {
+      "Use": {
+        "Interactions": [
+          {
+            "Type": "ChangeState",
+            "Changes": {
+              "default": "default"
+            }
+          }
+        ]
+      }
+    },
+    "Light": {
+      "Color": "#7fd9c8",
+      "Radius": 8
+    }
+  },
+  "Tags": {
+    "Type": [
+      "Deco"
+    ]
+  },
+  "IconProperties": {
+    "Scale": 0.45,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -10
+    ]
+  },
+  "Icon": "Icons/ItemsGenerated/Ritual_Brazier.png"
+}

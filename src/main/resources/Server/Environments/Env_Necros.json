@@ -1,0 +1,85 @@
+{
+  "Parent": "Default",
+  "WaterTint": "#1a5c2a",
+  "SpawnDensity": 0.6,
+  "Tags": {
+    "Zone1": [
+      "Foggy"
+    ],
+    "Necros": []
+  },
+  "WeatherForecasts": {
+    "0": [
+      { "WeatherId": "Necros_Foggy", "Weight": 100 }
+    ],
+    "1": [
+      { "WeatherId": "Necros_Foggy", "Weight": 100 }
+    ],
+    "2": [
+      { "WeatherId": "Necros_Foggy", "Weight": 100 }
+    ],
+    "3": [
+      { "WeatherId": "Necros_Foggy", "Weight": 100 }
+    ],
+    "4": [
+      { "WeatherId": "Necros_Foggy", "Weight": 100 }
+    ],
+    "5": [
+      { "WeatherId": "Necros_Foggy", "Weight": 100 }
+    ],
+    "6": [
+      { "WeatherId": "Necros_Foggy", "Weight": 100 }
+    ],
+    "7": [
+      { "WeatherId": "Necros_Foggy", "Weight": 100 }
+    ],
+    "8": [
+      { "WeatherId": "Necros_Foggy", "Weight": 100 }
+    ],
+    "9": [
+      { "WeatherId": "Necros_Foggy", "Weight": 100 }
+    ],
+    "10": [
+      { "WeatherId": "Necros_Foggy", "Weight": 100 }
+    ],
+    "11": [
+      { "WeatherId": "Necros_Foggy", "Weight": 100 }
+    ],
+    "12": [
+      { "WeatherId": "Necros_Foggy", "Weight": 100 }
+    ],
+    "13": [
+      { "WeatherId": "Necros_Foggy", "Weight": 100 }
+    ],
+    "14": [
+      { "WeatherId": "Necros_Foggy", "Weight": 100 }
+    ],
+    "15": [
+      { "WeatherId": "Necros_Foggy", "Weight": 100 }
+    ],
+    "16": [
+      { "WeatherId": "Necros_Foggy", "Weight": 100 }
+    ],
+    "17": [
+      { "WeatherId": "Necros_Foggy", "Weight": 100 }
+    ],
+    "18": [
+      { "WeatherId": "Necros_Foggy", "Weight": 100 }
+    ],
+    "19": [
+      { "WeatherId": "Necros_Foggy", "Weight": 100 }
+    ],
+    "20": [
+      { "WeatherId": "Necros_Foggy", "Weight": 100 }
+    ],
+    "21": [
+      { "WeatherId": "Necros_Foggy", "Weight": 100 }
+    ],
+    "22": [
+      { "WeatherId": "Necros_Foggy", "Weight": 100 }
+    ],
+    "23": [
+      { "WeatherId": "Necros_Foggy", "Weight": 100 }
+    ]
+  }
+}

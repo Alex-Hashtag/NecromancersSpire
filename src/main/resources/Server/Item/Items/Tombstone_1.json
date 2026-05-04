@@ -1,0 +1,53 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Tombstone_1.name"
+  },
+  "ItemLevel": 600,
+  "Categories": [
+    "Blocks.Deco",
+    "Necros.Deco"
+  ],
+  "PlayerAnimationsId": "Block",
+  "Set": "Deco",
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "Group": "Deco",
+    "VariantRotation": "NESW",
+    "Flags": {},
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Rocks",
+        "ItemId": "Tombstone_1"
+      }
+    },
+    "BlockParticleSetId": "Stone",
+    "CustomModel": "Blocks/tombstone_1.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "BlockTextures/necros_deco_atlas.png"
+      }
+    ],
+    "ParticleColor": "#4a4a4a",
+    "BlockSoundSetId": "Stone"
+  },
+  "Tags": {
+    "Type": [
+      "Deco"
+    ]
+  },
+  "Icon": "Icons/ItemsGenerated/Tombstone_1.png",
+  "IconProperties": {
+    "Scale": 0.5,
+    "Rotation": [
+      22.5,
+      53,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -19
+    ]
+  }
+}

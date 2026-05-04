@@ -1,0 +1,4823 @@
+{
+	"Name": "Necrotic Dessert",
+	"Terrain": {
+		"Type": "DAOTerrain",
+		"Density": {
+			"Type": "Min",
+			"Skip": false,
+			"Inputs": [
+				{
+					"Type": "Max",
+					"Skip": false,
+					"Inputs": [
+						{
+							"Type": "Sum",
+							"Skip": false,
+							"Inputs": [
+								{
+									"Type": "AmplitudeConstant",
+									"Skip": false,
+									"Value": 0.5,
+									"Inputs": [
+										{
+											"Type": "Exported",
+											"ExportAs": "Necros_Dunes",
+											"SingleInstance": true,
+											"Skip": false,
+											"Inputs": [
+												{
+													"Type": "Cache",
+													"Skip": false,
+													"Capacity": 3,
+													"Inputs": [
+														{
+															"Type": "Sum",
+															"Skip": false,
+															"Inputs": [
+																{
+																	"Type": "Normalizer",
+																	"Skip": false,
+																	"FromMin": -1,
+																	"FromMax": 1,
+																	"ToMin": -0.5,
+																	"ToMax": 0.7,
+																	"Inputs": [
+																		{
+																			"Type": "SimplexNoise2D",
+																			"Skip": false,
+																			"Lacunarity": 2.2,
+																			"Persistence": 0.5,
+																			"Octaves": 5,
+																			"Scale": 300,
+																			"Seed": "NecrosDunes"
+																		}
+																	]
+																},
+																{
+																	"Type": "AmplitudeConstant",
+																	"Skip": false,
+																	"Value": 0.35,
+																	"Inputs": [
+																		{
+																			"Type": "Normalizer",
+																			"Skip": false,
+																			"FromMin": -1,
+																			"FromMax": 1,
+																			"ToMin": -0.4,
+																			"ToMax": 0.6,
+																			"Inputs": [
+																				{
+																					"Type": "SimplexNoise2D",
+																					"Skip": false,
+																					"Lacunarity": 2.5,
+																					"Persistence": 0.45,
+																					"Octaves": 3,
+																					"Scale": 80,
+																					"Seed": "NecrosDunesSmall"
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"Type": "AmplitudeConstant",
+																	"Skip": false,
+																	"Value": 0.15,
+																	"Inputs": [
+																		{
+																			"Type": "Normalizer",
+																			"Skip": false,
+																			"FromMin": -1,
+																			"FromMax": 1,
+																			"ToMin": -0.3,
+																			"ToMax": 0.3,
+																			"Inputs": [
+																				{
+																					"Type": "SimplexNoise2D",
+																					"Skip": false,
+																					"Lacunarity": 3.0,
+																					"Persistence": 0.4,
+																					"Octaves": 2,
+																					"Scale": 30,
+																					"Seed": "NecrosRipples"
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"Type": "Normalizer",
+																	"Skip": false,
+																	"FromMin": -1,
+																	"FromMax": 0,
+																	"ToMin": -0.3,
+																	"ToMax": 0.4,
+																	"Inputs": [
+																		{
+																			"Type": "Inverter",
+																			"Skip": false,
+																			"Inputs": [
+																				{
+																					"Type": "Pow",
+																					"Skip": false,
+																					"Exponent": 0.6,
+																					"Inputs": [
+																						{
+																							"Type": "Abs",
+																							"Skip": false,
+																							"Inputs": [
+																								{
+																									"Type": "SimplexNoise2D",
+																									"Skip": false,
+																									"Lacunarity": 6,
+																									"Persistence": 0.06,
+																									"Octaves": 3,
+																									"Scale": 250,
+																									"Seed": "NecrosRidges"
+																								}
+																							]
+																						}
+																					]
+																				}
+																			]
+																		}
+																	]
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"Type": "CurveMapper",
+									"Skip": false,
+									"Curve": {
+										"Type": "Manual",
+										"Points": [
+											{
+												"In": 0,
+												"Out": 1
+											},
+											{
+												"In": 45,
+												"Out": -1
+											}
+										]
+									},
+									"Inputs": [
+										{
+											"Type": "BaseHeight",
+											"Skip": false,
+											"BaseHeightName": "Base",
+											"Distance": true
+										}
+									]
+								}
+							]
+						},
+						{
+							"Type": "Exported",
+							"ExportAs": "Necros_Mesas",
+							"SingleInstance": true,
+							"Skip": false,
+							"Inputs": [
+								{
+									"Type": "Cache",
+									"Skip": false,
+									"Capacity": 3,
+									"Inputs": [
+										{
+											"Type": "Sum",
+											"Skip": false,
+											"Inputs": [
+												{
+													"Type": "AmplitudeConstant",
+													"Skip": false,
+													"Value": 0.55,
+													"Inputs": [
+														{
+															"Type": "Multiplier",
+															"Skip": false,
+															"Inputs": [
+																{
+																	"Type": "CurveMapper",
+																	"Skip": false,
+																	"Curve": {
+																		"Type": "Manual",
+																		"Points": [
+																			{
+																				"In": -1,
+																				"Out": -1
+																			},
+																			{
+																				"In": -0.2,
+																				"Out": -1
+																			},
+																			{
+																				"In": 0.0,
+																				"Out": 0.6
+																			},
+																			{
+																				"In": 0.2,
+																				"Out": 1
+																			},
+																			{
+																				"In": 1,
+																				"Out": 1
+																			}
+																		]
+																	},
+																	"Inputs": [
+																		{
+																			"Type": "SimplexNoise2D",
+																			"Skip": false,
+																			"Lacunarity": 2,
+																			"Persistence": 0.35,
+																			"Octaves": 3,
+																			"Scale": 500,
+																			"Seed": "NecrosMesas"
+																		}
+																	]
+																},
+																{
+																	"Type": "CurveMapper",
+																	"Skip": false,
+																	"Curve": {
+																		"Type": "Manual",
+																		"Points": [
+																			{
+																				"In": -1,
+																				"Out": 0.7
+																			},
+																			{
+																				"In": 0,
+																				"Out": 1
+																			},
+																			{
+																				"In": 1,
+																				"Out": 0.8
+																			}
+																		]
+																	},
+																	"Inputs": [
+																		{
+																			"Type": "SimplexNoise2D",
+																			"Skip": false,
+																			"Lacunarity": 2,
+																			"Persistence": 0.3,
+																			"Octaves": 2,
+																			"Scale": 150,
+																			"Seed": "NecrosMesaVariation"
+																		}
+																	]
+																}
+															]
+														}
+													]
+												},
+												{
+													"Type": "CurveMapper",
+													"Skip": false,
+													"Curve": {
+														"Type": "Manual",
+														"Points": [
+															{
+																"In": 0,
+																"Out": 1
+															},
+															{
+																"In": 60,
+																"Out": -1
+															}
+														]
+													},
+													"Inputs": [
+														{
+															"Type": "BaseHeight",
+															"Skip": false,
+															"BaseHeightName": "Base",
+															"Distance": true
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"Type": "Exported",
+							"ExportAs": "Necros_Pillars",
+							"SingleInstance": true,
+							"Skip": false,
+							"Inputs": [
+								{
+									"Type": "Cache",
+									"Skip": false,
+									"Capacity": 3,
+									"Inputs": [
+										{
+											"Type": "Sum",
+											"Skip": false,
+											"Inputs": [
+												{
+													"Type": "Multiplier",
+													"Skip": false,
+													"Inputs": [
+														{
+															"Type": "AmplitudeConstant",
+															"Skip": false,
+															"Value": 0.7,
+															"Inputs": [
+																{
+																	"Type": "YOverride",
+																	"Skip": false,
+																	"Value": 0,
+																	"Inputs": [
+																		{
+																			"Type": "Cache",
+																			"Skip": false,
+																			"Capacity": 3,
+																			"Inputs": [
+																				{
+																					"Type": "PositionsCellNoise",
+																					"Skip": false,
+																					"MaxDistance": 60,
+																					"Positions": {
+																						"Type": "Occurrence",
+																						"Skip": false,
+																						"Seed": "NecrosPillars",
+																						"FieldFunction": {
+																							"Type": "Constant",
+																							"Skip": false,
+																							"Value": 0.12
+																						},
+																						"Positions": {
+																							"Type": "Mesh2D",
+																							"Skip": false,
+																							"PointsY": 0,
+																							"PointGenerator": {
+																								"Type": "Mesh",
+																								"Jitter": 0.4,
+																								"ScaleX": 180,
+																								"ScaleY": 180,
+																								"ScaleZ": 180,
+																								"Seed": "NecrosPillarMesh"
+																							}
+																						}
+																					},
+																					"ReturnType": {
+																						"Type": "Curve",
+																						"Curve": {
+																							"Type": "Manual",
+																							"Points": [
+																								{
+																									"In": 0,
+																									"Out": 1
+																								},
+																								{
+																									"In": 8,
+																									"Out": 1
+																								},
+																								{
+																									"In": 15,
+																									"Out": 0
+																								},
+																								{
+																									"In": 60,
+																									"Out": -1
+																								}
+																							]
+																						}
+																					},
+																					"DistanceFunction": {
+																						"Type": "Euclidean"
+																					}
+																				}
+																			]
+																		}
+																	]
+																}
+															]
+														},
+														{
+															"Type": "CurveMapper",
+															"Skip": false,
+															"Curve": {
+																"Type": "Manual",
+																"Points": [
+																	{
+																		"In": -1,
+																		"Out": 0.85
+																	},
+																	{
+																		"In": 0,
+																		"Out": 1
+																	},
+																	{
+																		"In": 1,
+																		"Out": 0.9
+																	}
+																]
+															},
+															"Inputs": [
+																{
+																	"Type": "SimplexNoise3D",
+																	"Skip": false,
+																	"Lacunarity": 2,
+																	"Persistence": 0.3,
+																	"Octaves": 2,
+																	"ScaleXZ": 20,
+																	"ScaleY": 30,
+																	"Seed": "NecrosPillarWarp"
+																}
+															]
+														}
+													]
+												},
+												{
+													"Type": "CurveMapper",
+													"Skip": false,
+													"Curve": {
+														"Type": "Manual",
+														"Points": [
+															{
+																"In": 0,
+																"Out": 1
+															},
+															{
+																"In": 50,
+																"Out": -1
+															}
+														]
+													},
+													"Inputs": [
+														{
+															"Type": "BaseHeight",
+															"Skip": false,
+															"BaseHeightName": "Base",
+															"Distance": true
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "Exported",
+					"ExportAs": "Necros_River_Carve",
+					"SingleInstance": true,
+					"Skip": false,
+					"Inputs": [
+						{
+							"Type": "Cache",
+							"Skip": false,
+							"Capacity": 3,
+							"Inputs": [
+								{
+									"Type": "Sum",
+									"Skip": false,
+									"Inputs": [
+										{
+											"Type": "Constant",
+											"Skip": false,
+											"Value": 0.8
+										},
+										{
+											"Type": "AmplitudeConstant",
+											"Skip": false,
+											"Value": -2.2,
+											"Inputs": [
+												{
+													"Type": "Multiplier",
+													"Skip": false,
+													"Inputs": [
+														{
+															"Type": "CurveMapper",
+															"Skip": false,
+															"Curve": {
+																"Type": "Manual",
+																"Points": [
+																	{
+																		"In": 0,
+																		"Out": 0
+																	},
+																	{
+																		"In": 0.5,
+																		"Out": 0
+																	},
+																	{
+																		"In": 0.65,
+																		"Out": 0.7
+																	},
+																	{
+																		"In": 0.8,
+																		"Out": 1
+																	}
+																]
+															},
+															"Inputs": [
+																{
+																	"Type": "Normalizer",
+																	"Skip": false,
+																	"FromMin": -1,
+																	"FromMax": 0.3,
+																	"ToMin": 0,
+																	"ToMax": 1,
+																	"Inputs": [
+																		{
+																			"Type": "Imported",
+																			"Skip": false,
+																			"Name": "World-River-Map"
+																		}
+																	]
+																}
+															]
+														},
+														{
+															"Type": "Sum",
+															"Skip": false,
+															"Inputs": [
+																{
+																	"Type": "CurveMapper",
+																	"Skip": false,
+																	"Curve": {
+																		"Type": "Manual",
+																		"Points": [
+																			{
+																				"In": -15,
+																				"Out": 0
+																			},
+																			{
+																				"In": -5,
+																				"Out": 0.8
+																			},
+																			{
+																				"In": 20,
+																				"Out": 1
+																			},
+																			{
+																				"In": 40,
+																				"Out": 0
+																			}
+																		]
+																	},
+																	"Inputs": [
+																		{
+																			"Type": "BaseHeight",
+																			"Skip": false,
+																			"BaseHeightName": "Base",
+																			"Distance": true
+																		}
+																	]
+																},
+																{
+																	"Type": "AmplitudeConstant",
+																	"Skip": false,
+																	"Value": 0.3,
+																	"Inputs": [
+																		{
+																			"Type": "SimplexNoise3D",
+																			"Skip": false,
+																			"Lacunarity": 2.5,
+																			"Persistence": 0.4,
+																			"Octaves": 3,
+																			"ScaleXZ": 40,
+																			"ScaleY": 25,
+																			"Seed": "NecrosRiverWarp3D"
+																		}
+																	]
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	},
+	"MaterialProvider": {
+		"Type": "Solidity",
+		"Solid": {
+			"Type": "Queue",
+			"Queue": [
+				{
+					"Type": "SimpleHorizontal",
+					"TopY": 65,
+					"TopBaseHeight": "Base",
+					"BottomY": 0,
+					"BottomBaseHeight": "Base",
+					"Material": {
+						"Type": "SpaceAndDepth",
+						"LayerContext": "DEPTH_INTO_FLOOR",
+						"MaxExpectedDepth": 8,
+						"Condition": {
+							"Type": "GreaterThanCondition",
+							"ContextToCheck": "SPACE_ABOVE_FLOOR",
+							"Threshold": 1
+						},
+						"Layers": [
+							{
+								"Type": "ConstantThickness",
+								"Thickness": 1,
+								"Material": {
+									"Type": "Constant",
+									"Material": {
+										"Solid": "Necrotic_Sand"
+									}
+								}
+							},
+							{
+								"Type": "ConstantThickness",
+								"Thickness": 2,
+								"Material": {
+									"Type": "Constant",
+									"Material": {
+										"Solid": "Necrotic_Pebbles"
+									}
+								}
+							},
+							{
+								"Type": "ConstantThickness",
+								"Thickness": 3,
+								"Material": {
+									"Type": "Constant",
+									"Material": {
+										"Solid": "Necrotic_Stone"
+									}
+								}
+							},
+							{
+								"Type": "ConstantThickness",
+								"Thickness": 2,
+								"Material": {
+									"Type": "Constant",
+									"Material": {
+										"Solid": "Necrotic_Stone_Deep"
+									}
+								}
+							}
+						]
+					}
+				},
+				{
+					"Type": "SimpleHorizontal",
+					"TopY": 0,
+					"TopBaseHeight": "Base",
+					"BottomY": -10,
+					"BottomBaseHeight": "Base",
+					"Material": {
+						"Type": "Constant",
+						"Material": {
+							"Solid": "Necrotic_Stone"
+						}
+					}
+				},
+				{
+					"Type": "SimpleHorizontal",
+					"TopY": -8,
+					"TopBaseHeight": "Base",
+					"BottomY": -20,
+					"BottomBaseHeight": "Base",
+					"Material": {
+						"Type": "FieldFunction",
+						"FieldFunction": {
+							"Type": "SimplexNoise3D",
+							"Skip": false,
+							"Lacunarity": 2,
+							"Persistence": 0.4,
+							"Octaves": 2,
+							"ScaleXZ": 40,
+							"ScaleY": 20,
+							"Seed": "NecrosStoneMix"
+						},
+						"Delimiters": [
+							{
+								"From": 0.2,
+								"To": 1,
+								"Material": {
+									"Type": "Constant",
+									"Material": {
+										"Solid": "Necrotic_Stone_Deep"
+									}
+								}
+							}
+						]
+					}
+				},
+				{
+					"Type": "SimpleHorizontal",
+					"TopY": -10,
+					"TopBaseHeight": "Base",
+					"BottomY": -25,
+					"BottomBaseHeight": "Base",
+					"Material": {
+						"Type": "FieldFunction",
+						"FieldFunction": {
+							"Type": "Imported",
+							"Skip": false,
+							"Name": "Necros_River_Carve"
+						},
+						"Delimiters": [
+							{
+								"From": -10,
+								"To": 0.8,
+								"Material": {
+									"Type": "Constant",
+									"Material": {
+										"Solid": "Necrotic_Mud"
+									}
+								}
+							}
+						]
+					}
+				},
+				{
+					"Type": "SimpleHorizontal",
+					"TopY": -20,
+					"TopBaseHeight": "Base",
+					"BottomY": -50,
+					"BottomBaseHeight": "Base",
+					"Material": {
+						"Type": "FieldFunction",
+						"FieldFunction": {
+							"Type": "SimplexNoise3D",
+							"Skip": false,
+							"Lacunarity": 2,
+							"Persistence": 0.3,
+							"Octaves": 2,
+							"ScaleXZ": 50,
+							"ScaleY": 30,
+							"Seed": "NecrosDeepMix"
+						},
+						"Delimiters": [
+							{
+								"From": 0.3,
+								"To": 1,
+								"Material": {
+									"Type": "Constant",
+									"Material": {
+										"Solid": "Necrotic_Brick_Stone"
+									}
+								}
+							}
+						]
+					}
+				},
+				{
+					"Type": "Constant",
+					"Material": {
+						"Solid": "Necrotic_Stone_Deep"
+					}
+				}
+			]
+		},
+		"Empty": {
+			"Type": "Queue",
+			"Queue": [
+				{
+					"Type": "SimpleHorizontal",
+					"TopY": 0,
+					"TopBaseHeight": "Water",
+					"BottomY": 0,
+					"BottomBaseHeight": "Bedrock",
+					"Material": {
+						"Type": "Constant",
+						"Material": {
+							"Fluid": "Necrotic_Water_Source"
+						}
+					}
+				},
+				{
+					"Type": "SimpleHorizontal",
+					"TopY": 3,
+					"TopBaseHeight": "Base",
+					"BottomY": -2,
+					"BottomBaseHeight": "Base",
+					"Material": {
+						"Type": "FieldFunction",
+						"FieldFunction": {
+							"Type": "Imported",
+							"Skip": false,
+							"Name": "Necros_River_Carve"
+						},
+						"Delimiters": [
+							{
+								"From": 0.5,
+								"To": 1,
+								"Material": {
+									"Type": "Constant",
+									"Material": {
+										"Solid": "Necrotic_Mud"
+									}
+								}
+							}
+						]
+					}
+				},
+				{
+					"Type": "SimpleHorizontal",
+					"TopY": 0,
+					"TopBaseHeight": "Base",
+					"BottomY": -45,
+					"BottomBaseHeight": "Base",
+					"Material": {
+						"Type": "FieldFunction",
+						"FieldFunction": {
+							"Type": "Imported",
+							"Skip": false,
+							"Name": "Necros_River_Carve"
+						},
+						"Delimiters": [
+							{
+								"From": -10,
+								"To": 0,
+								"Material": {
+									"Type": "Constant",
+									"Material": {
+										"Fluid": "Necrotic_Water_Source"
+									}
+								}
+							}
+						]
+					}
+				},
+				{
+					"Type": "Constant",
+					"Material": {
+						"Solid": "Empty"
+					}
+				}
+			]
+		}
+	},
+	"Props": [
+		{
+			"Skip": true,
+			"Runtime": 1,
+			"Positions": {
+				"Type": "Mesh2D",
+				"Skip": false,
+				"PointsY": 0,
+				"PointGenerator": {
+					"Type": "Mesh",
+					"Jitter": 0.5,
+					"ScaleX": 60,
+					"ScaleY": 60,
+					"ScaleZ": 60,
+					"Seed": "NecrosTombstones"
+				}
+			},
+			"Assignments": {
+				"Type": "Weighted",
+				"Skip": false,
+				"Seed": "NecrosTombstoneWeights",
+				"SkipChance": 0.5,
+				"WeightedAssignments": [
+					{
+						"Weight": 3,
+						"Assignments": {
+							"Type": "Constant",
+							"Prop": {
+								"Type": "Box",
+								"Range": {
+									"X": 0,
+									"Y": 0,
+									"Z": 0
+								},
+								"Material": {
+									"Solid": "Tombstone_1"
+								},
+								"Scanner": {
+									"Type": "ColumnLinear",
+									"Skip": false,
+									"MaxY": 60,
+									"MinY": -30,
+									"RelativeToPosition": false,
+									"BaseHeightName": "Base",
+									"TopDownOrder": true,
+									"ResultCap": 1
+								},
+								"Pattern": {
+									"Type": "Floor",
+									"Skip": false,
+									"Origin": {
+										"Type": "BlockType",
+										"Skip": false,
+										"Material": {
+											"Solid": "Empty"
+										}
+									},
+									"Floor": {
+										"Type": "BlockSet",
+										"Skip": false,
+										"BlockSet": {
+											"Inclusive": true,
+											"Materials": [
+												{
+													"Solid": "Necrotic_Sand"
+												},
+												{
+													"Solid": "Necrotic_Pebbles"
+												},
+												{
+													"Solid": "Necrotic_Mud"
+												}
+											]
+										}
+									}
+								}
+							}
+						}
+					},
+					{
+						"Weight": 3,
+						"Assignments": {
+							"Type": "Constant",
+							"Prop": {
+								"Type": "Box",
+								"Range": {
+									"X": 0,
+									"Y": 0,
+									"Z": 0
+								},
+								"Material": {
+									"Solid": "Tombstone_2"
+								},
+								"Scanner": {
+									"Type": "ColumnLinear",
+									"Skip": false,
+									"MaxY": 60,
+									"MinY": -30,
+									"RelativeToPosition": false,
+									"BaseHeightName": "Base",
+									"TopDownOrder": true,
+									"ResultCap": 1
+								},
+								"Pattern": {
+									"Type": "Floor",
+									"Skip": false,
+									"Origin": {
+										"Type": "BlockType",
+										"Skip": false,
+										"Material": {
+											"Solid": "Empty"
+										}
+									},
+									"Floor": {
+										"Type": "BlockSet",
+										"Skip": false,
+										"BlockSet": {
+											"Inclusive": true,
+											"Materials": [
+												{
+													"Solid": "Necrotic_Sand"
+												},
+												{
+													"Solid": "Necrotic_Pebbles"
+												},
+												{
+													"Solid": "Necrotic_Mud"
+												}
+											]
+										}
+									}
+								}
+							}
+						}
+					},
+					{
+						"Weight": 2,
+						"Assignments": {
+							"Type": "Constant",
+							"Prop": {
+								"Type": "Box",
+								"Range": {
+									"X": 0,
+									"Y": 0,
+									"Z": 0
+								},
+								"Material": {
+									"Solid": "Tombstone_3"
+								},
+								"Scanner": {
+									"Type": "ColumnLinear",
+									"Skip": false,
+									"MaxY": 60,
+									"MinY": -30,
+									"RelativeToPosition": false,
+									"BaseHeightName": "Base",
+									"TopDownOrder": true,
+									"ResultCap": 1
+								},
+								"Pattern": {
+									"Type": "Floor",
+									"Skip": false,
+									"Origin": {
+										"Type": "BlockType",
+										"Skip": false,
+										"Material": {
+											"Solid": "Empty"
+										}
+									},
+									"Floor": {
+										"Type": "BlockSet",
+										"Skip": false,
+										"BlockSet": {
+											"Inclusive": true,
+											"Materials": [
+												{
+													"Solid": "Necrotic_Sand"
+												},
+												{
+													"Solid": "Necrotic_Pebbles"
+												},
+												{
+													"Solid": "Necrotic_Mud"
+												}
+											]
+										}
+									}
+								}
+							}
+						}
+					},
+					{
+						"Weight": 2,
+						"Assignments": {
+							"Type": "Constant",
+							"Prop": {
+								"Type": "Box",
+								"Range": {
+									"X": 0,
+									"Y": 0,
+									"Z": 0
+								},
+								"Material": {
+									"Solid": "Tombstone_4"
+								},
+								"Scanner": {
+									"Type": "ColumnLinear",
+									"Skip": false,
+									"MaxY": 60,
+									"MinY": -30,
+									"RelativeToPosition": false,
+									"BaseHeightName": "Base",
+									"TopDownOrder": true,
+									"ResultCap": 1
+								},
+								"Pattern": {
+									"Type": "Floor",
+									"Skip": false,
+									"Origin": {
+										"Type": "BlockType",
+										"Skip": false,
+										"Material": {
+											"Solid": "Empty"
+										}
+									},
+									"Floor": {
+										"Type": "BlockSet",
+										"Skip": false,
+										"BlockSet": {
+											"Inclusive": true,
+											"Materials": [
+												{
+													"Solid": "Necrotic_Sand"
+												},
+												{
+													"Solid": "Necrotic_Pebbles"
+												},
+												{
+													"Solid": "Necrotic_Mud"
+												}
+											]
+										}
+									}
+								}
+							}
+						}
+					},
+					{
+						"Weight": 1,
+						"Assignments": {
+							"Type": "Constant",
+							"Prop": {
+								"Type": "Box",
+								"Range": {
+									"X": 0,
+									"Y": 0,
+									"Z": 0
+								},
+								"Material": {
+									"Solid": "Gravestone_2"
+								},
+								"Scanner": {
+									"Type": "ColumnLinear",
+									"Skip": false,
+									"MaxY": 60,
+									"MinY": -30,
+									"RelativeToPosition": false,
+									"BaseHeightName": "Base",
+									"TopDownOrder": true,
+									"ResultCap": 1
+								},
+								"Pattern": {
+									"Type": "Floor",
+									"Skip": false,
+									"Origin": {
+										"Type": "BlockType",
+										"Skip": false,
+										"Material": {
+											"Solid": "Empty"
+										}
+									},
+									"Floor": {
+										"Type": "BlockSet",
+										"Skip": false,
+										"BlockSet": {
+											"Inclusive": true,
+											"Materials": [
+												{
+													"Solid": "Necrotic_Sand"
+												},
+												{
+													"Solid": "Necrotic_Pebbles"
+												},
+												{
+													"Solid": "Necrotic_Mud"
+												}
+											]
+										}
+									}
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"Skip": false,
+			"Runtime": 1,
+			"Positions": {
+				"Type": "Mesh2D",
+				"Skip": false,
+				"PointsY": 0,
+				"PointGenerator": {
+					"Type": "Mesh",
+					"Jitter": 0.5,
+					"ScaleX": 40,
+					"ScaleY": 50,
+					"ScaleZ": 40,
+					"Seed": "NecrosSwords"
+				}
+			},
+			"Assignments": {
+				"Type": "Weighted",
+				"Skip": false,
+				"Seed": "NecrosSwordWeights",
+				"SkipChance": 0.5,
+				"WeightedAssignments": [
+					{
+						"Weight": 3,
+						"Assignments": {
+							"Type": "Constant",
+							"Prop": {
+								"Type": "Box",
+								"Range": {
+									"X": 0,
+									"Y": 0,
+									"Z": 0
+								},
+								"Material": {
+									"Solid": "Sword_Cemetery_1"
+								},
+								"Scanner": {
+									"Type": "ColumnLinear",
+									"Skip": false,
+									"MaxY": 60,
+									"MinY": -30,
+									"RelativeToPosition": false,
+									"BaseHeightName": "Base",
+									"TopDownOrder": true,
+									"ResultCap": 1
+								},
+								"Pattern": {
+									"Type": "Floor",
+									"Skip": false,
+									"Origin": {
+										"Type": "BlockType",
+										"Skip": false,
+										"Material": {
+											"Solid": "Empty"
+										}
+									},
+									"Floor": {
+										"Type": "BlockSet",
+										"Skip": false,
+										"BlockSet": {
+											"Inclusive": true,
+											"Materials": [
+												{
+													"Solid": "Necrotic_Sand"
+												},
+												{
+													"Solid": "Necrotic_Pebbles"
+												},
+												{
+													"Solid": "Necrotic_Mud"
+												}
+											]
+										}
+									}
+								}
+							}
+						}
+					},
+					{
+						"Weight": 3,
+						"Assignments": {
+							"Type": "Constant",
+							"Prop": {
+								"Type": "Box",
+								"Range": {
+									"X": 0,
+									"Y": 0,
+									"Z": 0
+								},
+								"Material": {
+									"Solid": "Sword_Cemetery_2"
+								},
+								"Scanner": {
+									"Type": "ColumnLinear",
+									"Skip": false,
+									"MaxY": 60,
+									"MinY": -30,
+									"RelativeToPosition": false,
+									"BaseHeightName": "Base",
+									"TopDownOrder": true,
+									"ResultCap": 1
+								},
+								"Pattern": {
+									"Type": "Floor",
+									"Skip": false,
+									"Origin": {
+										"Type": "BlockType",
+										"Skip": false,
+										"Material": {
+											"Solid": "Empty"
+										}
+									},
+									"Floor": {
+										"Type": "BlockSet",
+										"Skip": false,
+										"BlockSet": {
+											"Inclusive": true,
+											"Materials": [
+												{
+													"Solid": "Necrotic_Sand"
+												},
+												{
+													"Solid": "Necrotic_Pebbles"
+												},
+												{
+													"Solid": "Necrotic_Mud"
+												}
+											]
+										}
+									}
+								}
+							}
+						}
+					},
+					{
+						"Weight": 3,
+						"Assignments": {
+							"Type": "Constant",
+							"Prop": {
+								"Type": "Box",
+								"Range": {
+									"X": 0,
+									"Y": 0,
+									"Z": 0
+								},
+								"Material": {
+									"Solid": "Sword_Cemetery_3"
+								},
+								"Scanner": {
+									"Type": "ColumnLinear",
+									"Skip": false,
+									"MaxY": 60,
+									"MinY": -30,
+									"RelativeToPosition": false,
+									"BaseHeightName": "Base",
+									"TopDownOrder": true,
+									"ResultCap": 1
+								},
+								"Pattern": {
+									"Type": "Floor",
+									"Skip": false,
+									"Origin": {
+										"Type": "BlockType",
+										"Skip": false,
+										"Material": {
+											"Solid": "Empty"
+										}
+									},
+									"Floor": {
+										"Type": "BlockSet",
+										"Skip": false,
+										"BlockSet": {
+											"Inclusive": true,
+											"Materials": [
+												{
+													"Solid": "Necrotic_Sand"
+												},
+												{
+													"Solid": "Necrotic_Pebbles"
+												},
+												{
+													"Solid": "Necrotic_Mud"
+												}
+											]
+										}
+									}
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"Skip": false,
+			"Runtime": 1,
+			"Positions": {
+				"Type": "Mesh2D",
+				"Skip": false,
+				"PointsY": 0,
+				"PointGenerator": {
+					"Type": "Mesh",
+					"Jitter": 0.4,
+					"ScaleX": 80,
+					"ScaleY": 80,
+					"ScaleZ": 80,
+					"Seed": "NecrosBanners"
+				}
+			},
+			"Assignments": {
+				"Type": "Weighted",
+				"Skip": false,
+				"Seed": "NecrosBannerWeights",
+				"SkipChance": 0.7,
+				"WeightedAssignments": [
+					{
+						"Weight": 1,
+						"Assignments": {
+							"Type": "Constant",
+							"Prop": {
+								"Type": "Box",
+								"Range": {
+									"X": 0,
+									"Y": 0,
+									"Z": 0
+								},
+								"Material": {
+									"Solid": "Banner_1"
+								},
+								"Scanner": {
+									"Type": "ColumnLinear",
+									"Skip": false,
+									"MaxY": 60,
+									"MinY": -30,
+									"RelativeToPosition": false,
+									"BaseHeightName": "Base",
+									"TopDownOrder": true,
+									"ResultCap": 1
+								},
+								"Pattern": {
+									"Type": "Floor",
+									"Skip": false,
+									"Origin": {
+										"Type": "BlockType",
+										"Skip": false,
+										"Material": {
+											"Solid": "Empty"
+										}
+									},
+									"Floor": {
+										"Type": "BlockSet",
+										"Skip": false,
+										"BlockSet": {
+											"Inclusive": true,
+											"Materials": [
+												{
+													"Solid": "Necrotic_Sand"
+												},
+												{
+													"Solid": "Necrotic_Pebbles"
+												},
+												{
+													"Solid": "Necrotic_Mud"
+												}
+											]
+										}
+									}
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"Skip": true,
+			"Runtime": 1,
+			"Positions": {
+				"Type": "Mesh2D",
+				"Skip": false,
+				"PointsY": 0,
+				"PointGenerator": {
+					"Type": "Mesh",
+					"Jitter": 0.5,
+					"ScaleX": 100,
+					"ScaleY": 100,
+					"ScaleZ": 100,
+					"Seed": "NecrosPillarProps"
+				}
+			},
+			"Assignments": {
+				"Type": "Weighted",
+				"Skip": false,
+				"Seed": "NecrosPillarWeights",
+				"SkipChance": 0.8,
+				"WeightedAssignments": [
+					{
+						"Weight": 1,
+						"Assignments": {
+							"Type": "Constant",
+							"Prop": {
+								"Type": "Box",
+								"Range": {
+									"X": 1,
+									"Y": 5,
+									"Z": 1
+								},
+								"Material": {
+									"Solid": "Necrotic_Pillar"
+								},
+								"Scanner": {
+									"Type": "ColumnLinear",
+									"Skip": false,
+									"MaxY": 60,
+									"MinY": -30,
+									"RelativeToPosition": false,
+									"BaseHeightName": "Base",
+									"TopDownOrder": true,
+									"ResultCap": 1
+								},
+								"Pattern": {
+									"Type": "Floor",
+									"Skip": false,
+									"Origin": {
+										"Type": "BlockType",
+										"Skip": false,
+										"Material": {
+											"Solid": "Empty"
+										}
+									},
+									"Floor": {
+										"Type": "BlockSet",
+										"Skip": false,
+										"BlockSet": {
+											"Inclusive": true,
+											"Materials": [
+												{
+													"Solid": "Necrotic_Sand"
+												},
+												{
+													"Solid": "Necrotic_Pebbles"
+												},
+												{
+													"Solid": "Necrotic_Mud"
+												}
+											]
+										}
+									}
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"Skip": false,
+			"Runtime": 1,
+			"Positions": {
+				"Type": "Mesh2D",
+				"Skip": false,
+				"PointsY": 0,
+				"PointGenerator": {
+					"Type": "Mesh",
+					"Jitter": 0.5,
+					"ScaleX": 20,
+					"ScaleY": 20,
+					"ScaleZ": 20,
+					"Seed": "NecrosGlowShrooms"
+				}
+			},
+			"Assignments": {
+				"Type": "Weighted",
+				"Skip": false,
+				"Seed": "NecrosGlowShroomWeights",
+				"SkipChance": 0.4,
+				"WeightedAssignments": [
+					{
+						"Weight": 4,
+						"Assignments": {
+							"Type": "Constant",
+							"Prop": {
+								"Type": "Box",
+								"Range": {
+									"X": 1,
+									"Y": 1,
+									"Z": 1
+								},
+								"Material": {
+									"Solid": "Glow_Mushroom_1"
+								},
+								"Scanner": {
+									"Type": "ColumnLinear",
+									"Skip": false,
+									"MaxY": 60,
+									"MinY": -30,
+									"RelativeToPosition": false,
+									"BaseHeightName": "Base",
+									"TopDownOrder": true,
+									"ResultCap": 1
+								},
+								"Pattern": {
+									"Type": "Floor",
+									"Skip": false,
+									"Origin": {
+										"Type": "BlockType",
+										"Skip": false,
+										"Material": {
+											"Solid": "Empty"
+										}
+									},
+									"Floor": {
+										"Type": "BlockSet",
+										"Skip": false,
+										"BlockSet": {
+											"Inclusive": true,
+											"Materials": [
+												{
+													"Solid": "Necrotic_Sand"
+												},
+												{
+													"Solid": "Necrotic_Pebbles"
+												},
+												{
+													"Solid": "Necrotic_Mud"
+												}
+											]
+										}
+									}
+								}
+							}
+						}
+					},
+					{
+						"Weight": 3,
+						"Assignments": {
+							"Type": "Constant",
+							"Prop": {
+								"Type": "Box",
+								"Range": {
+									"X": 1,
+									"Y": 2,
+									"Z": 1
+								},
+								"Material": {
+									"Solid": "Glow_Mushroom_2"
+								},
+								"Scanner": {
+									"Type": "ColumnLinear",
+									"Skip": false,
+									"MaxY": 60,
+									"MinY": -30,
+									"RelativeToPosition": false,
+									"BaseHeightName": "Base",
+									"TopDownOrder": true,
+									"ResultCap": 1
+								},
+								"Pattern": {
+									"Type": "Floor",
+									"Skip": false,
+									"Origin": {
+										"Type": "BlockType",
+										"Skip": false,
+										"Material": {
+											"Solid": "Empty"
+										}
+									},
+									"Floor": {
+										"Type": "BlockSet",
+										"Skip": false,
+										"BlockSet": {
+											"Inclusive": true,
+											"Materials": [
+												{
+													"Solid": "Necrotic_Sand"
+												},
+												{
+													"Solid": "Necrotic_Pebbles"
+												},
+												{
+													"Solid": "Necrotic_Mud"
+												}
+											]
+										}
+									}
+								}
+							}
+						}
+					},
+					{
+						"Weight": 2,
+						"Assignments": {
+							"Type": "Constant",
+							"Prop": {
+								"Type": "Box",
+								"Range": {
+									"X": 2,
+									"Y": 3,
+									"Z": 2
+								},
+								"Material": {
+									"Solid": "Glow_Mushroom_3"
+								},
+								"Scanner": {
+									"Type": "ColumnLinear",
+									"Skip": false,
+									"MaxY": 60,
+									"MinY": -30,
+									"RelativeToPosition": false,
+									"BaseHeightName": "Base",
+									"TopDownOrder": true,
+									"ResultCap": 1
+								},
+								"Pattern": {
+									"Type": "Floor",
+									"Skip": false,
+									"Origin": {
+										"Type": "BlockType",
+										"Skip": false,
+										"Material": {
+											"Solid": "Empty"
+										}
+									},
+									"Floor": {
+										"Type": "BlockSet",
+										"Skip": false,
+										"BlockSet": {
+											"Inclusive": true,
+											"Materials": [
+												{
+													"Solid": "Necrotic_Sand"
+												},
+												{
+													"Solid": "Necrotic_Pebbles"
+												},
+												{
+													"Solid": "Necrotic_Mud"
+												}
+											]
+										}
+									}
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"Skip": false,
+			"Runtime": 1,
+			"Positions": {
+				"Type": "Mesh2D",
+				"Skip": false,
+				"PointsY": 0,
+				"PointGenerator": {
+					"Type": "Mesh",
+					"Jitter": 0.5,
+					"ScaleX": 120,
+					"ScaleY": 120,
+					"ScaleZ": 120,
+					"Seed": "NecrosVaporVents"
+				}
+			},
+			"Assignments": {
+				"Type": "Weighted",
+				"Skip": false,
+				"Seed": "NecrosVaporVentWeights",
+				"SkipChance": 0.6,
+				"WeightedAssignments": [
+					{
+						"Weight": 3,
+						"Assignments": {
+							"Type": "Constant",
+							"Prop": {
+								"Type": "Box",
+								"Range": {
+									"X": 2,
+									"Y": 1,
+									"Z": 2
+								},
+								"Material": {
+									"Solid": "Vapor_Vent_1"
+								},
+								"Scanner": {
+									"Type": "ColumnLinear",
+									"Skip": false,
+									"MaxY": 60,
+									"MinY": -30,
+									"RelativeToPosition": false,
+									"BaseHeightName": "Base",
+									"TopDownOrder": true,
+									"ResultCap": 1
+								},
+								"Pattern": {
+									"Type": "Floor",
+									"Skip": false,
+									"Origin": {
+										"Type": "BlockType",
+										"Skip": false,
+										"Material": {
+											"Solid": "Empty"
+										}
+									},
+									"Floor": {
+										"Type": "BlockSet",
+										"Skip": false,
+										"BlockSet": {
+											"Inclusive": true,
+											"Materials": [
+												{
+													"Solid": "Necrotic_Sand"
+												},
+												{
+													"Solid": "Necrotic_Pebbles"
+												},
+												{
+													"Solid": "Necrotic_Mud"
+												}
+											]
+										}
+									}
+								}
+							}
+						}
+					},
+					{
+						"Weight": 2,
+						"Assignments": {
+							"Type": "Constant",
+							"Prop": {
+								"Type": "Box",
+								"Range": {
+									"X": 3,
+									"Y": 2,
+									"Z": 3
+								},
+								"Material": {
+									"Solid": "Vapor_Vent_2"
+								},
+								"Scanner": {
+									"Type": "ColumnLinear",
+									"Skip": false,
+									"MaxY": 60,
+									"MinY": -30,
+									"RelativeToPosition": false,
+									"BaseHeightName": "Base",
+									"TopDownOrder": true,
+									"ResultCap": 1
+								},
+								"Pattern": {
+									"Type": "Floor",
+									"Skip": false,
+									"Origin": {
+										"Type": "BlockType",
+										"Skip": false,
+										"Material": {
+											"Solid": "Empty"
+										}
+									},
+									"Floor": {
+										"Type": "BlockSet",
+										"Skip": false,
+										"BlockSet": {
+											"Inclusive": true,
+											"Materials": [
+												{
+													"Solid": "Necrotic_Sand"
+												},
+												{
+													"Solid": "Necrotic_Pebbles"
+												},
+												{
+													"Solid": "Necrotic_Mud"
+												}
+											]
+										}
+									}
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"Skip": false,
+			"Runtime": 1,
+			"Positions": {
+				"Type": "Mesh2D",
+				"Skip": false,
+				"PointsY": 0,
+				"PointGenerator": {
+					"Type": "Mesh",
+					"Jitter": 0.5,
+					"ScaleX": 15,
+					"ScaleY": 15,
+					"ScaleZ": 15,
+					"Seed": "NecrosLuminousPlants"
+				}
+			},
+			"Assignments": {
+				"Type": "Weighted",
+				"Skip": false,
+				"Seed": "NecrosLuminousWeights",
+				"SkipChance": 0.35,
+				"WeightedAssignments": [
+					{
+						"Weight": 4,
+						"Assignments": {
+							"Type": "Constant",
+							"Prop": {
+								"Type": "Box",
+								"Range": {
+									"X": 1,
+									"Y": 1,
+									"Z": 1
+								},
+								"Material": {
+									"Solid": "Luminous_Moss"
+								},
+								"Scanner": {
+									"Type": "ColumnLinear",
+									"Skip": false,
+									"MaxY": 60,
+									"MinY": -30,
+									"RelativeToPosition": false,
+									"BaseHeightName": "Base",
+									"TopDownOrder": true,
+									"ResultCap": 1
+								},
+								"Pattern": {
+									"Type": "Floor",
+									"Skip": false,
+									"Origin": {
+										"Type": "BlockType",
+										"Skip": false,
+										"Material": {
+											"Solid": "Empty"
+										}
+									},
+									"Floor": {
+										"Type": "BlockSet",
+										"Skip": false,
+										"BlockSet": {
+											"Inclusive": true,
+											"Materials": [
+												{
+													"Solid": "Necrotic_Sand"
+												},
+												{
+													"Solid": "Necrotic_Pebbles"
+												},
+												{
+													"Solid": "Necrotic_Mud"
+												}
+											]
+										}
+									}
+								}
+							}
+						}
+					},
+					{
+						"Weight": 3,
+						"Assignments": {
+							"Type": "Constant",
+							"Prop": {
+								"Type": "Box",
+								"Range": {
+									"X": 1,
+									"Y": 2,
+									"Z": 1
+								},
+								"Material": {
+									"Solid": "Spirit_Fern"
+								},
+								"Scanner": {
+									"Type": "ColumnLinear",
+									"Skip": false,
+									"MaxY": 60,
+									"MinY": -30,
+									"RelativeToPosition": false,
+									"BaseHeightName": "Base",
+									"TopDownOrder": true,
+									"ResultCap": 1
+								},
+								"Pattern": {
+									"Type": "Floor",
+									"Skip": false,
+									"Origin": {
+										"Type": "BlockType",
+										"Skip": false,
+										"Material": {
+											"Solid": "Empty"
+										}
+									},
+									"Floor": {
+										"Type": "BlockSet",
+										"Skip": false,
+										"BlockSet": {
+											"Inclusive": true,
+											"Materials": [
+												{
+													"Solid": "Necrotic_Sand"
+												},
+												{
+													"Solid": "Necrotic_Pebbles"
+												},
+												{
+													"Solid": "Necrotic_Mud"
+												}
+											]
+										}
+									}
+								}
+							}
+						}
+					},
+					{
+						"Weight": 2,
+						"Assignments": {
+							"Type": "Constant",
+							"Prop": {
+								"Type": "Box",
+								"Range": {
+									"X": 1,
+									"Y": 1,
+									"Z": 1
+								},
+								"Material": {
+									"Solid": "Ether_Bloom"
+								},
+								"Scanner": {
+									"Type": "ColumnLinear",
+									"Skip": false,
+									"MaxY": 60,
+									"MinY": -30,
+									"RelativeToPosition": false,
+									"BaseHeightName": "Base",
+									"TopDownOrder": true,
+									"ResultCap": 1
+								},
+								"Pattern": {
+									"Type": "Floor",
+									"Skip": false,
+									"Origin": {
+										"Type": "BlockType",
+										"Skip": false,
+										"Material": {
+											"Solid": "Empty"
+										}
+									},
+									"Floor": {
+										"Type": "BlockSet",
+										"Skip": false,
+										"BlockSet": {
+											"Inclusive": true,
+											"Materials": [
+												{
+													"Solid": "Necrotic_Sand"
+												},
+												{
+													"Solid": "Necrotic_Pebbles"
+												},
+												{
+													"Solid": "Necrotic_Mud"
+												}
+											]
+										}
+									}
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"Skip": false,
+			"Runtime": 1,
+			"Positions": {
+				"Type": "Mesh2D",
+				"Skip": false,
+				"PointsY": 0,
+				"PointGenerator": {
+					"Type": "Mesh",
+					"Jitter": 0.5,
+					"ScaleX": 10,
+					"ScaleY": 10,
+					"ScaleZ": 10,
+					"Seed": "NecrosDeadPlants"
+				}
+			},
+			"Assignments": {
+				"Type": "Weighted",
+				"Skip": false,
+				"Seed": "NecrosDeadPlantWeights",
+				"SkipChance": 0.4,
+				"WeightedAssignments": [
+					{
+						"Weight": 4,
+						"Assignments": {
+							"Type": "Constant",
+							"Prop": {
+								"Type": "Box",
+								"Range": {
+									"X": 0,
+									"Y": 0,
+									"Z": 0
+								},
+								"Material": {
+									"Solid": "Plant_Bush_Dead"
+								},
+								"Scanner": {
+									"Type": "ColumnLinear",
+									"Skip": false,
+									"MaxY": 60,
+									"MinY": -10,
+									"RelativeToPosition": false,
+									"BaseHeightName": "Base",
+									"TopDownOrder": true,
+									"ResultCap": 1
+								},
+								"Pattern": {
+									"Type": "Floor",
+									"Skip": false,
+									"Origin": {
+										"Type": "BlockType",
+										"Skip": false,
+										"Material": {
+											"Solid": "Empty"
+										}
+									},
+									"Floor": {
+										"Type": "BlockSet",
+										"Skip": false,
+										"BlockSet": {
+											"Inclusive": true,
+											"Materials": [
+												{
+													"Solid": "Necrotic_Sand"
+												},
+												{
+													"Solid": "Necrotic_Pebbles"
+												},
+												{
+													"Solid": "Necrotic_Mud"
+												},
+												{
+													"Solid": "Necrotic_Dirt"
+												}
+											]
+										}
+									}
+								}
+							}
+						}
+					},
+					{
+						"Weight": 3,
+						"Assignments": {
+							"Type": "Constant",
+							"Prop": {
+								"Type": "Box",
+								"Range": {
+									"X": 0,
+									"Y": 0,
+									"Z": 0
+								},
+								"Material": {
+									"Solid": "Plant_Bush_Dead_Tall"
+								},
+								"Scanner": {
+									"Type": "ColumnLinear",
+									"Skip": false,
+									"MaxY": 60,
+									"MinY": -10,
+									"RelativeToPosition": false,
+									"BaseHeightName": "Base",
+									"TopDownOrder": true,
+									"ResultCap": 1
+								},
+								"Pattern": {
+									"Type": "Floor",
+									"Skip": false,
+									"Origin": {
+										"Type": "BlockType",
+										"Skip": false,
+										"Material": {
+											"Solid": "Empty"
+										}
+									},
+									"Floor": {
+										"Type": "BlockSet",
+										"Skip": false,
+										"BlockSet": {
+											"Inclusive": true,
+											"Materials": [
+												{
+													"Solid": "Necrotic_Sand"
+												},
+												{
+													"Solid": "Necrotic_Pebbles"
+												},
+												{
+													"Solid": "Necrotic_Mud"
+												},
+												{
+													"Solid": "Necrotic_Dirt"
+												}
+											]
+										}
+									}
+								}
+							}
+						}
+					},
+					{
+						"Weight": 2,
+						"Assignments": {
+							"Type": "Constant",
+							"Prop": {
+								"Type": "Box",
+								"Range": {
+									"X": 0,
+									"Y": 0,
+									"Z": 0
+								},
+								"Material": {
+									"Solid": "Plant_Bush_Winter"
+								},
+								"Scanner": {
+									"Type": "ColumnLinear",
+									"Skip": false,
+									"MaxY": 60,
+									"MinY": -10,
+									"RelativeToPosition": false,
+									"BaseHeightName": "Base",
+									"TopDownOrder": true,
+									"ResultCap": 1
+								},
+								"Pattern": {
+									"Type": "Floor",
+									"Skip": false,
+									"Origin": {
+										"Type": "BlockType",
+										"Skip": false,
+										"Material": {
+											"Solid": "Empty"
+										}
+									},
+									"Floor": {
+										"Type": "BlockSet",
+										"Skip": false,
+										"BlockSet": {
+											"Inclusive": true,
+											"Materials": [
+												{
+													"Solid": "Necrotic_Sand"
+												},
+												{
+													"Solid": "Necrotic_Pebbles"
+												},
+												{
+													"Solid": "Necrotic_Mud"
+												},
+												{
+													"Solid": "Necrotic_Dirt"
+												}
+											]
+										}
+									}
+								}
+							}
+						}
+					},
+					{
+						"Weight": 2,
+						"Assignments": {
+							"Type": "Constant",
+							"Prop": {
+								"Type": "Box",
+								"Range": {
+									"X": 0,
+									"Y": 0,
+									"Z": 0
+								},
+								"Material": {
+									"Solid": "Necrotic_Mushroom_Flatcap"
+								},
+								"Scanner": {
+									"Type": "ColumnLinear",
+									"Skip": false,
+									"MaxY": 60,
+									"MinY": -10,
+									"RelativeToPosition": false,
+									"BaseHeightName": "Base",
+									"TopDownOrder": true,
+									"ResultCap": 1
+								},
+								"Pattern": {
+									"Type": "Floor",
+									"Skip": false,
+									"Origin": {
+										"Type": "BlockType",
+										"Skip": false,
+										"Material": {
+											"Solid": "Empty"
+										}
+									},
+									"Floor": {
+										"Type": "BlockSet",
+										"Skip": false,
+										"BlockSet": {
+											"Inclusive": true,
+											"Materials": [
+												{
+													"Solid": "Necrotic_Sand"
+												},
+												{
+													"Solid": "Necrotic_Pebbles"
+												},
+												{
+													"Solid": "Necrotic_Mud"
+												},
+												{
+													"Solid": "Necrotic_Dirt"
+												}
+											]
+										}
+									}
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"Skip": false,
+			"Runtime": 1,
+			"Positions": {
+				"Type": "Mesh2D",
+				"Skip": false,
+				"PointsY": 0,
+				"PointGenerator": {
+					"Type": "Mesh",
+					"Jitter": 0.5,
+					"ScaleX": 25,
+					"ScaleY": 25,
+					"ScaleZ": 25,
+					"Seed": "NecrosStalactites"
+				}
+			},
+			"Assignments": {
+				"Type": "Weighted",
+				"Skip": false,
+				"Seed": "NecrosStalactiteWeights",
+				"SkipChance": 0.6,
+				"WeightedAssignments": [
+					{
+						"Weight": 3,
+						"Assignments": {
+							"Type": "Constant",
+							"Prop": {
+								"Type": "Box",
+								"Range": {
+									"X": 0,
+									"Y": 0,
+									"Z": 0
+								},
+								"Material": {
+									"Solid": "Rock_Slate_Stalactite_Large|Pitch=180"
+								},
+								"Scanner": {
+									"Type": "ColumnLinear",
+									"Skip": false,
+									"MaxY": 40,
+									"MinY": -20,
+									"RelativeToPosition": false,
+									"BaseHeightName": "Base",
+									"TopDownOrder": true,
+									"ResultCap": 1
+								},
+								"Pattern": {
+									"Type": "Ceiling",
+									"Skip": false,
+									"Origin": {
+										"Type": "BlockType",
+										"Skip": false,
+										"Material": {
+											"Solid": "Empty"
+										}
+									},
+									"Ceiling": {
+										"Type": "BlockSet",
+										"Skip": false,
+										"BlockSet": {
+											"Inclusive": true,
+											"Materials": [
+												{
+													"Solid": "Necrotic_Stone"
+												},
+												{
+													"Solid": "Necrotic_Stone_Deep"
+												},
+												{
+													"Solid": "Necrotic_Brick_Stone"
+												}
+											]
+										}
+									}
+								}
+							}
+						}
+					},
+					{
+						"Weight": 4,
+						"Assignments": {
+							"Type": "Constant",
+							"Prop": {
+								"Type": "Box",
+								"Range": {
+									"X": 0,
+									"Y": 0,
+									"Z": 0
+								},
+								"Material": {
+									"Solid": "Rock_Slate_Stalactite_Small|Pitch=180"
+								},
+								"Scanner": {
+									"Type": "ColumnLinear",
+									"Skip": false,
+									"MaxY": 40,
+									"MinY": -20,
+									"RelativeToPosition": false,
+									"BaseHeightName": "Base",
+									"TopDownOrder": true,
+									"ResultCap": 1
+								},
+								"Pattern": {
+									"Type": "Ceiling",
+									"Skip": false,
+									"Origin": {
+										"Type": "BlockType",
+										"Skip": false,
+										"Material": {
+											"Solid": "Empty"
+										}
+									},
+									"Ceiling": {
+										"Type": "BlockSet",
+										"Skip": false,
+										"BlockSet": {
+											"Inclusive": true,
+											"Materials": [
+												{
+													"Solid": "Necrotic_Stone"
+												},
+												{
+													"Solid": "Necrotic_Stone_Deep"
+												},
+												{
+													"Solid": "Necrotic_Brick_Stone"
+												}
+											]
+										}
+									}
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"Skip": false,
+			"Runtime": 1,
+			"Positions": {
+				"Type": "Mesh2D",
+				"Skip": false,
+				"PointsY": 0,
+				"PointGenerator": {
+					"Type": "Mesh",
+					"Jitter": 0.5,
+					"ScaleX": 14,
+					"ScaleY": 14,
+					"ScaleZ": 14,
+					"Seed": "NecrosRubble"
+				}
+			},
+			"Assignments": {
+				"Type": "Weighted",
+				"Skip": false,
+				"Seed": "NecrosRubbleWeights",
+				"SkipChance": 0.5,
+				"WeightedAssignments": [
+					{
+						"Weight": 3,
+						"Assignments": {
+							"Type": "Constant",
+							"Prop": {
+								"Type": "Box",
+								"Range": {
+									"X": 0,
+									"Y": 0,
+									"Z": 0
+								},
+								"Material": {
+									"Solid": "Rubble_Slate"
+								},
+								"Scanner": {
+									"Type": "ColumnLinear",
+									"Skip": false,
+									"MaxY": 60,
+									"MinY": -10,
+									"RelativeToPosition": false,
+									"BaseHeightName": "Base",
+									"TopDownOrder": true,
+									"ResultCap": 1
+								},
+								"Pattern": {
+									"Type": "Floor",
+									"Skip": false,
+									"Origin": {
+										"Type": "BlockType",
+										"Skip": false,
+										"Material": {
+											"Solid": "Empty"
+										}
+									},
+									"Floor": {
+										"Type": "BlockSet",
+										"Skip": false,
+										"BlockSet": {
+											"Inclusive": true,
+											"Materials": [
+												{
+													"Solid": "Necrotic_Sand"
+												},
+												{
+													"Solid": "Necrotic_Pebbles"
+												},
+												{
+													"Solid": "Necrotic_Stone"
+												},
+												{
+													"Solid": "Necrotic_Mud"
+												}
+											]
+										}
+									}
+								}
+							}
+						}
+					},
+					{
+						"Weight": 2,
+						"Assignments": {
+							"Type": "Constant",
+							"Prop": {
+								"Type": "Box",
+								"Range": {
+									"X": 0,
+									"Y": 0,
+									"Z": 0
+								},
+								"Material": {
+									"Solid": "Rubble_Slate_Medium"
+								},
+								"Scanner": {
+									"Type": "ColumnLinear",
+									"Skip": false,
+									"MaxY": 60,
+									"MinY": -10,
+									"RelativeToPosition": false,
+									"BaseHeightName": "Base",
+									"TopDownOrder": true,
+									"ResultCap": 1
+								},
+								"Pattern": {
+									"Type": "Floor",
+									"Skip": false,
+									"Origin": {
+										"Type": "BlockType",
+										"Skip": false,
+										"Material": {
+											"Solid": "Empty"
+										}
+									},
+									"Floor": {
+										"Type": "BlockSet",
+										"Skip": false,
+										"BlockSet": {
+											"Inclusive": true,
+											"Materials": [
+												{
+													"Solid": "Necrotic_Sand"
+												},
+												{
+													"Solid": "Necrotic_Pebbles"
+												},
+												{
+													"Solid": "Necrotic_Stone"
+												},
+												{
+													"Solid": "Necrotic_Mud"
+												}
+											]
+										}
+									}
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"Skip": false,
+			"Runtime": 1,
+			"Positions": {
+				"Type": "Mesh2D",
+				"Skip": false,
+				"PointsY": 0,
+				"PointGenerator": {
+					"Type": "Mesh",
+					"Jitter": 0.3,
+					"ScaleX": 170,
+					"ScaleY": 170,
+					"ScaleZ": 170,
+					"Seed": "NecrosAncientTrees"
+				}
+			},
+			"Assignments": {
+				"Type": "Weighted",
+				"Skip": false,
+				"Seed": "NecrosAncientTreeWeights",
+				"SkipChance": 0.5,
+				"WeightedAssignments": [
+					{
+						"Weight": 3,
+						"Assignments": {
+							"Type": "Constant",
+							"Prop": {
+								"Type": "Box",
+								"Range": {
+									"X": 0,
+									"Y": 10,
+									"Z": 0
+								},
+								"Material": {
+									"Solid": "Dead_Giant_Tree"
+								},
+								"Scanner": {
+									"Type": "ColumnLinear",
+									"Skip": false,
+									"MaxY": 60,
+									"MinY": -30,
+									"RelativeToPosition": false,
+									"BaseHeightName": "Base",
+									"TopDownOrder": true,
+									"ResultCap": 1
+								},
+								"Pattern": {
+									"Type": "Floor",
+									"Skip": false,
+									"Origin": {
+										"Type": "BlockType",
+										"Skip": false,
+										"Material": {
+											"Solid": "Empty"
+										}
+									},
+									"Floor": {
+										"Type": "BlockSet",
+										"Skip": false,
+										"BlockSet": {
+											"Inclusive": true,
+											"Materials": [
+												{
+													"Solid": "Necrotic_Sand"
+												},
+												{
+													"Solid": "Necrotic_Pebbles"
+												},
+												{
+													"Solid": "Necrotic_Mud"
+												}
+											]
+										}
+									}
+								}
+							}
+						}
+					},
+					{
+						"Weight": 2,
+						"Assignments": {
+							"Type": "Constant",
+							"Prop": {
+								"Type": "Box",
+								"Range": {
+									"X": 0,
+									"Y": 7,
+									"Z": 0
+								},
+								"Material": {
+									"Solid": "Petrified_Tree"
+								},
+								"Scanner": {
+									"Type": "ColumnLinear",
+									"Skip": false,
+									"MaxY": 60,
+									"MinY": -30,
+									"RelativeToPosition": false,
+									"BaseHeightName": "Base",
+									"TopDownOrder": true,
+									"ResultCap": 1
+								},
+								"Pattern": {
+									"Type": "Floor",
+									"Skip": false,
+									"Origin": {
+										"Type": "BlockType",
+										"Skip": false,
+										"Material": {
+											"Solid": "Empty"
+										}
+									},
+									"Floor": {
+										"Type": "BlockSet",
+										"Skip": false,
+										"BlockSet": {
+											"Inclusive": true,
+											"Materials": [
+												{
+													"Solid": "Necrotic_Sand"
+												},
+												{
+													"Solid": "Necrotic_Pebbles"
+												},
+												{
+													"Solid": "Necrotic_Mud"
+												}
+											]
+										}
+									}
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"Skip": false,
+			"Runtime": 0,
+			"Positions": {
+				"Type": "Mesh2D",
+				"Skip": false,
+				"PointsY": 0,
+				"PointGenerator": {
+					"Type": "Mesh",
+					"Jitter": 0.35,
+					"ScaleX": 64,
+					"ScaleY": 64,
+					"ScaleZ": 64,
+					"Seed": "NecrosPrefabRock01Mesh"
+				}
+			},
+			"Assignments": {
+				"Type": "Constant",
+				"Skip": false,
+				"Prop": {
+					"Type": "Prefab",
+					"Skip": false,
+					"WeightedPrefabPaths": [
+						{
+							"Path": "Necrotic/rocks_01",
+							"Weight": 1
+						}
+					],
+					"LegacyPath": false,
+					"LoadEntities": true,
+					"Directionality": {
+						"Type": "Random",
+						"Seed": "NecrosRock01Dir",
+						"Pattern": {
+							"Type": "Cuboid",
+							"Skip": false,
+							"Min": {"X": -1, "Y": 0, "Z": -1},
+							"Max": {"X": 1, "Y": 0, "Z": 1},
+							"SubPattern": {
+								"Type": "Floor",
+								"Skip": false,
+								"Origin": {
+									"Type": "BlockType",
+									"Skip": false,
+									"Material": {
+										"Solid": "Empty"
+									}
+								},
+								"Floor": {
+									"Type": "BlockSet",
+									"Skip": false,
+									"BlockSet": {
+										"Inclusive": true,
+										"Materials": [
+											{"Solid": "Necrotic_Sand"},
+											{"Solid": "Necrotic_Pebbles"},
+											{"Solid": "Necrotic_Dirt"},
+											{"Solid": "Necrotic_Stone"},
+											{"Solid": "Necrotic_Grass"}
+										]
+									}
+								}
+							}
+						}
+					},
+					"Scanner": {
+						"Type": "ColumnLinear",
+						"Skip": false,
+						"MaxY": 65,
+						"MinY": 0,
+						"RelativeToPosition": false,
+						"BaseHeightName": "Base",
+						"TopDownOrder": true,
+						"ResultCap": 1
+					},
+					"MoldingDirection": "None",
+					"MoldingChildren": false
+				}
+			}
+		},
+		{
+			"Skip": false,
+			"Runtime": 0,
+			"Positions": {
+				"Type": "Mesh2D",
+				"Skip": false,
+				"PointsY": 0,
+				"PointGenerator": {
+					"Type": "Mesh",
+					"Jitter": 0.35,
+					"ScaleX": 64,
+					"ScaleY": 64,
+					"ScaleZ": 64,
+					"Seed": "NecrosPrefabRock02Mesh"
+				}
+			},
+			"Assignments": {
+				"Type": "Constant",
+				"Skip": false,
+				"Prop": {
+					"Type": "Prefab",
+					"Skip": false,
+					"WeightedPrefabPaths": [
+						{
+							"Path": "Necrotic/rocks_02",
+							"Weight": 1
+						}
+					],
+					"LegacyPath": false,
+					"LoadEntities": true,
+					"Directionality": {
+						"Type": "Random",
+						"Seed": "NecrosRock02Dir",
+						"Pattern": {
+							"Type": "Cuboid",
+							"Skip": false,
+							"Min": {"X": -1, "Y": 0, "Z": -1},
+							"Max": {"X": 1, "Y": 0, "Z": 1},
+							"SubPattern": {
+								"Type": "Floor",
+								"Skip": false,
+								"Origin": {
+									"Type": "BlockType",
+									"Skip": false,
+									"Material": {
+										"Solid": "Empty"
+									}
+								},
+								"Floor": {
+									"Type": "BlockSet",
+									"Skip": false,
+									"BlockSet": {
+										"Inclusive": true,
+										"Materials": [
+											{"Solid": "Necrotic_Sand"},
+											{"Solid": "Necrotic_Pebbles"},
+											{"Solid": "Necrotic_Dirt"},
+											{"Solid": "Necrotic_Stone"},
+											{"Solid": "Necrotic_Grass"}
+										]
+									}
+								}
+							}
+						}
+					},
+					"Scanner": {
+						"Type": "ColumnLinear",
+						"Skip": false,
+						"MaxY": 65,
+						"MinY": 0,
+						"RelativeToPosition": false,
+						"BaseHeightName": "Base",
+						"TopDownOrder": true,
+						"ResultCap": 1
+					},
+					"MoldingDirection": "None",
+					"MoldingChildren": false
+				}
+			}
+		},
+		{
+			"Skip": false,
+			"Runtime": 0,
+			"Positions": {
+				"Type": "Mesh2D",
+				"Skip": false,
+				"PointsY": 0,
+				"PointGenerator": {
+					"Type": "Mesh",
+					"Jitter": 0.35,
+					"ScaleX": 64,
+					"ScaleY": 64,
+					"ScaleZ": 64,
+					"Seed": "NecrosPrefabRock03Mesh"
+				}
+			},
+			"Assignments": {
+				"Type": "Constant",
+				"Skip": false,
+				"Prop": {
+					"Type": "Prefab",
+					"Skip": false,
+					"WeightedPrefabPaths": [
+						{
+							"Path": "Necrotic/rocks_03",
+							"Weight": 1
+						}
+					],
+					"LegacyPath": false,
+					"LoadEntities": true,
+					"Directionality": {
+						"Type": "Random",
+						"Seed": "NecrosRock03Dir",
+						"Pattern": {
+							"Type": "Cuboid",
+							"Skip": false,
+							"Min": {"X": -1, "Y": 0, "Z": -1},
+							"Max": {"X": 1, "Y": 0, "Z": 1},
+							"SubPattern": {
+								"Type": "Floor",
+								"Skip": false,
+								"Origin": {
+									"Type": "BlockType",
+									"Skip": false,
+									"Material": {
+										"Solid": "Empty"
+									}
+								},
+								"Floor": {
+									"Type": "BlockSet",
+									"Skip": false,
+									"BlockSet": {
+										"Inclusive": true,
+										"Materials": [
+											{"Solid": "Necrotic_Sand"},
+											{"Solid": "Necrotic_Pebbles"},
+											{"Solid": "Necrotic_Dirt"},
+											{"Solid": "Necrotic_Stone"},
+											{"Solid": "Necrotic_Grass"}
+										]
+									}
+								}
+							}
+						}
+					},
+					"Scanner": {
+						"Type": "ColumnLinear",
+						"Skip": false,
+						"MaxY": 65,
+						"MinY": 0,
+						"RelativeToPosition": false,
+						"BaseHeightName": "Base",
+						"TopDownOrder": true,
+						"ResultCap": 1
+					},
+					"MoldingDirection": "None",
+					"MoldingChildren": false
+				}
+			}
+		},
+		{
+			"Skip": false,
+			"Runtime": 0,
+			"Positions": {
+				"Type": "Mesh2D",
+				"Skip": false,
+				"PointsY": 0,
+				"PointGenerator": {
+					"Type": "Mesh",
+					"Jitter": 0.35,
+					"ScaleX": 64,
+					"ScaleY": 64,
+					"ScaleZ": 64,
+					"Seed": "NecrosPrefabRock04Mesh"
+				}
+			},
+			"Assignments": {
+				"Type": "Constant",
+				"Skip": false,
+				"Prop": {
+					"Type": "Prefab",
+					"Skip": false,
+					"WeightedPrefabPaths": [
+						{
+							"Path": "Necrotic/rocks_04",
+							"Weight": 1
+						}
+					],
+					"LegacyPath": false,
+					"LoadEntities": true,
+					"Directionality": {
+						"Type": "Random",
+						"Seed": "NecrosRock04Dir",
+						"Pattern": {
+							"Type": "Cuboid",
+							"Skip": false,
+							"Min": {"X": -1, "Y": 0, "Z": -1},
+							"Max": {"X": 1, "Y": 0, "Z": 1},
+							"SubPattern": {
+								"Type": "Floor",
+								"Skip": false,
+								"Origin": {
+									"Type": "BlockType",
+									"Skip": false,
+									"Material": {
+										"Solid": "Empty"
+									}
+								},
+								"Floor": {
+									"Type": "BlockSet",
+									"Skip": false,
+									"BlockSet": {
+										"Inclusive": true,
+										"Materials": [
+											{"Solid": "Necrotic_Sand"},
+											{"Solid": "Necrotic_Pebbles"},
+											{"Solid": "Necrotic_Dirt"},
+											{"Solid": "Necrotic_Stone"},
+											{"Solid": "Necrotic_Grass"}
+										]
+									}
+								}
+							}
+						}
+					},
+					"Scanner": {
+						"Type": "ColumnLinear",
+						"Skip": false,
+						"MaxY": 65,
+						"MinY": 0,
+						"RelativeToPosition": false,
+						"BaseHeightName": "Base",
+						"TopDownOrder": true,
+						"ResultCap": 1
+					},
+					"MoldingDirection": "None",
+					"MoldingChildren": false
+				}
+			}
+		},
+		{
+			"Skip": false,
+			"Runtime": 0,
+			"Positions": {
+				"Type": "Mesh2D",
+				"Skip": false,
+				"PointsY": 0,
+				"PointGenerator": {
+					"Type": "Mesh",
+					"Jitter": 0.35,
+					"ScaleX": 100,
+					"ScaleY": 100,
+					"ScaleZ": 100,
+					"Seed": "NecrosPrefabFirePillar01Mesh"
+				}
+			},
+			"Assignments": {
+				"Type": "Constant",
+				"Skip": false,
+				"Prop": {
+					"Type": "Prefab",
+					"Skip": false,
+					"WeightedPrefabPaths": [
+						{
+							"Path": "Necrotic/fire_pillar_01",
+							"Weight": 1
+						}
+					],
+					"LegacyPath": false,
+					"LoadEntities": true,
+					"Directionality": {
+						"Type": "Random",
+						"Seed": "NecrosFirePillar01Dir",
+						"Pattern": {
+							"Type": "Cuboid",
+							"Skip": false,
+							"Min": {"X": -1, "Y": 0, "Z": -1},
+							"Max": {"X": 1, "Y": 0, "Z": 1},
+							"SubPattern": {
+								"Type": "Floor",
+								"Skip": false,
+								"Origin": {
+									"Type": "BlockType",
+									"Skip": false,
+									"Material": {
+										"Solid": "Empty"
+									}
+								},
+								"Floor": {
+									"Type": "BlockSet",
+									"Skip": false,
+									"BlockSet": {
+										"Inclusive": true,
+										"Materials": [
+											{"Solid": "Necrotic_Sand"},
+											{"Solid": "Necrotic_Pebbles"},
+											{"Solid": "Necrotic_Dirt"},
+											{"Solid": "Necrotic_Stone"},
+											{"Solid": "Necrotic_Grass"}
+										]
+									}
+								}
+							}
+						}
+					},
+					"Scanner": {
+						"Type": "ColumnLinear",
+						"Skip": false,
+						"MaxY": 65,
+						"MinY": 0,
+						"RelativeToPosition": false,
+						"BaseHeightName": "Base",
+						"TopDownOrder": true,
+						"ResultCap": 1
+					},
+					"MoldingDirection": "None",
+					"MoldingChildren": false
+				}
+			}
+		},
+		{
+			"Skip": false,
+			"Runtime": 0,
+			"Positions": {
+				"Type": "Mesh2D",
+				"Skip": false,
+				"PointsY": 0,
+				"PointGenerator": {
+					"Type": "Mesh",
+					"Jitter": 0.35,
+					"ScaleX": 100,
+					"ScaleY": 100,
+					"ScaleZ": 100,
+					"Seed": "NecrosPrefabFirePillar02Mesh"
+				}
+			},
+			"Assignments": {
+				"Type": "Constant",
+				"Skip": false,
+				"Prop": {
+					"Type": "Prefab",
+					"Skip": false,
+					"WeightedPrefabPaths": [
+						{
+							"Path": "Necrotic/fire_pillar_02",
+							"Weight": 1
+						}
+					],
+					"LegacyPath": false,
+					"LoadEntities": true,
+					"Directionality": {
+						"Type": "Random",
+						"Seed": "NecrosFirePillar02Dir",
+						"Pattern": {
+							"Type": "Cuboid",
+							"Skip": false,
+							"Min": {"X": -1, "Y": 0, "Z": -1},
+							"Max": {"X": 1, "Y": 0, "Z": 1},
+							"SubPattern": {
+								"Type": "Floor",
+								"Skip": false,
+								"Origin": {
+									"Type": "BlockType",
+									"Skip": false,
+									"Material": {
+										"Solid": "Empty"
+									}
+								},
+								"Floor": {
+									"Type": "BlockSet",
+									"Skip": false,
+									"BlockSet": {
+										"Inclusive": true,
+										"Materials": [
+											{"Solid": "Necrotic_Sand"},
+											{"Solid": "Necrotic_Pebbles"},
+											{"Solid": "Necrotic_Dirt"},
+											{"Solid": "Necrotic_Stone"},
+											{"Solid": "Necrotic_Grass"}
+										]
+									}
+								}
+							}
+						}
+					},
+					"Scanner": {
+						"Type": "ColumnLinear",
+						"Skip": false,
+						"MaxY": 65,
+						"MinY": 0,
+						"RelativeToPosition": false,
+						"BaseHeightName": "Base",
+						"TopDownOrder": true,
+						"ResultCap": 1
+					},
+					"MoldingDirection": "None",
+					"MoldingChildren": false
+				}
+			}
+		},
+		{
+			"Skip": false,
+			"Runtime": 0,
+			"Positions": {
+				"Type": "Mesh2D",
+				"Skip": false,
+				"PointsY": 0,
+				"PointGenerator": {
+					"Type": "Mesh",
+					"Jitter": 0.35,
+					"ScaleX": 180,
+					"ScaleY": 180,
+					"ScaleZ": 180,
+					"Seed": "NecrosPrefabTree01Mesh"
+				}
+			},
+			"Assignments": {
+				"Type": "Constant",
+				"Skip": false,
+				"Prop": {
+					"Type": "Prefab",
+					"Skip": false,
+					"WeightedPrefabPaths": [
+						{
+							"Path": "Necrotic/tree_01",
+							"Weight": 1
+						}
+					],
+					"LegacyPath": false,
+					"LoadEntities": true,
+					"Directionality": {
+						"Type": "Random",
+						"Seed": "NecrosTree01Dir",
+						"Pattern": {
+							"Type": "Cuboid",
+							"Skip": false,
+							"Min": {"X": -4, "Y": 0, "Z": -4},
+							"Max": {"X": 4, "Y": 0, "Z": 4},
+							"SubPattern": {
+								"Type": "Floor",
+								"Skip": false,
+								"Origin": {
+									"Type": "BlockType",
+									"Skip": false,
+									"Material": {
+										"Solid": "Empty"
+									}
+								},
+								"Floor": {
+									"Type": "BlockSet",
+									"Skip": false,
+									"BlockSet": {
+										"Inclusive": true,
+										"Materials": [
+											{"Solid": "Necrotic_Sand"},
+											{"Solid": "Necrotic_Pebbles"},
+											{"Solid": "Necrotic_Dirt"},
+											{"Solid": "Necrotic_Stone"},
+											{"Solid": "Necrotic_Grass"}
+										]
+									}
+								}
+							}
+						}
+					},
+					"Scanner": {
+						"Type": "ColumnLinear",
+						"Skip": false,
+						"MaxY": 65,
+						"MinY": 0,
+						"RelativeToPosition": false,
+						"BaseHeightName": "Base",
+						"TopDownOrder": true,
+						"ResultCap": 1
+					},
+					"MoldingDirection": "None",
+					"MoldingChildren": false
+				}
+			}
+		},
+		{
+			"Skip": false,
+			"Runtime": 0,
+			"Positions": {
+				"Type": "Mesh2D",
+				"Skip": false,
+				"PointsY": 0,
+				"PointGenerator": {
+					"Type": "Mesh",
+					"Jitter": 0.35,
+					"ScaleX": 225,
+					"ScaleY": 225,
+					"ScaleZ": 225,
+					"Seed": "NecrosPrefabChapel01Mesh"
+				}
+			},
+			"Assignments": {
+				"Type": "Constant",
+				"Skip": false,
+				"Prop": {
+					"Type": "Prefab",
+					"Skip": false,
+					"WeightedPrefabPaths": [
+						{
+							"Path": "Necrotic/chapel_01",
+							"Weight": 1
+						}
+					],
+					"LegacyPath": false,
+					"LoadEntities": true,
+					"Directionality": {
+						"Type": "Random",
+						"Seed": "NecrosChapel01Dir",
+						"Pattern": {
+							"Type": "Cuboid",
+							"Skip": false,
+							"Min": {"X": -3, "Y": 0, "Z": -3},
+							"Max": {"X": 3, "Y": 0, "Z": 3},
+							"SubPattern": {
+								"Type": "Floor",
+								"Skip": false,
+								"Origin": {
+									"Type": "BlockType",
+									"Skip": false,
+									"Material": {
+										"Solid": "Empty"
+									}
+								},
+								"Floor": {
+									"Type": "BlockSet",
+									"Skip": false,
+									"BlockSet": {
+										"Inclusive": true,
+										"Materials": [
+											{"Solid": "Necrotic_Sand"},
+											{"Solid": "Necrotic_Pebbles"},
+											{"Solid": "Necrotic_Dirt"},
+											{"Solid": "Necrotic_Stone"},
+											{"Solid": "Necrotic_Grass"}
+										]
+									}
+								}
+							}
+						}
+					},
+					"Scanner": {
+						"Type": "ColumnLinear",
+						"Skip": false,
+						"MaxY": 65,
+						"MinY": 0,
+						"RelativeToPosition": false,
+						"BaseHeightName": "Base",
+						"TopDownOrder": true,
+						"ResultCap": 1
+					},
+					"MoldingDirection": "None",
+					"MoldingChildren": false
+				}
+			}
+		},
+		{
+			"Skip": false,
+			"Runtime": 0,
+			"Positions": {
+				"Type": "Mesh2D",
+				"Skip": false,
+				"PointsY": 0,
+				"PointGenerator": {
+					"Type": "Mesh",
+					"Jitter": 0.25,
+					"ScaleX": 800,
+					"ScaleY": 500,
+					"ScaleZ": 800,
+					"Seed": "NecrosPrefabSpire01Mesh"
+				}
+			},
+			"Assignments": {
+				"Type": "Constant",
+				"Skip": false,
+				"Prop": {
+					"Type": "Prefab",
+					"Skip": false,
+					"WeightedPrefabPaths": [
+						{
+							"Path": "Necrotic/spire_01",
+							"Weight": 1
+						}
+					],
+					"LegacyPath": false,
+					"LoadEntities": true,
+					"Directionality": {
+						"Type": "Random",
+						"Seed": "NecrosSpire01Dir",
+						"Pattern": {
+							"Type": "Cuboid",
+							"Skip": false,
+							"Min": {"X": -2, "Y": 0, "Z": -2},
+							"Max": {"X": 2, "Y": 0, "Z": 2},
+							"SubPattern": {
+								"Type": "Floor",
+								"Skip": false,
+								"Origin": {
+									"Type": "BlockType",
+									"Skip": false,
+									"Material": {
+										"Solid": "Empty"
+									}
+								},
+								"Floor": {
+									"Type": "BlockSet",
+									"Skip": false,
+									"BlockSet": {
+										"Inclusive": true,
+										"Materials": [
+											{"Solid": "Necrotic_Sand"},
+											{"Solid": "Necrotic_Pebbles"},
+											{"Solid": "Necrotic_Dirt"},
+											{"Solid": "Necrotic_Stone"},
+											{"Solid": "Necrotic_Grass"}
+										]
+									}
+								}
+							}
+						}
+					},
+					"Scanner": {
+						"Type": "ColumnLinear",
+						"Skip": false,
+						"MaxY": 65,
+						"MinY": 0,
+						"RelativeToPosition": false,
+						"BaseHeightName": "Base",
+						"TopDownOrder": true,
+						"ResultCap": 1
+					},
+					"MoldingDirection": "None",
+					"MoldingChildren": false
+				}
+			}
+		},
+		{
+			"Skip": false,
+			"Runtime": 0,
+			"Positions": {
+				"Type": "Mesh2D",
+				"Skip": false,
+				"PointsY": 0,
+				"PointGenerator": {
+					"Type": "Mesh",
+					"Jitter": 0.35,
+					"ScaleX": 225,
+					"ScaleY": 225,
+					"ScaleZ": 225,
+					"Seed": "NecrosPrefabGraveyard01Mesh"
+				}
+			},
+			"Assignments": {
+				"Type": "Constant",
+				"Skip": false,
+				"Prop": {
+					"Type": "Prefab",
+					"Skip": false,
+					"WeightedPrefabPaths": [
+						{
+							"Path": "Necrotic/graveyard_01",
+							"Weight": 1
+						}
+					],
+					"LegacyPath": false,
+					"LoadEntities": true,
+					"Directionality": {
+						"Type": "Random",
+						"Seed": "NecrosGraveyard01Dir",
+						"Pattern": {
+							"Type": "Cuboid",
+							"Skip": false,
+							"Min": {"X": -8, "Y": 0, "Z": -8},
+							"Max": {"X": 8, "Y": 0, "Z": 8},
+							"SubPattern": {
+								"Type": "Floor",
+								"Skip": false,
+								"Origin": {
+									"Type": "BlockType",
+									"Skip": false,
+									"Material": {
+										"Solid": "Empty"
+									}
+								},
+								"Floor": {
+									"Type": "BlockSet",
+									"Skip": false,
+									"BlockSet": {
+										"Inclusive": true,
+										"Materials": [
+											{"Solid": "Necrotic_Sand"},
+											{"Solid": "Necrotic_Pebbles"},
+											{"Solid": "Necrotic_Dirt"},
+											{"Solid": "Necrotic_Stone"},
+											{"Solid": "Necrotic_Grass"}
+										]
+									}
+								}
+							}
+						}
+					},
+					"Scanner": {
+						"Type": "ColumnLinear",
+						"Skip": false,
+						"MaxY": 65,
+						"MinY": 0,
+						"RelativeToPosition": false,
+						"BaseHeightName": "Base",
+						"TopDownOrder": true,
+						"ResultCap": 1
+					},
+					"MoldingDirection": "None",
+					"MoldingChildren": false
+				}
+			}
+		},
+		{
+			"Skip": false,
+			"Runtime": 0,
+			"Positions": {
+				"Type": "Mesh2D",
+				"Skip": false,
+				"PointsY": 0,
+				"PointGenerator": {
+					"Type": "Mesh",
+					"Jitter": 0.4,
+					"ScaleX": 49,
+					"ScaleY": 49,
+					"ScaleZ": 49,
+					"Seed": "NecrosPrefabLight01Mesh"
+				}
+			},
+			"Assignments": {
+				"Type": "Constant",
+				"Skip": false,
+				"Prop": {
+					"Type": "Prefab",
+					"Skip": false,
+					"WeightedPrefabPaths": [
+						{
+							"Path": "Necrotic/light_01",
+							"Weight": 1
+						},
+						{
+							"Path": "Necrotic/light_01/light_02",
+							"Weight": 1
+						}
+					],
+					"LegacyPath": false,
+					"LoadEntities": true,
+					"Directionality": {
+						"Type": "Random",
+						"Seed": "NecrosLight01Dir",
+						"Pattern": {
+							"Type": "Cuboid",
+							"Skip": false,
+							"Min": {"X": 0, "Y": 0, "Z": 0},
+							"Max": {"X": 0, "Y": 0, "Z": 0},
+							"SubPattern": {
+								"Type": "Floor",
+								"Skip": false,
+								"Origin": {
+									"Type": "BlockType",
+									"Skip": false,
+									"Material": {
+										"Solid": "Empty"
+									}
+								},
+								"Floor": {
+									"Type": "BlockSet",
+									"Skip": false,
+									"BlockSet": {
+										"Inclusive": true,
+										"Materials": [
+											{"Solid": "Necrotic_Sand"},
+											{"Solid": "Necrotic_Pebbles"},
+											{"Solid": "Necrotic_Dirt"},
+											{"Solid": "Necrotic_Stone"},
+											{"Solid": "Necrotic_Grass"}
+										]
+									}
+								}
+							}
+						}
+					},
+					"Scanner": {
+						"Type": "ColumnLinear",
+						"Skip": false,
+						"MaxY": 65,
+						"MinY": 0,
+						"RelativeToPosition": false,
+						"BaseHeightName": "Base",
+						"TopDownOrder": true,
+						"ResultCap": 1
+					},
+					"MoldingDirection": "None",
+					"MoldingChildren": false
+				}
+			}
+		},
+		{
+			"Skip": false,
+			"Runtime": 0,
+			"Positions": {
+				"Type": "Mesh2D",
+				"Skip": false,
+				"PointsY": 0,
+				"PointGenerator": {
+					"Type": "Mesh",
+					"Jitter": 0.35,
+					"ScaleX": 150,
+					"ScaleY": 150,
+					"ScaleZ": 150,
+					"Seed": "NecrosPrefabHill01Mesh"
+				}
+			},
+			"Assignments": {
+				"Type": "Constant",
+				"Skip": false,
+				"Prop": {
+					"Type": "Prefab",
+					"Skip": false,
+					"WeightedPrefabPaths": [
+						{
+							"Path": "Necrotic/hill_01",
+							"Weight": 1
+						}
+					],
+					"LegacyPath": false,
+					"LoadEntities": true,
+					"Directionality": {
+						"Type": "Random",
+						"Seed": "NecrosHill01Dir",
+						"Pattern": {
+							"Type": "Cuboid",
+							"Skip": false,
+							"Min": {"X": -6, "Y": 0, "Z": -6},
+							"Max": {"X": 6, "Y": 0, "Z": 6},
+							"SubPattern": {
+								"Type": "Floor",
+								"Skip": false,
+								"Origin": {
+									"Type": "BlockType",
+									"Skip": false,
+									"Material": {
+										"Solid": "Empty"
+									}
+								},
+								"Floor": {
+									"Type": "BlockSet",
+									"Skip": false,
+									"BlockSet": {
+										"Inclusive": true,
+										"Materials": [
+											{"Solid": "Necrotic_Sand"},
+											{"Solid": "Necrotic_Pebbles"},
+											{"Solid": "Necrotic_Dirt"},
+											{"Solid": "Necrotic_Stone"},
+											{"Solid": "Necrotic_Grass"}
+										]
+									}
+								}
+							}
+						}
+					},
+					"Scanner": {
+						"Type": "ColumnLinear",
+						"Skip": false,
+						"MaxY": 65,
+						"MinY": 0,
+						"RelativeToPosition": false,
+						"BaseHeightName": "Base",
+						"TopDownOrder": true,
+						"ResultCap": 1
+					},
+					"MoldingDirection": "None",
+					"MoldingChildren": false
+				}
+			}
+		},
+		{
+			"Skip": false,
+			"Runtime": 0,
+			"Positions": {
+				"Type": "Mesh2D",
+				"Skip": false,
+				"PointsY": 0,
+				"PointGenerator": {
+					"Type": "Mesh",
+					"Jitter": 0.35,
+					"ScaleX": 92,
+					"ScaleY": 92,
+					"ScaleZ": 92,
+					"Seed": "NecrosPrefabHills02Mesh"
+				}
+			},
+			"Assignments": {
+				"Type": "Constant",
+				"Skip": false,
+				"Prop": {
+					"Type": "Prefab",
+					"Skip": false,
+					"WeightedPrefabPaths": [
+						{
+							"Path": "Necrotic/hills_02",
+							"Weight": 1
+						}
+					],
+					"LegacyPath": false,
+					"LoadEntities": true,
+					"Directionality": {
+						"Type": "Random",
+						"Seed": "NecrosHills02Dir",
+						"Pattern": {
+							"Type": "Cuboid",
+							"Skip": false,
+							"Min": {"X": -10, "Y": 0, "Z": -10},
+							"Max": {"X": 10, "Y": 0, "Z": 10},
+							"SubPattern": {
+								"Type": "Floor",
+								"Skip": false,
+								"Origin": {
+									"Type": "BlockType",
+									"Skip": false,
+									"Material": {
+										"Solid": "Empty"
+									}
+								},
+								"Floor": {
+									"Type": "BlockSet",
+									"Skip": false,
+									"BlockSet": {
+										"Inclusive": true,
+										"Materials": [
+											{"Solid": "Necrotic_Sand"},
+											{"Solid": "Necrotic_Pebbles"},
+											{"Solid": "Necrotic_Dirt"},
+											{"Solid": "Necrotic_Stone"},
+											{"Solid": "Necrotic_Grass"}
+										]
+									}
+								}
+							}
+						}
+					},
+					"Scanner": {
+						"Type": "ColumnLinear",
+						"Skip": false,
+						"MaxY": 65,
+						"MinY": 0,
+						"RelativeToPosition": false,
+						"BaseHeightName": "Base",
+						"TopDownOrder": true,
+						"ResultCap": 1
+					},
+					"MoldingDirection": "None",
+					"MoldingChildren": false
+				}
+			}
+		},
+		{
+			"Skip": false,
+			"Runtime": 0,
+			"Positions": {
+				"Type": "Mesh2D",
+				"Skip": false,
+				"PointsY": 0,
+				"PointGenerator": {
+					"Type": "Mesh",
+					"Jitter": 0.35,
+					"ScaleX": 100,
+					"ScaleY": 100,
+					"ScaleZ": 100,
+					"Seed": "NecrosPrefabCave01Mesh"
+				}
+			},
+			"Assignments": {
+				"Type": "Constant",
+				"Skip": false,
+				"Prop": {
+					"Type": "Prefab",
+					"Skip": false,
+					"WeightedPrefabPaths": [
+						{
+							"Path": "Necrotic/cave_01",
+							"Weight": 1
+						}
+					],
+					"LegacyPath": false,
+					"LoadEntities": true,
+					"Directionality": {
+						"Type": "Random",
+						"Seed": "NecrosCave01Dir",
+						"Pattern": {
+							"Type": "Cuboid",
+							"Skip": false,
+							"Min": {"X": -1, "Y": 0, "Z": -1},
+							"Max": {"X": 1, "Y": 0, "Z": 1},
+							"SubPattern": {
+								"Type": "Floor",
+								"Skip": false,
+								"Origin": {
+									"Type": "BlockType",
+									"Skip": false,
+									"Material": {
+										"Solid": "Empty"
+									}
+								},
+								"Floor": {
+									"Type": "BlockSet",
+									"Skip": false,
+									"BlockSet": {
+										"Inclusive": true,
+										"Materials": [
+											{"Solid": "Necrotic_Sand"},
+											{"Solid": "Necrotic_Pebbles"},
+											{"Solid": "Necrotic_Dirt"},
+											{"Solid": "Necrotic_Stone"},
+											{"Solid": "Necrotic_Grass"}
+										]
+									}
+								}
+							}
+						}
+					},
+					"Scanner": {
+						"Type": "ColumnLinear",
+						"Skip": false,
+						"MaxY": 65,
+						"MinY": 0,
+						"RelativeToPosition": false,
+						"BaseHeightName": "Base",
+						"TopDownOrder": true,
+						"ResultCap": 1
+					},
+					"MoldingDirection": "None",
+					"MoldingChildren": false
+				}
+			}
+		},
+		{
+			"Skip": false,
+			"Runtime": 0,
+			"Positions": {
+				"Type": "Mesh2D",
+				"Skip": false,
+				"PointsY": 0,
+				"PointGenerator": {
+					"Type": "Mesh",
+					"Jitter": 0.35,
+					"ScaleX": 180,
+					"ScaleY": 180,
+					"ScaleZ": 180,
+					"Seed": "NecrosPrefabRuin01Mesh"
+				}
+			},
+			"Assignments": {
+				"Type": "Constant",
+				"Skip": false,
+				"Prop": {
+					"Type": "Prefab",
+					"Skip": false,
+					"WeightedPrefabPaths": [
+						{
+							"Path": "Necrotic/ruin_01",
+							"Weight": 1
+						},
+						{
+							"Path": "Necrotic/ruin_01/ruin_02",
+							"Weight": 1
+						}
+					],
+					"LegacyPath": false,
+					"LoadEntities": true,
+					"Directionality": {
+						"Type": "Random",
+						"Seed": "NecrosRuin01Dir",
+						"Pattern": {
+							"Type": "Cuboid",
+							"Skip": false,
+							"Min": {"X": -7, "Y": 0, "Z": -7},
+							"Max": {"X": 7, "Y": 0, "Z": 7},
+							"SubPattern": {
+								"Type": "Floor",
+								"Skip": false,
+								"Origin": {
+									"Type": "BlockType",
+									"Skip": false,
+									"Material": {
+										"Solid": "Empty"
+									}
+								},
+								"Floor": {
+									"Type": "BlockSet",
+									"Skip": false,
+									"BlockSet": {
+										"Inclusive": true,
+										"Materials": [
+											{"Solid": "Necrotic_Sand"},
+											{"Solid": "Necrotic_Pebbles"},
+											{"Solid": "Necrotic_Dirt"},
+											{"Solid": "Necrotic_Stone"},
+											{"Solid": "Necrotic_Grass"}
+										]
+									}
+								}
+							}
+						}
+					},
+					"Scanner": {
+						"Type": "ColumnLinear",
+						"Skip": false,
+						"MaxY": 65,
+						"MinY": 0,
+						"RelativeToPosition": false,
+						"BaseHeightName": "Base",
+						"TopDownOrder": true,
+						"ResultCap": 1
+					},
+					"MoldingDirection": "None",
+					"MoldingChildren": false
+				}
+			}
+		},
+		{
+			"Skip": false,
+			"Runtime": 0,
+			"Positions": {
+				"Type": "Mesh2D",
+				"Skip": false,
+				"PointsY": 0,
+				"PointGenerator": {
+					"Type": "Mesh",
+					"Jitter": 0.35,
+					"ScaleX": 80,
+					"ScaleY": 80,
+					"ScaleZ": 80,
+					"Seed": "NecrosPrefabBattlefield01Mesh"
+				}
+			},
+			"Assignments": {
+				"Type": "Constant",
+				"Skip": false,
+				"Prop": {
+					"Type": "Prefab",
+					"Skip": false,
+					"WeightedPrefabPaths": [
+						{
+							"Path": "Necrotic/battlefield",
+							"Weight": 1
+						},
+						{
+							"Path": "Necrotic/battlefield/battlefield_02",
+							"Weight": 1
+						}
+					],
+					"LegacyPath": false,
+					"LoadEntities": true,
+					"Directionality": {
+						"Type": "Random",
+						"Seed": "NecrosBattlefield01Dir",
+						"Pattern": {
+							"Type": "Cuboid",
+							"Skip": false,
+							"Min": {"X": -8, "Y": 0, "Z": -8},
+							"Max": {"X": 8, "Y": 0, "Z": 8},
+							"SubPattern": {
+								"Type": "Floor",
+								"Skip": false,
+								"Origin": {
+									"Type": "BlockType",
+									"Skip": false,
+									"Material": {
+										"Solid": "Empty"
+									}
+								},
+								"Floor": {
+									"Type": "BlockSet",
+									"Skip": false,
+									"BlockSet": {
+										"Inclusive": true,
+										"Materials": [
+											{"Solid": "Necrotic_Sand"},
+											{"Solid": "Necrotic_Pebbles"},
+											{"Solid": "Necrotic_Dirt"},
+											{"Solid": "Necrotic_Stone"},
+											{"Solid": "Necrotic_Grass"}
+										]
+									}
+								}
+							}
+						}
+					},
+					"Scanner": {
+						"Type": "ColumnLinear",
+						"Skip": false,
+						"MaxY": 65,
+						"MinY": 0,
+						"RelativeToPosition": false,
+						"BaseHeightName": "Base",
+						"TopDownOrder": true,
+						"ResultCap": 1
+					},
+					"MoldingDirection": "None",
+					"MoldingChildren": false
+				}
+			}
+		},
+		{
+			"Skip": false,
+			"Runtime": 1,
+			"Positions": {
+				"Type": "Mesh2D",
+				"Skip": false,
+				"PointsY": 0,
+				"PointGenerator": {
+					"Type": "Mesh",
+					"Jitter": 0.5,
+					"ScaleX": 8,
+					"ScaleY": 8,
+					"ScaleZ": 8,
+					"Seed": "NecrosKrampusDeco"
+				}
+			},
+			"Assignments": {
+				"Type": "Weighted",
+				"Skip": false,
+				"Seed": "NecrosKrampusDecoWeights",
+				"SkipChance": 0.45,
+				"WeightedAssignments": [
+					{
+						"Weight": 4,
+						"Assignments": {
+							"Type": "Constant",
+							"Prop": {
+								"Type": "Box",
+								"Range": {
+									"X": 0,
+									"Y": 0,
+									"Z": 0
+								},
+								"Material": {
+									"Solid": "Necrotic_Grass"
+								},
+								"Scanner": {
+									"Type": "ColumnLinear",
+									"Skip": false,
+									"MaxY": 60,
+									"MinY": -10,
+									"RelativeToPosition": false,
+									"BaseHeightName": "Base",
+									"TopDownOrder": true,
+									"ResultCap": 1
+								},
+								"Pattern": {
+									"Type": "Floor",
+									"Skip": false,
+									"Origin": {
+										"Type": "BlockType",
+										"Skip": false,
+										"Material": {
+											"Solid": "Empty"
+										}
+									},
+									"Floor": {
+										"Type": "BlockSet",
+										"Skip": false,
+										"BlockSet": {
+											"Inclusive": true,
+											"Materials": [
+												{
+													"Solid": "Necrotic_Sand"
+												},
+												{
+													"Solid": "Necrotic_Pebbles"
+												},
+												{
+													"Solid": "Necrotic_Mud"
+												},
+												{
+													"Solid": "Necrotic_Dirt"
+												}
+											]
+										}
+									}
+								}
+							}
+						}
+					},
+					{
+						"Weight": 3,
+						"Assignments": {
+							"Type": "Constant",
+							"Prop": {
+								"Type": "Box",
+								"Range": {
+									"X": 0,
+									"Y": 0,
+									"Z": 0
+								},
+								"Material": {
+									"Solid": "Prickly_Bush"
+								},
+								"Scanner": {
+									"Type": "ColumnLinear",
+									"Skip": false,
+									"MaxY": 60,
+									"MinY": -10,
+									"RelativeToPosition": false,
+									"BaseHeightName": "Base",
+									"TopDownOrder": true,
+									"ResultCap": 1
+								},
+								"Pattern": {
+									"Type": "Floor",
+									"Skip": false,
+									"Origin": {
+										"Type": "BlockType",
+										"Skip": false,
+										"Material": {
+											"Solid": "Empty"
+										}
+									},
+									"Floor": {
+										"Type": "BlockSet",
+										"Skip": false,
+										"BlockSet": {
+											"Inclusive": true,
+											"Materials": [
+												{
+													"Solid": "Necrotic_Sand"
+												},
+												{
+													"Solid": "Necrotic_Pebbles"
+												},
+												{
+													"Solid": "Necrotic_Mud"
+												},
+												{
+													"Solid": "Necrotic_Dirt"
+												}
+											]
+										}
+									}
+								}
+							}
+						}
+					},
+					{
+						"Weight": 2,
+						"Assignments": {
+							"Type": "Constant",
+							"Prop": {
+								"Type": "Box",
+								"Range": {
+									"X": 0,
+									"Y": 0,
+									"Z": 0
+								},
+								"Material": {
+									"Solid": "Dead_Branch"
+								},
+								"Scanner": {
+									"Type": "ColumnLinear",
+									"Skip": false,
+									"MaxY": 60,
+									"MinY": -10,
+									"RelativeToPosition": false,
+									"BaseHeightName": "Base",
+									"TopDownOrder": true,
+									"ResultCap": 1
+								},
+								"Pattern": {
+									"Type": "Floor",
+									"Skip": false,
+									"Origin": {
+										"Type": "BlockType",
+										"Skip": false,
+										"Material": {
+											"Solid": "Empty"
+										}
+									},
+									"Floor": {
+										"Type": "BlockSet",
+										"Skip": false,
+										"BlockSet": {
+											"Inclusive": true,
+											"Materials": [
+												{
+													"Solid": "Necrotic_Sand"
+												},
+												{
+													"Solid": "Necrotic_Pebbles"
+												},
+												{
+													"Solid": "Necrotic_Mud"
+												},
+												{
+													"Solid": "Necrotic_Dirt"
+												}
+											]
+										}
+									}
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"Skip": false,
+			"Runtime": 1,
+			"Positions": {
+				"Type": "Mesh2D",
+				"Skip": false,
+				"PointsY": 0,
+				"PointGenerator": {
+					"Type": "Mesh",
+					"Jitter": 0.4,
+					"ScaleX": 10,
+					"ScaleY": 10,
+					"ScaleZ": 10,
+					"Seed": "NecrosCeilingRoots"
+				}
+			},
+			"Assignments": {
+				"Type": "Weighted",
+				"Skip": false,
+				"Seed": "NecrosCeilingRootsWeights",
+				"SkipChance": 0.05,
+				"WeightedAssignments": [
+					{
+						"Weight": 2,
+						"Assignments": {
+							"Type": "Constant",
+							"Prop": {
+								"Type": "Box",
+								"Range": {
+									"X": 0,
+									"Y": 0,
+									"Z": 0
+								},
+								"Material": {
+									"Solid": "Long_Roots"
+								},
+								"Scanner": {
+									"Type": "ColumnLinear",
+									"Skip": false,
+									"MaxY": 90,
+									"MinY": -30,
+									"RelativeToPosition": false,
+									"BaseHeightName": "Base",
+									"TopDownOrder": false,
+									"ResultCap": 1
+								},
+								"Pattern": {
+									"Type": "Ceiling",
+									"Skip": false,
+									"Origin": {
+										"Type": "BlockType",
+										"Skip": false,
+										"Material": {
+											"Solid": "Empty"
+										}
+									},
+									"Ceiling": {
+										"Type": "BlockSet",
+										"Skip": false,
+										"BlockSet": {
+											"Inclusive": true,
+											"Materials": [
+												{
+													"Solid": "Necrotic_Stone"
+												},
+												{
+													"Solid": "Necrotic_Stone_Deep"
+												},
+												{
+													"Solid": "Necrotic_Dirt"
+												}
+											]
+										}
+									}
+								}
+							}
+						}
+					},
+					{
+						"Weight": 2,
+						"Assignments": {
+							"Type": "Constant",
+							"Prop": {
+								"Type": "Box",
+								"Range": {
+									"X": 0,
+									"Y": 0,
+									"Z": 0
+								},
+								"Material": {
+									"Solid": "Wood-Burnt_Roots"
+								},
+								"Scanner": {
+									"Type": "ColumnLinear",
+									"Skip": false,
+									"MaxY": 90,
+									"MinY": -30,
+									"RelativeToPosition": false,
+									"BaseHeightName": "Base",
+									"TopDownOrder": false,
+									"ResultCap": 1
+								},
+								"Pattern": {
+									"Type": "Ceiling",
+									"Skip": false,
+									"Origin": {
+										"Type": "BlockType",
+										"Skip": false,
+										"Material": {
+											"Solid": "Empty"
+										}
+									},
+									"Ceiling": {
+										"Type": "BlockSet",
+										"Skip": false,
+										"BlockSet": {
+											"Inclusive": true,
+											"Materials": [
+												{
+													"Solid": "Necrotic_Stone"
+												},
+												{
+													"Solid": "Necrotic_Stone_Deep"
+												},
+												{
+													"Solid": "Necrotic_Dirt"
+												}
+											]
+										}
+									}
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"Skip": false,
+			"Runtime": 1,
+			"Positions": {
+				"Type": "Mesh2D",
+				"Skip": false,
+				"PointsY": 0,
+				"PointGenerator": {
+					"Type": "Mesh",
+					"Jitter": 0.5,
+					"ScaleX": 10,
+					"ScaleY": 10,
+					"ScaleZ": 10,
+					"Seed": "NecrosMornumOreMesh"
+				}
+			},
+			"Assignments": {
+				"Type": "Weighted",
+				"Skip": false,
+				"Seed": "NecrosMornumOreWeights",
+				"SkipChance": 0.0,
+				"WeightedAssignments": [
+					{
+						"Weight": 3,
+						"Assignments": {
+							"Type": "Constant",
+							"Prop": {
+								"Type": "Density",
+								"Skip": false,
+								"Pattern": {
+									"Type": "Floor",
+									"Skip": false,
+									"Floor": {
+										"Type": "BlockSet",
+										"Skip": false,
+										"BlockSet": {
+											"Inclusive": true,
+											"Materials": [
+												{
+													"Solid": "Necrotic_Stone"
+												}
+											]
+										}
+									},
+									"Origin": {
+										"Type": "BlockSet",
+										"Skip": false,
+										"BlockSet": {
+											"Inclusive": true,
+											"Materials": [
+												{"Solid": "Necrotic_Stone"},
+												{"Solid": "Necrotic_Stone_Deep"},
+												{"Solid": "Necrotic_Dirt"},
+												{"Solid": "Empty"}
+											]
+										}
+									}
+								},
+								"Scanner": {
+									"Type": "ColumnLinear",
+									"Skip": false,
+									"MaxY": 40,
+									"MinY": -35,
+									"RelativeToPosition": false,
+									"BaseHeightName": "Base",
+									"TopDownOrder": false,
+									"ResultCap": 1
+								},
+								"Material": {
+									"Type": "Solidity",
+									"Solid": {
+										"Type": "Constant",
+										"Material": {
+											"Solid": "Ore_Mornum_Necrotic_Stone"
+										}
+									}
+								},
+								"Density": {
+									"Type": "Sum",
+									"Skip": false,
+									"Inputs": [
+										{
+											"Type": "Normalizer",
+											"Skip": false,
+											"FromMin": -1,
+											"FromMax": 1,
+											"ToMin": -0.3,
+											"ToMax": 0.3,
+											"Inputs": [
+												{
+													"Type": "SimplexNoise3D",
+													"Skip": false,
+													"Lacunarity": 2,
+													"Persistence": 0.5,
+													"Octaves": 1,
+													"ScaleXZ": 4,
+													"ScaleY": 4,
+													"Seed": "NecrosMornumNoiseA"
+												}
+											]
+										},
+										{
+											"Type": "Normalizer",
+											"Skip": false,
+											"FromMin": -1,
+											"FromMax": 1,
+											"ToMin": -0.7,
+											"ToMax": 0.7,
+											"Inputs": [
+												{
+													"Type": "Anchor",
+													"Skip": false,
+													"Reversed": false,
+													"Inputs": [
+														{
+															"Type": "Cube",
+															"Skip": false,
+															"Curve": {
+																"Type": "Manual",
+																"Points": [
+																	{
+																		"In": 0,
+																		"Out": 1
+																	},
+																	{
+																		"In": 3,
+																		"Out": -2
+																	}
+																]
+															}
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								"PlacementMask": {
+									"DontPlace": {
+										"Inclusive": true,
+										"Materials": [
+											{
+												"Solid": "Empty"
+											}
+										]
+									},
+									"DontReplace": {
+										"Inclusive": true,
+										"Materials": [
+											{
+												"Solid": "Empty"
+											}
+										]
+									}
+								},
+								"Range": {
+									"X": 2,
+									"Y": 3,
+									"Z": 2
+								}
+							}
+						}
+					},
+					{
+						"Weight": 3,
+						"Assignments": {
+							"Type": "Constant",
+							"Prop": {
+								"Type": "Density",
+								"Skip": false,
+								"Pattern": {
+									"Type": "Floor",
+									"Skip": false,
+									"Floor": {
+										"Type": "BlockSet",
+										"Skip": false,
+										"BlockSet": {
+											"Inclusive": true,
+											"Materials": [
+												{
+													"Solid": "Necrotic_Stone_Deep"
+												}
+											]
+										}
+									},
+									"Origin": {
+										"Type": "BlockSet",
+										"Skip": false,
+										"BlockSet": {
+											"Inclusive": true,
+											"Materials": [
+												{"Solid": "Necrotic_Stone_Deep"},
+												{"Solid": "Necrotic_Stone"},
+												{"Solid": "Necrotic_Dirt"},
+												{"Solid": "Empty"}
+											]
+										}
+									}
+								},
+								"Scanner": {
+									"Type": "ColumnLinear",
+									"Skip": false,
+									"MaxY": 40,
+									"MinY": -35,
+									"RelativeToPosition": false,
+									"BaseHeightName": "Base",
+									"TopDownOrder": false,
+									"ResultCap": 1
+								},
+								"Material": {
+									"Type": "Solidity",
+									"Solid": {
+										"Type": "Constant",
+										"Material": {
+											"Solid": "Ore_Mornum_Necrotic_Stone_Deep"
+										}
+									}
+								},
+								"Density": {
+									"Type": "Sum",
+									"Skip": false,
+									"Inputs": [
+										{
+											"Type": "Normalizer",
+											"Skip": false,
+											"FromMin": -1,
+											"FromMax": 1,
+											"ToMin": -0.3,
+											"ToMax": 0.3,
+											"Inputs": [
+												{
+													"Type": "SimplexNoise3D",
+													"Skip": false,
+													"Lacunarity": 2,
+													"Persistence": 0.5,
+													"Octaves": 1,
+													"ScaleXZ": 8,
+													"ScaleY": 8,
+													"Seed": "NecrosMornumNoiseB"
+												}
+											]
+										},
+										{
+											"Type": "Normalizer",
+											"Skip": false,
+											"FromMin": -1,
+											"FromMax": 1,
+											"ToMin": -0.7,
+											"ToMax": 0.7,
+											"Inputs": [
+												{
+													"Type": "Anchor",
+													"Skip": false,
+													"Reversed": false,
+													"Inputs": [
+														{
+															"Type": "Cube",
+															"Skip": false,
+															"Curve": {
+																"Type": "Manual",
+																"Points": [
+																	{
+																		"In": 0,
+																		"Out": 1
+																	},
+																	{
+																		"In": 3,
+																		"Out": -2
+																	}
+																]
+															}
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								"PlacementMask": {
+									"DontPlace": {
+										"Inclusive": true,
+										"Materials": [
+											{
+												"Solid": "Empty"
+											}
+										]
+									},
+									"DontReplace": {
+										"Inclusive": true,
+										"Materials": [
+											{
+												"Solid": "Empty"
+											}
+										]
+									}
+								},
+								"Range": {
+									"X": 2,
+									"Y": 3,
+									"Z": 2
+								}
+							}
+						}
+					},
+					{
+						"Weight": 2,
+						"Assignments": {
+							"Type": "Constant",
+							"Prop": {
+								"Type": "Density",
+								"Skip": false,
+								"Pattern": {
+									"Type": "Floor",
+									"Skip": false,
+									"Floor": {
+										"Type": "BlockSet",
+										"Skip": false,
+										"BlockSet": {
+											"Inclusive": true,
+											"Materials": [
+												{
+													"Solid": "Necrotic_Dirt"
+												},
+												{
+													"Solid": "Necrotic_Mud"
+												}
+											]
+										}
+									},
+									"Origin": {
+										"Type": "BlockSet",
+										"Skip": false,
+										"BlockSet": {
+											"Inclusive": true,
+											"Materials": [
+												{"Solid": "Necrotic_Dirt"},
+												{"Solid": "Necrotic_Mud"},
+												{"Solid": "Necrotic_Stone"},
+												{"Solid": "Empty"}
+											]
+										}
+									}
+								},
+								"Scanner": {
+									"Type": "ColumnLinear",
+									"Skip": false,
+									"MaxY": 40,
+									"MinY": -35,
+									"RelativeToPosition": false,
+									"BaseHeightName": "Base",
+									"TopDownOrder": false,
+									"ResultCap": 1
+								},
+								"Material": {
+									"Type": "Solidity",
+									"Solid": {
+										"Type": "Constant",
+										"Material": {
+											"Solid": "Ore_Mornum_Necrotic_Dirt"
+										}
+									}
+								},
+								"Density": {
+									"Type": "Sum",
+									"Skip": false,
+									"Inputs": [
+										{
+											"Type": "Normalizer",
+											"Skip": false,
+											"FromMin": -1,
+											"FromMax": 1,
+											"ToMin": -0.3,
+											"ToMax": 0.3,
+											"Inputs": [
+												{
+													"Type": "SimplexNoise3D",
+													"Skip": false,
+													"Lacunarity": 2,
+													"Persistence": 0.5,
+													"Octaves": 1,
+													"ScaleXZ": 4,
+													"ScaleY": 4,
+													"Seed": "NecrosMornumNoiseC"
+												}
+											]
+										},
+										{
+											"Type": "Normalizer",
+											"Skip": false,
+											"FromMin": -1,
+											"FromMax": 1,
+											"ToMin": -0.7,
+											"ToMax": 0.7,
+											"Inputs": [
+												{
+													"Type": "Anchor",
+													"Skip": false,
+													"Reversed": false,
+													"Inputs": [
+														{
+															"Type": "Cube",
+															"Skip": false,
+															"Curve": {
+																"Type": "Manual",
+																"Points": [
+																	{
+																		"In": 0,
+																		"Out": 1
+																	},
+																	{
+																		"In": 3,
+																		"Out": -2
+																	}
+																]
+															}
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								"PlacementMask": {
+									"DontPlace": {
+										"Inclusive": true,
+										"Materials": [
+											{
+												"Solid": "Empty"
+											}
+										]
+									},
+									"DontReplace": {
+										"Inclusive": true,
+										"Materials": [
+											{
+												"Solid": "Empty"
+											}
+										]
+									}
+								},
+								"Range": {
+									"X": 2,
+									"Y": 3,
+									"Z": 2
+								}
+							}
+						}
+					}
+				]
+			}
+		}
+	],
+	"EnvironmentProvider": {
+		"Type": "Constant",
+		"Environment": "Env_Necros"
+	},
+	"TintProvider": {
+		"Type": "Constant",
+		"Color": "#4a3f36"
+	}
+}

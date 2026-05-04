@@ -1,0 +1,59 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Necrotic_Sand.name"
+  },
+  "ItemLevel": 0,
+  "Categories": [
+    "Blocks.Sand",
+    "Necros.Soil"
+  ],
+  "PlayerAnimationsId": "Block",
+  "Set": "Sand",
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Cube",
+    "Group": "Sand",
+    "Flags": {},
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Soils",
+        "ItemId": "Necrotic_Sand"
+      }
+    },
+    "BlockParticleSetId": "Sand",
+    "Textures": [
+      {
+        "All": "BlockTextures/necrotic_sand.png",
+        "Weight": 75
+      },
+      {
+        "All": "BlockTextures/necrotic_sand_02.png",
+        "Weight": 20
+      },
+      {
+        "All": "BlockTextures/necrotic_sand_03.png",
+        "Weight": 5
+      }
+    ],
+    "ParticleColor": "#8a7a6a",
+    "BlockSoundSetId": "Sand"
+  },
+  "Tags": {
+    "Type": [
+      "Sand"
+    ]
+  },
+  "Icon": "Icons/ItemsGenerated/Necrotic_Sand.png",
+  "IconProperties": {
+    "Scale": 0.58823,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -13.5
+    ]
+  }
+}

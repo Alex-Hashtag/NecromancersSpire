@@ -1,0 +1,62 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Necrotic_Water.name"
+  },
+  "ItemLevel": 0,
+  "Categories": [
+    "Blocks.Fluids",
+    "Necros.Fluids"
+  ],
+  "Interactions": {
+    "Secondary": {
+      "Interactions": [
+        {
+          "Type": "PlaceFluid",
+          "FluidToPlace": "Necrotic_Water_Source"
+        }
+      ]
+    }
+  },
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Cube",
+    "Effect": [
+      "Lava"
+    ],
+    "Opacity": "Transparent",
+    "Group": "Fluid_Necrotic_Water",
+    "Light": {
+      "Color": "#6a9"
+    },
+    "Flags": {},
+    "BlockParticleSetId": "Water",
+    "Textures": [
+      {
+        "Weight": 1,
+        "All": "BlockTextures/Fluid_Necrotic_Water.png"
+      }
+    ],
+    "ParticleColor": "#4a9a4a",
+    "BlockSoundSetId": "Mud"
+  },
+  "PlayerAnimationsId": "Block",
+  "Tags": {
+    "Material": [
+      "Fluid"
+    ]
+  },
+  "MaxStack": 1,
+  "Icon": "Icons/ItemsGenerated/Necrotic_Water.png",
+  "IconProperties": {
+    "Scale": 0.58823,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -13.5
+    ]
+  }
+}

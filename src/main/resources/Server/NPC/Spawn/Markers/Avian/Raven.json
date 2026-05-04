@@ -1,0 +1,14 @@
+{
+  "Model": "NPC_Spawn_Marker",
+  "NPCs": [
+    {
+      "Name": "Raven",
+      "Weight": 100,
+      "RealtimeRespawnTime": 420
+    }
+  ],
+  "ExclusionRadius": 25,
+  "RealtimeRespawn": true,
+  "MaxDropHeight": 8,
+  "DeactivationDistance": 120
+}

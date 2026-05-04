@@ -1,0 +1,55 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Banner_2.name"
+  },
+  "ItemLevel": 0,
+  "Categories": [
+    "Blocks.Deco",
+    "Necros.Deco"
+  ],
+  "PlayerAnimationsId": "Block",
+  "Set": "Deco",
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "Group": "Deco",
+    "VariantRotation": "NESW",
+    "Flags": {},
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Woods",
+        "ItemId": "Banner_2"
+      }
+    },
+    "BlockParticleSetId": "Wood",
+    "CustomModel": "Blocks/banner_2.blockymodel",
+    "CustomModelAnimation": "Blocks/banner_swing2.blockyanim",
+    "Looping": true,
+    "CustomModelTexture": [
+      {
+        "Texture": "BlockTextures/necros_deco_atlas.png"
+      }
+    ],
+    "ParticleColor": "#8b7355",
+    "BlockSoundSetId": "Wood"
+  },
+  "Tags": {
+    "Type": [
+      "Deco"
+    ]
+  },
+  "Icon": "Icons/ItemsGenerated/Banner_2.png",
+  "IconProperties": {
+    "Scale": 0.33,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      -8,
+      26
+    ]
+  }
+}

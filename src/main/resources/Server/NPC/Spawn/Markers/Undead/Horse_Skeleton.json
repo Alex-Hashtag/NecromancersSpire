@@ -1,0 +1,19 @@
+{
+  "Model": "NPC_Spawn_Marker",
+  "NPCs": [
+    {
+      "Name": "Horse_Skeleton",
+      "Weight": 70,
+      "RealtimeRespawnTime": 600
+    },
+    {
+      "Name": "Horse_Skeleton_Armored",
+      "Weight": 30,
+      "RealtimeRespawnTime": 600
+    }
+  ],
+  "ExclusionRadius": 40,
+  "RealtimeRespawn": true,
+  "MaxDropHeight": 4,
+  "DeactivationDistance": 160
+}

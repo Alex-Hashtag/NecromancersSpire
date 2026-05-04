@@ -1,0 +1,88 @@
+items.Example_Block.name = Example Block
+
+# --- Necros Creative Tab ---
+ui.itemcategory.necros = Necros
+ui.itemcategory.ores = Ores
+
+# --- Necros Blocks ---
+items.Necrotic_Stone.name = Necrotic Stone
+items.Necrotic_Stone_Deep.name = Necrotic Deepstone
+items.Necrotic_Pebbles.name = Necrotic Pebbles
+items.Necrotic_Brick_Stone.name = Necrotic Stone Brick
+items.Necrotic_Stone_Brick_Decorative.name = Decorative Necrotic Brick
+items.Necrotic_Pillar.name = Necrotic Pillar
+items.Necrotic_Crystal.name = Necrotic Crystal
+items.Necrotic_Dirt.name = Necrotic Dirt
+items.Necrotic_Mud.name = Necrotic Mud
+items.Necrotic_Sand.name = Necrotic Sand
+items.Necrotic_Water.name = Necrotic Water
+items.Necrotic_Window.name = Necrotic Window
+
+# --- Necros Decorations ---
+items.Banner_1.name = Necrotic Banner
+items.Banner_2.name = Necrotic War Banner
+items.Tombstone_1.name = Cracked Tombstone
+items.Tombstone_2.name = Weathered Tombstone
+items.Tombstone_3.name = Broken Tombstone
+items.Tombstone_4.name = Ornate Tombstone
+items.Sword_Cemetery_1.name = Cemetery Sword
+items.Sword_Cemetery_2.name = Rusted Cemetery Sword
+items.Sword_Cemetery_3.name = Shattered Cemetery Sword
+items.Dead_Branch.name = Dead Branch
+items.Necrotic_Grass.name = Necrotic Grass
+items.Prickly_Bush.name = Prickly Bush
+items.Light_Crack.name = Light Crack
+items.Ritual_Brazier.name = Ritual Brazier
+items.Long_Roots.name = Long Roots
+items.Necrotic_Mushroom_Flatcap.name = Necrotic Mushroom
+items.Necrotic_Fence.name = Necrotic Fence
+items.Necromancer_Throne.name = Necromancer Throne
+items.Throne_Crown_Necros.name = Necromancer Throne with Crown
+items.Sword_Stone_Necros.name = Necrotic Blade in Stone
+items.Sword_Stone_Empty.name = Stone Pedestal of Necros
+
+# --- Necros Ores ---
+items.Ore_Mornum.name = Mornum Crystal
+items.Ore_Mornum.description = A cursed crystal harvested from the bones of the Necros realm.
+items.Ore_Mornum_Necrotic_Stone.name = Mornum Ore
+items.Ore_Mornum_Necrotic_Stone_Deep.name = Deep Mornum Ore
+items.Ore_Mornum_Necrotic_Dirt.name = Mornum-laced Dirt
+
+# --- Necros Equipment ---
+items.Necrotic_Blade.name = Necrotic Blade
+items.Necrotic_Crown.name = Necrotic Crown
+
+# --- Necros Portal ---
+items.PortalKey_Necros.name = Necros Portal Shard
+items.PortalKey_Necros.description = A sinister shard humming with necrotic energy. Use to open a portal to the Necros realm.
+items.Portal_Device_Necros.name = Necros Portal Device
+items.Portal_Device_Necros.description = A ritual device that opens a teal-flamed gateway to the Necros realm.
+items.Portal_Return_Necros.name = Necros Return Gate
+items.Portal_Return_Necros.description = Returns a traveller through a Necros Portal Device.
+items.Forgotten_Temple_Portal_Enter_Necros.name = Necros Temple Gateway (Enter)
+items.Forgotten_Temple_Portal_Enter_Necros.description = Step in to travel to the Necros realm.
+items.Forgotten_Temple_Portal_Exit_Necros.name = Necros Temple Gateway (Exit)
+items.Forgotten_Temple_Portal_Exit_Necros.description = Step in to leave the Necros realm.
+items.Leave_Instance_Necros.name = Necros Departure Pad
+items.Leave_Instance_Necros.description = Leaves the current instance.
+
+# --- Necros Messages ---
+necros.soul_captured = Soul captured! ({mob}) ({count}/{max})
+necros.crown_full = The crown can hold no more souls.
+necros.no_souls = No souls in the crown.
+necros.releasing_souls = Releasing {count} souls from the crown!
+
+# --- Necros Command Messages ---
+necros.command.player_only = This command can only be used by a player.
+
+# --- Necros Ritual Messages ---
+necros.ritual.in_progress = A ritual is already in progress.
+necros.ritual.requires_item = This brazier requires: {item}
+necros.ritual.begun = The ritual has begun...
+
+# --- Necros Portal Messages ---
+necros.portal.blocked_water = The portal cannot be placed in Necrotic Water.
+
+# --- Necros NPCs ---
+npcRoles.Necrotic_Skull.name = Necrotic Skull
+npcRoles.Soul_Ally.name = Revived Soul

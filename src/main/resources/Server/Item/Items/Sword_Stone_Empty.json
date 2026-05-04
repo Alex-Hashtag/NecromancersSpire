@@ -1,0 +1,65 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Sword_Stone_Empty.name"
+  },
+  "ItemLevel": 600,
+  "Categories": [
+    "Blocks.Deco",
+    "Necros.Deco"
+  ],
+  "Interactions": {
+    "Primary": "Block_Primary",
+    "Secondary": "Block_Secondary"
+  },
+  "PlayerAnimationsId": "Block",
+  "Set": "Deco",
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "Group": "Deco",
+    "VariantRotation": "NESW",
+    "Flags": {},
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Rocks",
+        "ItemId": "Sword_Stone_Empty"
+      }
+    },
+    "BlockParticleSetId": "Stone",
+    "CustomModel": "Blocks/no_sword_stone.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "BlockTextures/necros_deco_atlas.png"
+      }
+    ],
+    "ParticleColor": "#4a4a4a",
+    "BlockSoundSetId": "Stone",
+    "Support": {
+      "Down": [
+        {
+          "FaceType": "Full"
+        }
+      ]
+    }
+  },
+  "ItemSoundSetId": "ISS_Blocks_Stone",
+  "Tags": {
+    "Type": [
+      "Deco"
+    ]
+  },
+  "IconProperties": {
+    "Scale": 0.58823,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -13.5
+    ]
+  },
+  "Icon": "Icons/ItemsGenerated/Sword_Stone_Empty.png"
+}

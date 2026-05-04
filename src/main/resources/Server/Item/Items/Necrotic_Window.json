@@ -1,0 +1,79 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Necrotic_Window.name"
+  },
+  "ItemLevel": 0,
+  "Categories": [
+    "Blocks.Decorative",
+    "Necros.Deco"
+  ],
+  "PlayerAnimationsId": "Block",
+  "Set": "Decorative",
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Group": "Glass",
+    "Flags": {},
+    "Opacity": "Transparent",
+    "VariantRotation": "Wall",
+    "HitboxType": "Window",
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Woods",
+        "ItemId": "Necrotic_Window"
+      }
+    },
+    "BlockParticleSetId": "Glass",
+    "CustomModel": "Blocks/necrotic_window.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "BlockTextures/necrotic_window.png"
+      }
+    ],
+    "ParticleColor": "#6a5a7a",
+    "BlockSoundSetId": "Glass",
+    "Support": {
+      "Down": [
+        { "FaceType": "Full" },
+        { "FaceType": "Window" }
+      ],
+      "Up": [
+        { "FaceType": "Full" },
+        { "FaceType": "Window" }
+      ],
+      "East": [
+        { "FaceType": "Full" }
+      ],
+      "West": [
+        { "FaceType": "Full" }
+      ]
+    },
+    "Supporting": {
+      "Up": [
+        { "FaceType": "Window" }
+      ],
+      "Down": [
+        { "FaceType": "Window" }
+      ]
+    }
+  },
+  "Tags": {
+    "Type": [
+      "Decorative",
+      "Glass"
+    ]
+  },
+  "IconProperties": {
+    "Scale": 0.58823,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -13.5
+    ]
+  },
+  "Icon": "Icons/ItemsGenerated/Necrotic_Window.png"
+}

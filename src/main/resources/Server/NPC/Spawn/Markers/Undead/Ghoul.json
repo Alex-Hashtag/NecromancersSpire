@@ -1,0 +1,14 @@
+{
+  "Model": "NPC_Spawn_Marker",
+  "NPCs": [
+    {
+      "Name": "Ghoul",
+      "Weight": 100,
+      "RealtimeRespawnTime": 300
+    }
+  ],
+  "ExclusionRadius": 24,
+  "RealtimeRespawn": true,
+  "MaxDropHeight": 4,
+  "DeactivationDistance": 120
+}

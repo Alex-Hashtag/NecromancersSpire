@@ -1,0 +1,48 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.PortalKey_Necros.name",
+    "Description": "server.items.PortalKey_Necros.description"
+  },
+  "Icon": "Icons/ItemsGenerated/PortalKey_Necros.png",
+  "Categories": [
+    "Blocks.Portals",
+    "Necros.Portals"
+  ],
+  "PortalKey": {
+    "PortalType": "Portals_Necros",
+    "TimeLimitSeconds": 3600
+  },
+  "BlockType": {
+    "DrawType": "Model",
+    "Material": "Solid",
+    "Opacity": "Transparent",
+    "CustomModel": "Blocks/Miscellaneous/Portal_Shard.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "BlockTextures/portal_shard_necros.png",
+        "Weight": 1
+      }
+    ]
+  },
+  "PlayerAnimationsId": "Item",
+  "Tags": {
+    "Type": [
+      "Portal",
+      "Temporary"
+    ]
+  },
+  "Quality": "Uncommon",
+  "ItemLevel": 51,
+  "IconProperties": {
+    "Scale": 0.9,
+    "Rotation": [
+      22.5,
+      137,
+      22.5
+    ],
+    "Translation": [
+      -10,
+      -15
+    ]
+  }
+}

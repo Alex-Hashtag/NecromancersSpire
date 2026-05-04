@@ -1,0 +1,38 @@
+{
+  "Environments": [ "Env_Necros" ],
+  "MinDistanceFromPlayer": 15,
+  "MaxSpawnedNPCs": 4,
+  "ConcurrentSpawnsRange": [ 1, 3 ],
+  "SpawnAfterGameTimeRange": [ "PT0S", "PT10M" ],
+  "NPCIdleDespawnTime": 60,
+  "BeaconVacantDespawnGameTime": "PT15M",
+  "BeaconRadius": 80,
+  "SpawnRadius": 50,
+  "YRange": [ -40, 5 ],
+  "TargetDistanceFromPlayer": 25,
+  "NPCs": [
+    {
+      "Weight": 40,
+      "Id": "Hound_Bleached"
+    },
+    {
+      "Weight": 25,
+      "Id": "Horse_Skeleton"
+    },
+    {
+      "Weight": 35,
+      "Id": "Necrotic_Skeleton"
+    },
+    {
+      "Weight": 20,
+      "Id": "Necrotic_Skull"
+    },
+    {
+      "Weight": 15,
+      "Id": "Wraith"
+    }
+  ],
+  "LightRanges": {
+    "Light": [ 0, 15 ]
+  }
+}

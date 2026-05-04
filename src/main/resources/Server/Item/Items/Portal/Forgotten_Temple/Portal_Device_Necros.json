@@ -1,0 +1,153 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Portal_Device_Necros.name",
+    "Description": "server.items.Portal_Device_Necros.description"
+  },
+  "Icon": "Icons/ItemsGenerated/Portal_Device_Necros.png",
+  "Categories": [
+    "Blocks.Portals",
+    "Necros.Portals"
+  ],
+  "BlockType": {
+    "DrawType": "Model",
+    "Material": "Solid",
+    "Opacity": "Transparent",
+    "CustomModel": "Blocks/Miscellaneous/Platform_MagicInactive.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "BlockTextures/platform_magic_blue2.png",
+        "Weight": 1
+      }
+    ],
+    "BlockEntity": {
+      "Components": {
+        "Portal": {
+          "Config": {
+            "OnState": "Active",
+            "SpawningState": "Spawning",
+            "ReturnBlockType": "Portal_Return_Necros"
+          }
+        }
+      }
+    },
+    "HitboxType": "Pad_Portal",
+    "BlockParticleSetId": "Stone",
+    "BlockSoundSetId": "Stone",
+    "VariantRotation": "NESW",
+    "Flags": {
+      "IsUsable": true
+    },
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Benches"
+      }
+    },
+    "State": {
+      "Definitions": {
+        "Spawning": {
+          "InteractionSoundEventId": "SFX_Portal_Neutral_Open",
+          "Gathering": {
+            "Breaking": {
+              "GatherType": "Unbreakable"
+            }
+          },
+          "Light": {
+            "Radius": 0,
+            "Color": "#7cc"
+          },
+          "Particles": [
+            {
+              "SystemId": "Portal_Going_Through_Blue",
+              "PositionOffset": {
+                "Y": 1
+              }
+            }
+          ],
+          "CustomModelAnimation": "Blocks/Miscellaneous/Platform_Magic_Activate.blockyanim"
+        },
+        "Active": {
+          "AmbientSoundEventId": "SFX_Portal_Neutral",
+          "Gathering": {
+            "Breaking": {
+              "GatherType": "Unbreakable"
+            }
+          },
+          "Light": {
+            "Radius": 0,
+            "Color": "#7cc"
+          },
+          "Particles": [
+            {
+              "SystemId": "MagicPortal",
+              "PositionOffset": {
+                "Y": 2.0
+              },
+              "Scale": 0.8
+            }
+          ],
+          "Interactions": {
+            "CollisionEnter": {
+              "Interactions": [
+                {
+                  "Type": "Portal",
+                  "Next": {
+                    "Type": "Simple",
+                    "Effects": {
+                      "LocalSoundEventId": "SFX_Portal_Neutral_Teleport_Local"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "CustomModel": "Blocks/Miscellaneous/Platform_MagicInactive.blockymodel",
+          "CustomModelAnimation": "Blocks/Miscellaneous/Platform_Magic_Idle.blockyanim"
+        }
+      }
+    },
+    "Interactions": {
+      "Use": {
+        "Interactions": [
+          {
+            "Type": "OpenCustomUI",
+            "Page": {
+              "Id": "PortalDevice",
+              "Config": {
+                "OnState": "Active",
+                "SpawningState": "Spawning",
+                "ReturnBlockType": "Portal_Return_Necros",
+                "GameplayConfig": "Portal"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "Light": {
+      "Color": "#7fd9c8",
+      "Radius": 2
+    }
+  },
+  "PlayerAnimationsId": "Block",
+  "Tags": {
+    "Type": [
+      "Portal"
+    ]
+  },
+  "Quality": "Rare",
+  "MaxStack": 1,
+  "ItemLevel": 50,
+  "IconProperties": {
+    "Scale": 0.35,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -13.5
+    ]
+  },
+  "ItemSoundSetId": "ISS_Blocks_Stone"
+}

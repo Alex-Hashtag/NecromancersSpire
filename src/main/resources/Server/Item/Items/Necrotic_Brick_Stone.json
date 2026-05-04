@@ -1,0 +1,59 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Necrotic_Brick_Stone.name"
+  },
+  "ItemLevel": 600,
+  "Categories": [
+    "Blocks.Stone",
+    "Necros.Stone"
+  ],
+  "PlayerAnimationsId": "Block",
+  "Set": "Stone",
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Cube",
+    "Group": "Stone",
+    "Flags": {},
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Rocks",
+        "ItemId": "Necrotic_Brick_Stone"
+      }
+    },
+    "BlockParticleSetId": "Stone",
+    "Textures": [
+      {
+        "All": "BlockTextures/necrotic_brick_stone.png",
+        "Weight": 5
+      },
+      {
+        "All": "BlockTextures/necrotic_brick_stone_alt.png",
+        "Weight": 4
+      },
+      {
+        "All": "BlockTextures/necrotic_brick_stone_alt2.png",
+        "Weight": 1
+      }
+    ],
+    "ParticleColor": "#4a4a4a",
+    "BlockSoundSetId": "Stone"
+  },
+  "Tags": {
+    "Type": [
+      "Stone"
+    ]
+  },
+  "Icon": "Icons/ItemsGenerated/Necrotic_Brick_Stone.png",
+  "IconProperties": {
+    "Scale": 0.58823,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -13.5
+    ]
+  }
+}

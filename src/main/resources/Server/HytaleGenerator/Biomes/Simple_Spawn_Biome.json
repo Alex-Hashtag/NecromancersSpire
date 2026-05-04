@@ -1,0 +1,310 @@
+{
+	"Name": "Simple_Spawn_Biome",
+	"Terrain": {
+		"Type": "DAOTerrain",
+		"Density": {
+			"Type": "Sum",
+			"Skip": false,
+			"Inputs": [
+				{
+					"Type": "SimplexNoise2D",
+					"Skip": false,
+					"Lacunarity": 10,
+					"Persistence": 0.05,
+					"Octaves": 1,
+					"Scale": 150,
+					"Seed": "SimpleSpawn"
+				},
+				{
+					"Type": "CurveMapper",
+					"Skip": false,
+					"Curve": {
+						"Type": "Manual",
+						"Points": [
+							{
+								"In": 0,
+								"Out": 1
+							},
+							{
+								"In": 50,
+								"Out": -1
+							}
+						]
+					},
+					"Inputs": [
+						{
+							"Type": "BaseHeight",
+							"Skip": false,
+							"BaseHeightName": "Base",
+							"Distance": true
+						}
+					]
+				}
+			]
+		}
+	},
+	"MaterialProvider": {
+		"Type": "Solidity",
+		"Solid": {
+			"Type": "Queue",
+			"Queue": [
+				{
+					"Type": "SimpleHorizontal",
+					"TopY": 10,
+					"TopBaseHeight": "Base",
+					"BottomY": 5,
+					"BottomBaseHeight": "Base",
+					"Material": {
+						"Type": "SpaceAndDepth",
+						"Depth": {
+							"Type": "Queue",
+							"Queue": [
+								{
+									"Type": "Constant",
+									"Material": {
+										"Solid": "Rock_Crystal_Purple_Block"
+									}
+								}
+							]
+						},
+						"Space": {
+							"Type": "Queue",
+							"Queue": [
+								{
+									"Type": "Constant",
+									"Material": {
+										"Solid": "Rock_Crystal_Cyan_Block"
+									}
+								}
+							]
+						}
+					}
+				},
+				{
+					"Type": "SimpleHorizontal",
+					"TopY": 5,
+					"TopBaseHeight": "Base",
+					"BottomY": 0,
+					"BottomBaseHeight": "Base",
+					"Material": {
+						"Type": "Constant",
+						"Material": {
+							"Solid": "Rock_Crystal_Green_Block"
+						}
+					}
+				},
+				{
+					"Type": "SimpleHorizontal",
+					"TopY": 0,
+					"TopBaseHeight": "Base",
+					"BottomY": -20,
+					"BottomBaseHeight": "Base",
+					"Material": {
+						"Type": "Constant",
+						"Material": {
+							"Solid": "Rock_Crystal_Red_Block"
+						}
+					}
+				},
+				{
+					"Type": "Constant",
+					"Material": {
+						"Solid": "Rock_Stone"
+					}
+				}
+			]
+		},
+		"Empty": {
+			"Type": "Queue",
+			"Queue": [
+				{
+					"Type": "Constant",
+					"Material": {
+						"Solid": "Empty"
+					}
+				}
+			]
+		}
+	},
+	"Props": [
+		{
+			"Skip": false,
+			"Runtime": 0,
+			"Positions": {
+				"Type": "Mesh2D",
+				"Skip": false,
+				"PointsY": 0,
+				"PointGenerator": {
+					"Type": "Mesh",
+					"Jitter": 0.5,
+					"ScaleX": 8,
+					"ScaleY": 40,
+					"ScaleZ": 8,
+					"Seed": "Crystals"
+				}
+			},
+			"Assignments": {
+				"Type": "Constant",
+				"Prop": {
+					"Type": "Box",
+					"Skip": false,
+					"Range": {
+						"X": 1,
+						"Y": 3,
+						"Z": 1
+					},
+					"Material": {
+						"Solid": "Rock_Crystal_Blue_Large"
+					},
+					"Pattern": {
+						"Type": "Floor",
+						"Skip": false,
+						"Origin": {
+							"Type": "BlockType",
+							"Skip": false,
+							"Material": {}
+						},
+						"Floor": {
+							"Type": "BlockType",
+							"Skip": false,
+							"Material": {
+								"Solid": "Rock_Crystal_Purple_Block"
+							}
+						}
+					},
+					"Scanner": {
+						"Type": "ColumnLinear",
+						"Skip": false,
+						"MaxY": 320,
+						"MinY": 0,
+						"RelativeToPosition": false,
+						"TopDownOrder": true,
+						"ResultCap": 1
+					}
+				}
+			}
+		},
+		{
+			"Skip": false,
+			"Runtime": 0,
+			"Positions": {
+				"Type": "Mesh2D",
+				"Skip": false,
+				"PointsY": 0,
+				"PointGenerator": {
+					"Type": "Mesh",
+					"Jitter": 0.5,
+					"ScaleX": 5,
+					"ScaleY": 40,
+					"ScaleZ": 5,
+					"Seed": "Mushrooms"
+				}
+			},
+			"Assignments": {
+				"Type": "Constant",
+				"Prop": {
+					"Type": "Box",
+					"Skip": false,
+					"Range": {
+						"X": 1,
+						"Y": 1,
+						"Z": 1
+					},
+					"Material": {
+						"Solid": "Plant_Crop_Mushroom_Glowing_Purple"
+					},
+					"Pattern": {
+						"Type": "Floor",
+						"Skip": false,
+						"Origin": {
+							"Type": "BlockType",
+							"Skip": false,
+							"Material": {}
+						},
+						"Floor": {
+							"Type": "BlockType",
+							"Skip": false,
+							"Material": {
+								"Solid": "Rock_Crystal_Cyan_Block"
+							}
+						}
+					},
+					"Scanner": {
+						"Type": "ColumnLinear",
+						"Skip": false,
+						"MaxY": 320,
+						"MinY": 0,
+						"RelativeToPosition": false,
+						"TopDownOrder": true,
+						"ResultCap": 1
+					}
+				}
+			}
+		},
+		{
+			"Skip": false,
+			"Runtime": 0,
+			"Positions": {
+				"Type": "Mesh2D",
+				"Skip": false,
+				"PointsY": 0,
+				"PointGenerator": {
+					"Type": "Mesh",
+					"Jitter": 0.3,
+					"ScaleX": 15,
+					"ScaleY": 40,
+					"ScaleZ": 15,
+					"Seed": "PinkCrystals"
+				}
+			},
+			"Assignments": {
+				"Type": "Constant",
+				"Prop": {
+					"Type": "Box",
+					"Skip": false,
+					"Range": {
+						"X": 2,
+						"Y": 4,
+						"Z": 2
+					},
+					"Material": {
+						"Solid": "Rock_Crystal_Pink_Large"
+					},
+					"Pattern": {
+						"Type": "Floor",
+						"Skip": false,
+						"Origin": {
+							"Type": "BlockType",
+							"Skip": false,
+							"Material": {}
+						},
+						"Floor": {
+							"Type": "BlockType",
+							"Skip": false,
+							"Material": {
+								"Solid": "Rock_Crystal_Green_Block"
+							}
+						}
+					},
+					"Scanner": {
+						"Type": "ColumnLinear",
+						"Skip": false,
+						"MaxY": 320,
+						"MinY": 0,
+						"RelativeToPosition": false,
+						"TopDownOrder": true,
+						"ResultCap": 1
+					}
+				}
+			}
+		}
+	],
+	"EnvironmentProvider": {
+		"Type": "Constant",
+		"Environment": "Env_No_Fog"
+	},
+	"TintProvider": {
+		"Type": "Constant",
+		"Color": "#7CFC00"
+	}
+}

@@ -1,0 +1,12 @@
+{
+  "InstanceId": "Necros",
+  "Description": {
+    "DisplayName": "Necroland",
+    "FlavorText": "A desolate dimension where only the undead can thrive.",
+    "ThemeColor": "#6a9",
+    "SplashImage": "DefaultArtwork.png",
+    "Tips": [
+      "Beware the waters, they are not kind to the living."
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "Duration": 600,
+  "Infinite": false,
+  "Debuff": false,
+  "OverlapBehavior": "Overwrite",
+  "ApplicationEffects": {}
+}

@@ -1,0 +1,8 @@
+{
+  "Parent": "Necrotic_Water_Source",
+  "MaxFluidLevel": 8,
+  "Ticker": {
+    "CanDemote": true,
+    "SupportedBy": "Necrotic_Water_Source"
+  }
+}

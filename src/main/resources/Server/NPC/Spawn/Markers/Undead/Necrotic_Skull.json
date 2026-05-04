@@ -1,0 +1,14 @@
+{
+  "Model": "NPC_Spawn_Marker",
+  "NPCs": [
+    {
+      "Name": "Necrotic_Skull",
+      "Weight": 100,
+      "RealtimeRespawnTime": 240
+    }
+  ],
+  "ExclusionRadius": 20,
+  "RealtimeRespawn": true,
+  "MaxDropHeight": 4,
+  "DeactivationDistance": 80
+}

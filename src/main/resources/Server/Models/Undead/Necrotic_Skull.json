@@ -1,0 +1,53 @@
+{
+  "Model": "NPC/Undead/Necrotic_Skull/Models/Model.blockymodel",
+  "Texture": "NPC/Undead/Necrotic_Skull/Models/Texture.png",
+  "EyeHeight": 0.5,
+  "HitBox": {
+    "Max": {
+      "X": 0.3,
+      "Y": 0.6,
+      "Z": 0.3
+    },
+    "Min": {
+      "X": -0.3,
+      "Y": 0,
+      "Z": -0.3
+    }
+  },
+  "DefaultAttachments": [],
+  "Parent": "Player",
+  "Particles": [
+    {
+      "SystemId": "Fire_Teal",
+      "PositionOffset": {
+        "Y": 0.1
+      },
+      "Scale": 1.4
+    },
+    {
+      "SystemId": "Fire_Teal",
+      "PositionOffset": {
+        "X": 0.15,
+        "Y": 0.35,
+        "Z": 0.1
+      },
+      "Scale": 0.9
+    },
+    {
+      "SystemId": "Fire_Teal",
+      "PositionOffset": {
+        "X": -0.15,
+        "Y": 0.35,
+        "Z": -0.1
+      },
+      "Scale": 0.9
+    },
+    {
+      "SystemId": "Fire_Teal",
+      "PositionOffset": {
+        "Y": 0.6
+      },
+      "Scale": 1.2
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+	"Type": "Exported",
+	"ExportAs": "World-River-Map",
+	"SingleInstance": true,
+	"Skip": false,
+	"Inputs": [
+		{
+			"Type": "Cache",
+			"Skip": false,
+			"Capacity": 3,
+			"Inputs": [
+				{
+					"Type": "Min",
+					"Skip": false,
+					"Inputs": [
+						{
+							"Type": "Sum",
+							"Skip": false,
+							"Inputs": [
+								{
+									"Type": "AmplitudeConstant",
+									"Skip": false,
+									"Value": 0.7,
+									"Inputs": [
+										{
+											"Type": "Inverter",
+											"Skip": false,
+											"Inputs": [
+												{
+													"Type": "Abs",
+													"Skip": false,
+													"Inputs": [
+														{
+															"Type": "SimplexNoise2D",
+															"Skip": false,
+															"Lacunarity": 3,
+															"Persistence": 0.15,
+															"Octaves": 3,
+															"Scale": 400,
+															"Seed": "NecrosRiver1"
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"Type": "AmplitudeConstant",
+									"Skip": false,
+									"Value": 0.3,
+									"Inputs": [
+										{
+											"Type": "Inverter",
+											"Skip": false,
+											"Inputs": [
+												{
+													"Type": "Abs",
+													"Skip": false,
+													"Inputs": [
+														{
+															"Type": "SimplexNoise2D",
+															"Skip": false,
+															"Lacunarity": 4,
+															"Persistence": 0.1,
+															"Octaves": 2,
+															"Scale": 250,
+															"Seed": "NecrosRiver2"
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"Type": "Constant",
+							"Skip": false,
+							"Value": 0.3
+						}
+					]
+				}
+			]
+		}
+	]
+}
