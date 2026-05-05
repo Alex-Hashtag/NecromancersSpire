@@ -1,0 +1,318 @@
+{
+  "Type": "Generic",
+  "StartState": "Idle",
+  "BusyStates": ["Alerted", "Chase"],
+  "Appearance": "Skulldread",
+  "MaxHealth": 180,
+  "NameTranslationKey": "server.npcRoles.Skulldread.name",
+  "MotionControllerList": [
+    {
+      "Type": "Walk",
+      "MaxWalkSpeed": 14,
+      "Gravity": 20,
+      "MaxFallSpeed": 30,
+      "Acceleration": 18
+    }
+  ],
+  "Instructions": [
+    {
+      "Instructions": [
+        {
+          "Sensor": {
+            "Type": "Any",
+            "Once": true
+          },
+          "Actions": [
+            {
+              "Type": "PlayAnimation",
+              "Slot": "Status",
+              "Animation": "Spawn"
+            }
+          ],
+          "Continue": true
+        },
+        {
+          "Sensor": {
+            "Type": "State",
+            "State": "Idle"
+          },
+          "Instructions": [
+            {
+              "Reference": "Component_Instruction_Intelligent_Idle",
+              "Modify": {
+                "_ExportStates": ["Alerted", "Search", "Alerted"],
+                "ViewRange": 22,
+                "ViewSector": 360,
+                "HearingRange": 12,
+                "AlertedRange": 28,
+                "MotionComponent": "Component_Instruction_Intelligent_Idle_Motion_Leashed_Wander"
+              }
+            }
+          ]
+        },
+        {
+          "Sensor": {
+            "Type": "State",
+            "State": "Alerted"
+          },
+          "Instructions": [
+            {
+              "Sensor": {
+                "Type": "Any",
+                "Once": true
+              },
+              "Actions": [
+                {
+                  "Type": "PlayAnimation",
+                  "Slot": "Status",
+                  "Animation": "Idle"
+                },
+                {
+                  "Type": "SpawnParticles",
+                  "Offset": [0, 1.0, 0],
+                  "ParticleSystem": "Alerted"
+                }
+              ],
+              "Continue": true
+            },
+            {
+              "Sensor": {
+                "Type": "Any"
+              },
+              "Instructions": [
+                {
+                  "Sensor": {
+                    "Type": "Target",
+                    "Range": 28
+                  },
+                  "HeadMotion": {
+                    "Type": "Watch"
+                  }
+                }
+              ],
+              "Continue": true
+            },
+            {
+              "Sensor": {
+                "Type": "Reference",
+                "Reference": "Component_Sensor_Sight_By_Attitude",
+                "Modify": {
+                  "ViewRange": 28,
+                  "ViewSector": 360,
+                  "Attitudes": ["Hostile"]
+                }
+              },
+              "Actions": [
+                {
+                  "Type": "Timeout",
+                  "Delay": [0.3, 0.5],
+                  "Action": {
+                    "Type": "State",
+                    "State": "Chase"
+                  }
+                }
+              ]
+            },
+            {
+              "Actions": [
+                {
+                  "Type": "State",
+                  "State": "Idle"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Sensor": {
+            "Type": "State",
+            "State": "Chase"
+          },
+          "Instructions": [
+            {
+              "Reference": "Component_Instruction_Clear_Status_Animation"
+            },
+            {
+              "Reference": "Component_Instruction_Simple_Soft_Leash",
+              "Modify": {
+                "_ExportStates": ["Idle"]
+              }
+            },
+            {
+              "Sensor": {
+                "Type": "Target",
+                "Range": 4.0
+              },
+              "Actions": [
+                {
+                  "Type": "Attack",
+                  "Attack": "Root_NPC_Attack_Melee",
+                  "AttackPauseRange": [0.6, 1.0]
+                }
+              ],
+              "HeadMotion": {
+                "Type": "Aim",
+                "RelativeTurnSpeed": 1.8
+              },
+              "ActionsBlocking": true
+            },
+            {
+              "Reference": "Component_Instruction_Intelligent_Chase",
+              "Modify": {
+                "_ExportStates": ["Search", "Idle", "Search"],
+                "ViewRange": 28,
+                "HearingRange": 12,
+                "RelativeSpeed": 1.0
+              }
+            }
+          ]
+        },
+        {
+          "Sensor": {
+            "Type": "State",
+            "State": "Search"
+          },
+          "Instructions": [
+            {
+              "Sensor": {
+                "Type": "Any",
+                "Once": true
+              },
+              "Actions": [
+                {
+                  "Type": "PlayAnimation",
+                  "Slot": "Status"
+                }
+              ],
+              "Continue": true
+            },
+            {
+              "Sensor": {
+                "Type": "Any"
+              },
+              "Instructions": [
+                {
+                  "Sensor": {
+                    "Type": "Any"
+                  },
+                  "BodyMotion": {
+                    "Type": "Sequence",
+                    "Looped": true,
+                    "Motions": [
+                      {
+                        "Type": "Timer",
+                        "Time": [1, 3],
+                        "Motion": {
+                          "Type": "WanderInCircle",
+                          "Radius": 6,
+                          "MaxHeadingChange": 60,
+                          "RelativeSpeed": 0.5
+                        }
+                      },
+                      {
+                        "Type": "Timer",
+                        "Time": [1, 2],
+                        "Motion": {
+                          "Type": "Nothing"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "Continue": true
+            },
+            {
+              "Sensor": {
+                "Type": "Or",
+                "Sensors": [
+                  {
+                    "Type": "Player",
+                    "Range": 3,
+                    "LockOnTarget": true,
+                    "Filters": [
+                      {
+                        "Type": "LineOfSight"
+                      }
+                    ]
+                  },
+                  {
+                    "Type": "Reference",
+                    "Reference": "Component_Sensor_Sight_By_Attitude",
+                    "Modify": {
+                      "ViewRange": 22,
+                      "ViewSector": 360,
+                      "Attitudes": ["Hostile"]
+                    }
+                  }
+                ]
+              },
+              "Actions": [
+                {
+                  "Type": "State",
+                  "State": "Alerted"
+                }
+              ]
+            },
+            {
+              "Sensor": {
+                "Type": "Any"
+              },
+              "Actions": [
+                {
+                  "Type": "Timeout",
+                  "Delay": [8, 12],
+                  "Action": {
+                    "Type": "State",
+                    "State": "Idle"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "DefaultPlayerAttitude": "Hostile",
+  "DefaultNPCAttitude": "Ignore",
+  "FlockSpawnTypes": ["Skulldread"],
+  "FlockAllowedNPC": ["Skulldread", "Necrotic_Skeleton"],
+  "DisableDamageGroups": ["Self"],
+  "DisableDamageFlock": true,
+  "ApplySeparation": true,
+  "SeparationDistance": 2.0,
+  "KnockbackScale": 0.3,
+  "DropList": "Drop_Skulldread",
+  "BreathesInWater": true,
+  "IsMemory": true,
+  "MemoriesCategory": "Undead",
+  "MemoriesNameOverride": "Skulldread",
+  "InteractionVars": {
+    "Melee_Damage": {
+      "Interactions": [
+        {
+          "Parent": "NPC_Attack_Melee_Damage",
+          "DamageCalculator": {
+            "Type": "Absolute",
+            "BaseDamage": {
+              "Physical": 35
+            },
+            "RandomPercentageModifier": 0.2
+          },
+          "DamageEffects": {
+            "Knockback": {
+              "Force": 8,
+              "RelativeX": 0,
+              "RelativeZ": -1,
+              "VelocityY": 3,
+              "VelocityType": "Set"
+            },
+            "WorldSoundEventId": "SFX_Unarmed_Impact",
+            "LocalSoundEventId": "SFX_Unarmed_Impact"
+          }
+        }
+      ]
+    }
+  }
+}

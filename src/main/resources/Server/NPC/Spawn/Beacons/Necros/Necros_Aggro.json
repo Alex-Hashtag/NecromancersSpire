@@ -1,8 +1,8 @@
 {
   "Environments": [ "Env_Necros" ],
   "MinDistanceFromPlayer": 15,
-  "MaxSpawnedNPCs": 4,
-  "ConcurrentSpawnsRange": [ 1, 3 ],
+  "MaxSpawnedNPCs": 8,
+  "ConcurrentSpawnsRange": [ 2, 6 ],
   "SpawnAfterGameTimeRange": [ "PT0S", "PT10M" ],
   "NPCIdleDespawnTime": 60,
   "BeaconVacantDespawnGameTime": "PT15M",
@@ -30,6 +30,10 @@
     {
       "Weight": 15,
       "Id": "Wraith"
+    },
+    {
+      "Weight": 10,
+      "Id": "Skulldread"
     }
   ],
   "LightRanges": {

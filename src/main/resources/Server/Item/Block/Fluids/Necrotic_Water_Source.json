@@ -29,21 +29,43 @@
           "Type": "Condition",
           "RequiredGameMode": "Adventure",
           "Next": {
-            "Type": "ApplyEffect",
-            "EffectId": {
-              "Duration": 1,
-              "OverlapBehavior": "Overwrite",
-              "ApplicationEffects": {
-                "HorizontalSpeedMultiplier": 0.5
-              }
-            },
+            "Type": "EffectCondition",
+            "EntityEffectIds": [
+              "Necrotic_Resistance"
+            ],
+            "Match": "None",
             "Next": {
               "Type": "ApplyEffect",
-              "EffectId": "Necrotic_Burn"
+              "EffectId": {
+                "Duration": 1,
+                "OverlapBehavior": "Overwrite",
+                "ApplicationEffects": {
+                  "HorizontalSpeedMultiplier": 0.5
+                }
+              },
+              "Next": {
+                "Type": "ApplyEffect",
+                "EffectId": "Necrotic_Burn"
+              }
             }
           }
         }
       ]
+    }
+  },
+  "Ticker": {
+    "CanDemote": false,
+    "SpreadFluid": "Necrotic_Water",
+    "FlowRate": 2.0,
+    "Collisions": {
+      "Lava": {
+        "BlockToPlace": "Rock_Stone_Cobble",
+        "SoundEvent": "SFX_Flame_Break"
+      },
+      "Lava_Source": {
+        "BlockToPlace": "Rock_Magma_Cooled",
+        "SoundEvent": "SFX_Flame_Break"
+      }
     }
   },
   "Tags": {

@@ -1,0 +1,18 @@
+{
+  "Duration": 300,
+  "Infinite": false,
+  "Debuff": false,
+  "OverlapBehavior": "Overwrite",
+  "ApplicationEffects": {
+    "EntityBottomTint": "#001a1a",
+    "EntityTopTint": "#00ffcc"
+  },
+  "DamageResistance": {
+    "Fire": [
+      {
+        "Amount": 1.0,
+        "CalculationType": "Multiplicative"
+      }
+    ]
+  }
+}

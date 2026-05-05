@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "org.alex_hashtag"
-version = "0.1.3"
+version = "0.1.4"
 val javaVersion = 25
 
 repositories {

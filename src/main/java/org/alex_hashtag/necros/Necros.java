@@ -67,6 +67,10 @@ public class Necros extends JavaPlugin {
             // Stone pedestal: sword-in-stone pull + throne crown claim
             this.getEntityStoreRegistry().registerSystem(new StonePedestalInteractionSystem());
             LOGGER.atInfo().log("Registered StonePedestalInteractionSystem (pedestal interactions)");
+
+            // Necros dimension entry: grant Necrotic Resistance for surviving waters
+            this.getEntityStoreRegistry().registerSystem(new NecrosDimensionEntrySystem());
+            LOGGER.atInfo().log("Registered NecrosDimensionEntrySystem (water resistance on entry)");
         });
 
         // Save soul counts on shutdown

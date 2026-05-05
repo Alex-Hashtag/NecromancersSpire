@@ -1,0 +1,14 @@
+{
+  "Model": "NPC_Spawn_Marker",
+  "NPCs": [
+    {
+      "Name": "Skulldread",
+      "Weight": 100,
+      "RealtimeRespawnTime": 360
+    }
+  ],
+  "ExclusionRadius": 30,
+  "RealtimeRespawn": true,
+  "MaxDropHeight": 4,
+  "DeactivationDistance": 120
+}

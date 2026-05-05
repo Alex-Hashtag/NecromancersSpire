@@ -15,7 +15,6 @@
     }
   },
   "DefaultAttachments": [],
-  "Parent": "Player",
   "Particles": [
     {
       "SystemId": "Fire_Teal",

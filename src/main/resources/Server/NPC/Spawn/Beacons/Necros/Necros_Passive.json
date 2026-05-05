@@ -1,8 +1,8 @@
 {
   "Environments": [ "Env_Necros" ],
   "MinDistanceFromPlayer": 20,
-  "MaxSpawnedNPCs": 3,
-  "ConcurrentSpawnsRange": [ 1, 2 ],
+  "MaxSpawnedNPCs": 6,
+  "ConcurrentSpawnsRange": [ 2, 4 ],
   "SpawnAfterGameTimeRange": [ "PT0S", "PT5M" ],
   "NPCIdleDespawnTime": 60,
   "BeaconVacantDespawnGameTime": "PT15M",
