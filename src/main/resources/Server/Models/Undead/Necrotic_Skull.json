@@ -15,6 +15,196 @@
     }
   },
   "DefaultAttachments": [],
+  "AnimationSets": {
+    "Idle": {
+      "Animations": [
+        {
+          "Animation": "NPC/Undead/Necrotic_Skull/Animations/Idle.blockyanim",
+          "Speed": 0.5
+        }
+      ]
+    },
+    "Walk": {
+      "Animations": [
+        {
+          "Animation": "NPC/Undead/Necrotic_Skull/Animations/Run.blockyanim",
+          "Speed": 0.6
+        }
+      ]
+    },
+    "Run": {
+      "Animations": [
+        {
+          "Animation": "NPC/Undead/Necrotic_Skull/Animations/Run.blockyanim",
+          "Speed": 1
+        }
+      ]
+    },
+    "FlyIdle": {
+      "Animations": [
+        {
+          "Animation": "NPC/Undead/Necrotic_Skull/Animations/Idle.blockyanim",
+          "Speed": 0.5
+        }
+      ]
+    },
+    "Fly": {
+      "Animations": [
+        {
+          "Animation": "NPC/Undead/Necrotic_Skull/Animations/Run.blockyanim",
+          "Speed": 0.8
+        }
+      ]
+    },
+    "FlyBackward": {
+      "Animations": [
+        {
+          "Animation": "NPC/Undead/Necrotic_Skull/Animations/Run.blockyanim",
+          "Speed": 0.6
+        }
+      ]
+    },
+    "FlyFast": {
+      "Animations": [
+        {
+          "Animation": "NPC/Undead/Necrotic_Skull/Animations/Run.blockyanim",
+          "Speed": 1
+        }
+      ]
+    },
+    "Jump": {
+      "Animations": [
+        {
+          "Animation": "NPC/Undead/Necrotic_Skull/Animations/Idle.blockyanim",
+          "BlendingDuration": 0.1,
+          "Looping": false
+        }
+      ]
+    },
+    "JumpRun": {
+      "Animations": [
+        {
+          "Animation": "NPC/Undead/Necrotic_Skull/Animations/Run.blockyanim",
+          "BlendingDuration": 0.1,
+          "Looping": false
+        }
+      ]
+    },
+    "Fall": {
+      "Animations": [
+        {
+          "Animation": "NPC/Undead/Necrotic_Skull/Animations/Idle.blockyanim",
+          "BlendingDuration": 0.4
+        }
+      ]
+    },
+    "SwimIdle": {
+      "Animations": [
+        {
+          "Animation": "NPC/Undead/Necrotic_Skull/Animations/Idle.blockyanim",
+          "Speed": 0.5
+        }
+      ]
+    },
+    "Swim": {
+      "Animations": [
+        {
+          "Animation": "NPC/Undead/Necrotic_Skull/Animations/Run.blockyanim",
+          "Speed": 0.6
+        }
+      ]
+    },
+    "SwimFast": {
+      "Animations": [
+        {
+          "Animation": "NPC/Undead/Necrotic_Skull/Animations/Run.blockyanim",
+          "Speed": 1
+        }
+      ]
+    },
+    "SwimFloat": {
+      "Animations": [
+        {
+          "Animation": "NPC/Undead/Necrotic_Skull/Animations/Idle.blockyanim",
+          "Speed": 0.4
+        }
+      ]
+    },
+    "SwimSink": {
+      "Animations": [
+        {
+          "Animation": "NPC/Undead/Necrotic_Skull/Animations/Idle.blockyanim",
+          "Speed": 0.4
+        }
+      ]
+    },
+    "FluidIdle": {
+      "Animations": [
+        {
+          "Animation": "NPC/Undead/Necrotic_Skull/Animations/Idle.blockyanim",
+          "Speed": 0.3
+        }
+      ]
+    },
+    "FluidWalk": {
+      "Animations": [
+        {
+          "Animation": "NPC/Undead/Necrotic_Skull/Animations/Run.blockyanim",
+          "Speed": 0.5
+        }
+      ]
+    },
+    "FluidRun": {
+      "Animations": [
+        {
+          "Animation": "NPC/Undead/Necrotic_Skull/Animations/Run.blockyanim",
+          "Speed": 0.7
+        }
+      ]
+    },
+    "Alerted": {
+      "Animations": [
+        {
+          "Animation": "NPC/Undead/Necrotic_Skull/Animations/Alerted.blockyanim",
+          "Looping": false
+        }
+      ]
+    },
+    "Hurt": {
+      "Animations": [
+        {
+          "Animation": "NPC/Undead/Necrotic_Skull/Animations/Hurt.blockyanim",
+          "BlendingDuration": 0.1,
+          "Looping": false
+        }
+      ]
+    },
+    "Death": {
+      "Animations": [
+        {
+          "Animation": "NPC/Undead/Necrotic_Skull/Animations/Death.blockyanim",
+          "Looping": false
+        }
+      ]
+    },
+    "Spawn": {
+      "Animations": [
+        {
+          "Animation": "NPC/Undead/Necrotic_Skull/Animations/Spawn.blockyanim",
+          "BlendingDuration": 0,
+          "Looping": false
+        }
+      ]
+    },
+    "Despawn": {
+      "Animations": [
+        {
+          "Animation": "NPC/Undead/Necrotic_Skull/Animations/Death.blockyanim",
+          "Looping": false
+        }
+      ]
+    }
+  },
   "Particles": [
     {
       "SystemId": "Fire_Teal",

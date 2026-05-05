@@ -15,6 +15,89 @@
     }
   },
   "DefaultAttachments": [],
+  "AnimationSets": {
+    "Idle": {
+      "Animations": [
+        {
+          "Animation": "NPC/Undead/Skulldread/Animations/Idle.blockyanim",
+          "Speed": 0.5
+        }
+      ]
+    },
+    "Walk": {
+      "Animations": [
+        {
+          "Animation": "NPC/Undead/Skulldread/Animations/Walk.blockyanim",
+          "Speed": 1
+        }
+      ]
+    },
+    "WalkBackward": {
+      "Animations": [
+        {
+          "Animation": "NPC/Undead/Skulldread/Animations/Walk.blockyanim",
+          "Speed": 1
+        }
+      ]
+    },
+    "Run": {
+      "Animations": [
+        {
+          "Animation": "NPC/Undead/Skulldread/Animations/Run.blockyanim",
+          "Speed": 1
+        }
+      ]
+    },
+    "Fall": {
+      "Animations": [
+        {
+          "Animation": "NPC/Undead/Skulldread/Animations/Fall.blockyanim",
+          "BlendingDuration": 0.4
+        }
+      ]
+    },
+    "Hurt": {
+      "Animations": [
+        {
+          "Animation": "NPC/Undead/Skulldread/Animations/Hurt.blockyanim",
+          "BlendingDuration": 0.1,
+          "Looping": false
+        }
+      ]
+    },
+    "Death": {
+      "Animations": [
+        {
+          "Animation": "NPC/Undead/Skulldread/Animations/Death.blockyanim",
+          "Looping": false
+        }
+      ]
+    },
+    "Spawn": {
+      "Animations": [
+        {
+          "Animation": "NPC/Undead/Skulldread/Animations/Spawn.blockyanim",
+          "BlendingDuration": 0,
+          "Looping": false
+        }
+      ]
+    },
+    "Despawn": {
+      "Animations": [
+        {
+          "Animation": "NPC/Undead/Skulldread/Animations/Despawn.blockyanim",
+          "Looping": false
+        }
+      ]
+    },
+    "Sleep": {
+      "Animations": [
+        {
+          "Animation": "NPC/Undead/Skulldread/Animations/Sleep.blockyanim"
+        }
+      ]
+    }
+  },
   "Icon": "Icons/ModelsGenerated/Skulldread.png",
   "IconProperties": {
     "Scale": 0.15,
