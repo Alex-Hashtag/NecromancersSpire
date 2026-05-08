@@ -308,167 +308,6 @@
 									]
 								}
 							]
-						},
-						{
-							"Type": "Exported",
-							"ExportAs": "Necros_Pillars",
-							"SingleInstance": true,
-							"Skip": false,
-							"Inputs": [
-								{
-									"Type": "Cache",
-									"Skip": false,
-									"Capacity": 3,
-									"Inputs": [
-										{
-											"Type": "Sum",
-											"Skip": false,
-											"Inputs": [
-												{
-													"Type": "Multiplier",
-													"Skip": false,
-													"Inputs": [
-														{
-															"Type": "AmplitudeConstant",
-															"Skip": false,
-															"Value": 0.7,
-															"Inputs": [
-																{
-																	"Type": "YOverride",
-																	"Skip": false,
-																	"Value": 0,
-																	"Inputs": [
-																		{
-																			"Type": "Cache",
-																			"Skip": false,
-																			"Capacity": 3,
-																			"Inputs": [
-																				{
-																					"Type": "PositionsCellNoise",
-																					"Skip": false,
-																					"MaxDistance": 60,
-																					"Positions": {
-																						"Type": "Occurrence",
-																						"Skip": false,
-																						"Seed": "NecrosPillars",
-																						"FieldFunction": {
-																							"Type": "Constant",
-																							"Skip": false,
-																							"Value": 0.12
-																						},
-																						"Positions": {
-																							"Type": "Mesh2D",
-																							"Skip": false,
-																							"PointsY": 0,
-																							"PointGenerator": {
-																								"Type": "Mesh",
-																								"Jitter": 0.4,
-																								"ScaleX": 180,
-																								"ScaleY": 180,
-																								"ScaleZ": 180,
-																								"Seed": "NecrosPillarMesh"
-																							}
-																						}
-																					},
-																					"ReturnType": {
-																						"Type": "Curve",
-																						"Curve": {
-																							"Type": "Manual",
-																							"Points": [
-																								{
-																									"In": 0,
-																									"Out": 1
-																								},
-																								{
-																									"In": 8,
-																									"Out": 1
-																								},
-																								{
-																									"In": 15,
-																									"Out": 0
-																								},
-																								{
-																									"In": 60,
-																									"Out": -1
-																								}
-																							]
-																						}
-																					},
-																					"DistanceFunction": {
-																						"Type": "Euclidean"
-																					}
-																				}
-																			]
-																		}
-																	]
-																}
-															]
-														},
-														{
-															"Type": "CurveMapper",
-															"Skip": false,
-															"Curve": {
-																"Type": "Manual",
-																"Points": [
-																	{
-																		"In": -1,
-																		"Out": 0.85
-																	},
-																	{
-																		"In": 0,
-																		"Out": 1
-																	},
-																	{
-																		"In": 1,
-																		"Out": 0.9
-																	}
-																]
-															},
-															"Inputs": [
-																{
-																	"Type": "SimplexNoise3D",
-																	"Skip": false,
-																	"Lacunarity": 2,
-																	"Persistence": 0.3,
-																	"Octaves": 2,
-																	"ScaleXZ": 20,
-																	"ScaleY": 30,
-																	"Seed": "NecrosPillarWarp"
-																}
-															]
-														}
-													]
-												},
-												{
-													"Type": "CurveMapper",
-													"Skip": false,
-													"Curve": {
-														"Type": "Manual",
-														"Points": [
-															{
-																"In": 0,
-																"Out": 1
-															},
-															{
-																"In": 50,
-																"Out": -1
-															}
-														]
-													},
-													"Inputs": [
-														{
-															"Type": "BaseHeight",
-															"Skip": false,
-															"BaseHeightName": "Base",
-															"Distance": true
-														}
-													]
-												}
-											]
-										}
-									]
-								}
-							]
 						}
 					]
 				},
@@ -3773,6 +3612,86 @@
 				}
 			}
 		},
+	{
+		"Skip": false,
+		"Runtime": 0,
+		"Positions": {
+			"Type": "Mesh2D",
+			"Skip": false,
+			"PointsY": 0,
+			"PointGenerator": {
+				"Type": "Mesh",
+				"Jitter": 0.35,
+				"ScaleX": 120,
+				"ScaleY": 120,
+				"ScaleZ": 120,
+				"Seed": "NecrosPrefabHill03Mesh"
+			}
+		},
+		"Assignments": {
+			"Type": "Constant",
+			"Skip": false,
+			"Prop": {
+				"Type": "Prefab",
+				"Skip": false,
+				"WeightedPrefabPaths": [
+					{
+						"Path": "Necrotic/hill_03",
+						"Weight": 1
+					}
+				],
+				"LegacyPath": false,
+				"LoadEntities": true,
+				"Directionality": {
+					"Type": "Random",
+					"Seed": "NecrosHill03Dir",
+					"Pattern": {
+						"Type": "Cuboid",
+						"Skip": false,
+						"Min": {"X": -10, "Y": 0, "Z": -10},
+						"Max": {"X": 10, "Y": 0, "Z": 10},
+						"SubPattern": {
+							"Type": "Floor",
+							"Skip": false,
+							"Origin": {
+								"Type": "BlockType",
+								"Skip": false,
+								"Material": {
+									"Solid": "Empty"
+								}
+							},
+							"Floor": {
+								"Type": "BlockSet",
+								"Skip": false,
+								"BlockSet": {
+									"Inclusive": true,
+									"Materials": [
+										{"Solid": "Necrotic_Sand"},
+										{"Solid": "Necrotic_Pebbles"},
+										{"Solid": "Necrotic_Dirt"},
+										{"Solid": "Necrotic_Stone"},
+										{"Solid": "Necrotic_Grass"}
+									]
+								}
+							}
+						}
+					}
+				},
+				"Scanner": {
+					"Type": "ColumnLinear",
+					"Skip": false,
+					"MaxY": 65,
+					"MinY": 0,
+					"RelativeToPosition": false,
+					"BaseHeightName": "Base",
+					"TopDownOrder": true,
+					"ResultCap": 1
+				},
+				"MoldingDirection": "None",
+				"MoldingChildren": false
+			}
+		}
+	},
 		{
 			"Skip": false,
 			"Runtime": 0,

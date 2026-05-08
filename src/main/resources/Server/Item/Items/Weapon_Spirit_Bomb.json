@@ -1,0 +1,53 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Weapon_Spirit_Bomb.name"
+  },
+  "Categories": [
+    "Items.Weapons"
+  ],
+  "Quality": "Uncommon",
+  "ItemLevel": 20,
+  "PlayerAnimationsId": "Item",
+  "Interactions": {
+    "Secondary": "Item_Throw"
+  },
+  "InteractionVars": {
+    "Item_Throw_Projectile": {
+      "Interactions": [
+        {
+          "Parent": "Item_Throw_Projectile",
+          "ProjectileId": "Bomb_Spirit"
+        }
+      ]
+    }
+  },
+  "IconProperties": {
+    "Scale": 0.75,
+    "Rotation": [
+      18,
+      6,
+      337
+    ],
+    "Translation": [
+      -8,
+      -16
+    ]
+  },
+  "MaxStack": 16,
+  "Model": "Items/Weapons/Bomb/Spirit_Bomb.blockymodel",
+  "Icon": "Icons/ItemsGenerated/Weapon_Spirit_Bomb.png",
+  "Texture": "Items/Weapons/Bomb/Spirit_Bomb_Texture.png",
+  "Tags": {
+    "Type": [
+      "Weapon"
+    ],
+    "Family": [
+      "Bomb"
+    ]
+  },
+  "Weapon": {},
+  "Light": {
+    "Radius": 1,
+    "Color": "#141"
+  }
+}

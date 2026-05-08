@@ -1,0 +1,26 @@
+{
+  "Conditions": {
+    "DayTime": {
+      "Min": 19,
+      "Max": 5
+    },
+    "EnvironmentTagPattern": {
+      "Op": "Equals",
+      "Tag": "Necros"
+    }
+  },
+  "Music": {
+    "Tracks": [
+      "Music/Zone4/Z4AN-DarknessFalls.ogg",
+      "Music/Zone4/Z4AN-NightWinds.ogg",
+      "Music/Zone4/Z4AN-Shadows.ogg",
+      "Music/Zone4/Z4AN-StarsAbove.ogg",
+      "Music/_general/Z123AN_Ambient_Fragments_01.ogg",
+      "Music/_general/Z123AN_Ambient_Fragments_02.ogg",
+      "Music/_general/00a1_Silence.ogg"
+    ],
+    "Volume": 4
+  },
+  "AudioCategory": "AudioCat_Music",
+  "Priority": 35
+}

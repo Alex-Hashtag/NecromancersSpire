@@ -1,0 +1,27 @@
+{
+  "Conditions": {
+    "EnvironmentTagPattern": {
+      "Op": "Equals",
+      "Tag": "Necros"
+    }
+  },
+  "Music": {
+    "Tracks": [
+      "Music/Zone4/Z4AD-Desolation.ogg",
+      "Music/Zone4/Z4AD-DesertWinds.ogg",
+      "Music/Zone4/Z4AD-Dunes.ogg",
+      "Music/Zone4/Z4AD-GrainsOfSand.ogg",
+      "Music/Zone4/Z4AD-HowlingSands.ogg",
+      "Music/Zone4/Z4AD-SandsOfTime.ogg",
+      "Music/Zone4/Z4AD-Sandstorms.ogg",
+      "Music/Zone4/Z4AD-Wandering.ogg",
+      "Music/_general/Z123AD_Ambient_Fragments_01.ogg",
+      "Music/_general/Z123AD_Ambient_Fragments_02.ogg",
+      "Music/_general/Z123AD_Ambient_Fragments_03.ogg",
+      "Music/_general/00a1_Silence.ogg"
+    ],
+    "Volume": 5
+  },
+  "AudioCategory": "AudioCat_Music",
+  "Priority": 30
+}

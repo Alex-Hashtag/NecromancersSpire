@@ -8,10 +8,10 @@
   "MotionControllerList": [
     {
       "Type": "Walk",
-      "MaxWalkSpeed": 14,
+      "MaxWalkSpeed": 9,
       "Gravity": 20,
       "MaxFallSpeed": 30,
-      "Acceleration": 18
+      "Acceleration": 12
     }
   ],
   "Instructions": [
@@ -162,7 +162,7 @@
                 "_ExportStates": ["Search", "Idle", "Search"],
                 "ViewRange": 28,
                 "HearingRange": 12,
-                "RelativeSpeed": 1.0
+                "RelativeSpeed": 0.7
               }
             }
           ]
@@ -206,7 +206,7 @@
                           "Type": "WanderInCircle",
                           "Radius": 6,
                           "MaxHeadingChange": 60,
-                          "RelativeSpeed": 0.5
+                          "RelativeSpeed": 0.35
                         }
                       },
                       {
