@@ -5,8 +5,6 @@ import com.hypixel.hytale.component.Ref;
 import com.hypixel.hytale.component.Store;
 import com.hypixel.hytale.logger.HytaleLogger;
 import com.hypixel.hytale.math.vector.Transform;
-import com.hypixel.hytale.math.vector.Vector3d;
-import com.hypixel.hytale.protocol.GameMode;
 import com.hypixel.hytale.server.core.Message;
 import com.hypixel.hytale.server.core.asset.type.entityeffect.config.EntityEffect;
 import com.hypixel.hytale.server.core.command.system.CommandContext;
@@ -21,6 +19,7 @@ import com.hypixel.hytale.server.core.universe.world.World;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
 
 import javax.annotation.Nonnull;
+import org.joml.Vector3d;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.TimeUnit;
 
@@ -39,7 +38,7 @@ public class NecrosCommand extends AbstractPlayerCommand {
 
     public NecrosCommand() {
         super("necros", "Teleports you to/from the Necros dimension.");
-        this.setPermissionGroup(GameMode.Creative);
+        this.setPermissionGroups("hytale:WorldEditor");
     }
 
     @Override
@@ -77,7 +76,7 @@ public class NecrosCommand extends AbstractPlayerCommand {
         TransformComponent transformComponent = store.getComponent(ref, TransformComponent.getComponentType());
         assert transformComponent != null;
         Vector3d position = transformComponent.getPosition();
-        Transform returnLocation = new Transform(position.clone());
+        Transform returnLocation = new Transform(new Vector3d(position));
 
         // Check if Necros world already exists and reuse it
         World existingNecros = Universe.get().getWorld(WORLD_NAME);

@@ -7,16 +7,17 @@ import com.hypixel.hytale.component.Store;
 import com.hypixel.hytale.component.query.Query;
 import com.hypixel.hytale.component.system.EntityEventSystem;
 import com.hypixel.hytale.logger.HytaleLogger;
-import com.hypixel.hytale.math.vector.Vector3d;
+import com.hypixel.hytale.protocol.ItemArmorSlot;
 import com.hypixel.hytale.server.core.Message;
+import com.hypixel.hytale.server.core.entity.UUIDComponent;
 import com.hypixel.hytale.server.core.entity.entities.Player;
-import com.hypixel.hytale.server.core.inventory.Inventory;
+import com.hypixel.hytale.server.core.inventory.InventoryComponent;
 import com.hypixel.hytale.server.core.inventory.ItemStack;
-import com.hypixel.hytale.server.core.inventory.container.ItemContainer;
 import com.hypixel.hytale.server.core.modules.entity.component.TransformComponent;
 import com.hypixel.hytale.server.core.modules.entity.damage.Damage;
 import com.hypixel.hytale.server.core.modules.entity.damage.event.KillFeedEvent;
 import com.hypixel.hytale.server.core.modules.entity.tracker.NetworkId;
+import com.hypixel.hytale.server.core.universe.PlayerRef;
 import com.hypixel.hytale.server.core.universe.world.ParticleUtil;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
 import com.hypixel.hytale.server.npc.entities.NPCEntity;
@@ -24,6 +25,7 @@ import com.hypixel.hytale.server.npc.entities.NPCEntity;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 import java.util.UUID;
+import org.joml.Vector3d;
 
 /**
  * ECS event system that captures souls when a player kills a hostile mob while:
@@ -67,11 +69,12 @@ public final class SoulCaptureListener extends EntityEventSystem<EntityStore, Ki
         Ref<EntityStore> targetRef = event.getTargetRef();
         if (targetRef == null || !targetRef.isValid()) return;
 
-        // Query guarantees this archetype contains Player
-        Player killerPlayer = archetypeChunk.getComponent(index, Player.getComponentType());
-        if (killerPlayer == null) return;
+        Ref<EntityStore> killerRef = archetypeChunk.getReferenceTo(index);
+        if (killerRef == null || !killerRef.isValid()) return;
 
-        UUID playerUuid = killerPlayer.getUuid();
+        PlayerRef killerPlayerRef = store.getComponent(killerRef, PlayerRef.getComponentType());
+        UUIDComponent uuidComponent = store.getComponent(killerRef, UUIDComponent.getComponentType());
+        UUID playerUuid = uuidComponent != null ? uuidComponent.getUuid() : null;
         if (playerUuid == null) return;
 
         // Check that the killed entity is not a released soul
@@ -85,18 +88,15 @@ public final class SoulCaptureListener extends EntityEventSystem<EntityStore, Ki
         }
 
         // Check if the player is holding the Necrotic Blade
-        Inventory inventory = killerPlayer.getInventory();
-        if (inventory == null) return;
-
-        ItemStack heldItem = inventory.getItemInHand();
+        ItemStack heldItem = InventoryComponent.getItemInHand(store, killerRef);
         if (heldItem == null || heldItem.isEmpty()) return;
         if (!SoulStorage.NECROTIC_BLADE_ID.equals(heldItem.getItemId())) return;
 
         // Check if the player is wearing the Necrotic Crown (Head = slot 0)
-        ItemContainer armorContainer = inventory.getArmor();
-        if (armorContainer == null) return;
+        InventoryComponent.Armor armorComponent = store.getComponent(killerRef, InventoryComponent.Armor.getComponentType());
+        if (armorComponent == null) return;
 
-        ItemStack headSlot = armorContainer.getItemStack((short) 0);
+        ItemStack headSlot = armorComponent.getInventory().getItemStack((short) ItemArmorSlot.Head.getValue());
         if (headSlot == null || headSlot.isEmpty()) return;
         if (!SoulStorage.NECROTIC_CROWN_ID.equals(headSlot.getItemId())) return;
 
@@ -129,18 +129,22 @@ public final class SoulCaptureListener extends EntityEventSystem<EntityStore, Ki
             // Spawn absorption particle at the killed mob's position
             spawnAbsorptionEffect(targetRef, store);
 
-            killerPlayer.sendMessage(
-                    Message.translation("server.necros.soul_captured")
-                            .param("mob", npcRoleName)
-                            .param("count", totalSouls)
-                            .param("max", SoulStorage.MAX_SOULS)
-                            .color("#aa00aa")
-                            .bold(true)
-            );
+            if (killerPlayerRef != null) {
+                killerPlayerRef.sendMessage(
+                        Message.translation("server.necros.soul_captured")
+                                .param("mob", npcRoleName)
+                                .param("count", totalSouls)
+                                .param("max", SoulStorage.MAX_SOULS)
+                                .color("#aa00aa")
+                                .bold(true)
+                );
+            }
         } else {
-            killerPlayer.sendMessage(
-                    Message.translation("server.necros.crown_full").color("#888888")
-            );
+            if (killerPlayerRef != null) {
+                killerPlayerRef.sendMessage(
+                        Message.translation("server.necros.crown_full").color("#888888")
+                );
+            }
         }
     }
 
@@ -154,7 +158,7 @@ public final class SoulCaptureListener extends EntityEventSystem<EntityStore, Ki
 
             Vector3d pos = transform.getPosition();
             // Offset upward slightly so the effect plays at body height
-            Vector3d effectPos = new Vector3d(pos.getX(), pos.getY() + 0.5, pos.getZ());
+            Vector3d effectPos = new Vector3d(pos.x, pos.y + 0.5, pos.z);
             // Spatial lookup finds nearby players and sends them the particle packet
             ParticleUtil.spawnParticleEffect(SOUL_ABSORB_PARTICLE, effectPos, store);
         } catch (Exception e) {

@@ -8,11 +8,10 @@ import com.hypixel.hytale.component.Store;
 import com.hypixel.hytale.component.query.Query;
 import com.hypixel.hytale.component.system.tick.EntityTickingSystem;
 import com.hypixel.hytale.logger.HytaleLogger;
-import com.hypixel.hytale.math.vector.Vector3d;
 import com.hypixel.hytale.server.core.asset.type.attitude.Attitude;
-import com.hypixel.hytale.server.core.entity.entities.Player;
 import com.hypixel.hytale.server.core.modules.entity.component.TransformComponent;
 import com.hypixel.hytale.server.core.modules.entity.tracker.NetworkId;
+import com.hypixel.hytale.server.core.universe.PlayerRef;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
 import com.hypixel.hytale.server.npc.entities.NPCEntity;
 import com.hypixel.hytale.server.npc.role.Role;
@@ -23,6 +22,8 @@ import it.unimi.dsi.fastutil.ints.Int2FloatOpenHashMap;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.atomic.AtomicReference;
+import org.joml.Vector3d;
 
 /**
  * ECS tick system that makes released soul NPCs fight nearby non-soul NPCs.
@@ -117,9 +118,9 @@ public final class SoulAllyTickSystem extends EntityTickingSystem<EntityStore> {
         // ── Priority: if the owner player recently attacked something, target that first ──
         Ref<EntityStore> playerTarget = null;
         if (ownerRef != null && ownerRef.isValid()) {
-            Player ownerPlayer = store.getComponent(ownerRef, Player.getComponentType());
-            if (ownerPlayer != null && ownerPlayer.getUuid() != null) {
-                Ref<EntityStore> pTarget = SoulStorage.get().getPlayerAttackTarget(ownerPlayer.getUuid());
+            PlayerRef ownerPlayerRef = store.getComponent(ownerRef, PlayerRef.getComponentType());
+            if (ownerPlayerRef != null && ownerPlayerRef.getUuid() != null) {
+                Ref<EntityStore> pTarget = SoulStorage.get().getPlayerAttackTarget(ownerPlayerRef.getUuid());
                 if (pTarget != null && pTarget.isValid() && !pTarget.equals(soulRef)) {
                     // Verify it's not a released soul (don't attack other souls)
                     NetworkId pTargetNetId = store.getComponent(pTarget, NetworkId.getComponentType());
@@ -130,7 +131,7 @@ public final class SoulAllyTickSystem extends EntityTickingSystem<EntityStore> {
             }
         }
 
-        final Ref<EntityStore>[] closestEnemy = new Ref[]{playerTarget};
+        AtomicReference<Ref<EntityStore>> closestEnemy = new AtomicReference<>(playerTarget);
         final double[] closestDistSq = {playerTarget != null ? 0.0 : TARGET_RANGE_SQ};
 
         // If the player has a specific target, override attitude toward it
@@ -167,17 +168,17 @@ public final class SoulAllyTickSystem extends EntityTickingSystem<EntityStore> {
                 if (candidateTransform == null) continue;
 
                 Vector3d candidatePos = candidateTransform.getPosition();
-                double dx = candidatePos.getX() - soulPos.getX();
-                double dy = candidatePos.getY() - soulPos.getY();
-                double dz = candidatePos.getZ() - soulPos.getZ();
+                double dx = candidatePos.x - soulPos.x;
+                double dy = candidatePos.y - soulPos.y;
+                double dz = candidatePos.z - soulPos.z;
                 double distSq = dx * dx + dy * dy + dz * dz;
 
                 double ownerDistSq = Double.MAX_VALUE;
                 if (ownerTransform != null) {
                     Vector3d ownerPos = ownerTransform.getPosition();
-                    double odx = candidatePos.getX() - ownerPos.getX();
-                    double ody = candidatePos.getY() - ownerPos.getY();
-                    double odz = candidatePos.getZ() - ownerPos.getZ();
+                    double odx = candidatePos.x - ownerPos.x;
+                    double ody = candidatePos.y - ownerPos.y;
+                    double odz = candidatePos.z - ownerPos.z;
                     ownerDistSq = odx * odx + ody * ody + odz * odz;
                 }
 
@@ -194,22 +195,23 @@ public final class SoulAllyTickSystem extends EntityTickingSystem<EntityStore> {
                     // Track closest
                     if (distSq < closestDistSq[0]) {
                         closestDistSq[0] = distSq;
-                        closestEnemy[0] = candidateRef;
+                        closestEnemy.set(candidateRef);
                     }
                 }
             }
         });
 
-        if (closestEnemy[0] != null) {
+        Ref<EntityStore> closestEnemyRef = closestEnemy.get();
+        if (closestEnemyRef != null) {
             // ── 2. Inject into TargetMemory so the combat evaluator sees a hostile ──
             try {
                 TargetMemory targetMemory = store.getComponent(soulRef, TargetMemory.getComponentType());
                 if (targetMemory != null) {
                     Int2FloatOpenHashMap hostiles = targetMemory.getKnownHostiles();
-                    if (hostiles.put(closestEnemy[0].getIndex(), TARGET_REMEMBER_FOR) <= 0.0f) {
-                        targetMemory.getKnownHostilesList().add(closestEnemy[0]);
+                    if (hostiles.put(closestEnemyRef.getIndex(), TARGET_REMEMBER_FOR) <= 0.0f) {
+                        targetMemory.getKnownHostilesList().add(closestEnemyRef);
                     }
-                    targetMemory.setClosestHostile(closestEnemy[0]);
+                    targetMemory.setClosestHostile(closestEnemyRef);
                 }
             } catch (Exception e) {
                 // TargetMemory may not be present on all NPC types
@@ -218,18 +220,18 @@ public final class SoulAllyTickSystem extends EntityTickingSystem<EntityStore> {
             // ── 3. Set LockedTarget so the behavior tree has a direct target ──
             if (markedSupport != null) {
                 try {
-                    markedSupport.setMarkedEntity(MarkedEntitySupport.DEFAULT_TARGET_SLOT, closestEnemy[0]);
+                    markedSupport.setMarkedEntity(MarkedEntitySupport.DEFAULT_TARGET_SLOT, closestEnemyRef);
                 } catch (Exception ignored) {
                 }
             }
         }
 
         // No immediate enemy found: keep ally moving near the summoner
-        if (closestEnemy[0] == null && markedSupport != null && ownerRef != null && ownerTransform != null) {
+        if (closestEnemyRef == null && markedSupport != null && ownerRef != null && ownerTransform != null) {
             Vector3d ownerPos = ownerTransform.getPosition();
-            double ox = ownerPos.getX() - soulPos.getX();
-            double oy = ownerPos.getY() - soulPos.getY();
-            double oz = ownerPos.getZ() - soulPos.getZ();
+            double ox = ownerPos.x - soulPos.x;
+            double oy = ownerPos.y - soulPos.y;
+            double oz = ownerPos.z - soulPos.z;
             double ownerDistSq = ox * ox + oy * oy + oz * oz;
             if (ownerDistSq > FOLLOW_OWNER_RANGE_SQ) {
                 try {

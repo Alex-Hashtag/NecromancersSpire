@@ -5,7 +5,6 @@ import com.hypixel.hytale.server.worldgen.HytaleWorldGenProvider;
 import com.hypixel.hytale.component.Store;
 import com.hypixel.hytale.logger.HytaleLogger;
 import com.hypixel.hytale.math.util.ChunkUtil;
-import com.hypixel.hytale.math.vector.Vector3i;
 import com.hypixel.hytale.server.core.asset.AssetModule;
 import com.hypixel.hytale.server.core.asset.type.blocktype.config.BlockType;
 import com.hypixel.hytale.server.core.asset.type.blocktype.config.Rotation;
@@ -24,6 +23,7 @@ import java.nio.file.Path;
 import java.util.List;
 import java.util.Random;
 import java.util.Set;
+import org.joml.Vector3i;
 
 public final class RitualHousePlacerSystem {
     private static final HytaleLogger LOGGER = HytaleLogger.forEnclosingClass();
@@ -111,8 +111,6 @@ public final class RitualHousePlacerSystem {
                 return true;
             } catch (Throwable e) {
                 LOGGER.atWarning().withCause(e).log("[RitualHouse] Paste failed at %s", placement);
-            } finally {
-                accessor.release();
             }
         }
 

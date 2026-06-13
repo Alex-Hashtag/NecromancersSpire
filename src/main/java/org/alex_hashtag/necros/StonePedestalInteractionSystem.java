@@ -11,9 +11,7 @@ import com.hypixel.hytale.component.query.Query;
 import com.hypixel.hytale.component.system.EntityEventSystem;
 import com.hypixel.hytale.logger.HytaleLogger;
 import com.hypixel.hytale.math.util.ChunkUtil;
-import com.hypixel.hytale.math.vector.Vector3d;
-import com.hypixel.hytale.math.vector.Vector3f;
-import com.hypixel.hytale.math.vector.Vector3i;
+import com.hypixel.hytale.math.vector.Rotation3f;
 import com.hypixel.hytale.server.core.asset.type.blocktype.config.BlockType;
 import com.hypixel.hytale.server.core.entity.entities.Player;
 import com.hypixel.hytale.server.core.event.events.ecs.UseBlockEvent;
@@ -26,6 +24,8 @@ import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
+import org.joml.Vector3d;
+import org.joml.Vector3i;
 
 public final class StonePedestalInteractionSystem extends EntityEventSystem<EntityStore, UseBlockEvent.Pre> {
     private static final HytaleLogger LOGGER = HytaleLogger.forEnclosingClass();
@@ -140,7 +140,7 @@ public final class StonePedestalInteractionSystem extends EntityEventSystem<Enti
                 commandBuffer,
                 new ItemStack(itemId, 1),
                 dropPos,
-                Vector3f.ZERO,
+                Rotation3f.ZERO,
                 0.0f,
                 0.2f,
                 0.0f
