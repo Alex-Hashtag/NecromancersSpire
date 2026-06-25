@@ -7,6 +7,7 @@ import com.hypixel.hytale.component.Store;
 import com.hypixel.hytale.component.query.Query;
 import com.hypixel.hytale.component.system.EntityEventSystem;
 import com.hypixel.hytale.logger.HytaleLogger;
+import com.hypixel.hytale.server.core.entity.UUIDComponent;
 import com.hypixel.hytale.server.core.entity.entities.Player;
 import com.hypixel.hytale.server.core.modules.entity.damage.Damage;
 import com.hypixel.hytale.server.core.modules.entity.tracker.NetworkId;
@@ -52,7 +53,10 @@ public final class PlayerAttackTargetTracker extends EntityEventSystem<EntitySto
         Player player = store.getComponent(attackerRef, Player.getComponentType());
         if (player == null) return;
 
-        UUID playerUuid = player.getUuid();
+        UUIDComponent uuidComponent = store.getComponent(attackerRef, UUIDComponent.getComponentType());
+        if (uuidComponent == null) return;
+
+        UUID playerUuid = uuidComponent.getUuid();
         if (playerUuid == null) return;
 
         Ref<EntityStore> targetRef = archetypeChunk.getReferenceTo(index);

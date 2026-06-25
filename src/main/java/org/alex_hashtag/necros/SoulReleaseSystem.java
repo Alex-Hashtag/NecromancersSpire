@@ -7,16 +7,16 @@ import com.hypixel.hytale.component.Store;
 import com.hypixel.hytale.component.query.Query;
 import com.hypixel.hytale.component.system.tick.EntityTickingSystem;
 import com.hypixel.hytale.logger.HytaleLogger;
-import com.hypixel.hytale.math.vector.Vector3d;
-import com.hypixel.hytale.math.vector.Vector3f;
+import com.hypixel.hytale.math.vector.Rotation3f;
+import com.hypixel.hytale.protocol.ItemArmorSlot;
 import com.hypixel.hytale.server.core.Message;
 import com.hypixel.hytale.server.core.asset.type.attitude.Attitude;
+import com.hypixel.hytale.server.core.entity.UUIDComponent;
 import com.hypixel.hytale.server.core.asset.type.entityeffect.config.EntityEffect;
 import com.hypixel.hytale.server.core.entity.effect.EffectControllerComponent;
 import com.hypixel.hytale.server.core.entity.entities.Player;
-import com.hypixel.hytale.server.core.inventory.Inventory;
+import com.hypixel.hytale.server.core.inventory.InventoryComponent;
 import com.hypixel.hytale.server.core.inventory.ItemStack;
-import com.hypixel.hytale.server.core.inventory.container.ItemContainer;
 import com.hypixel.hytale.protocol.ColorLight;
 import com.hypixel.hytale.server.core.modules.entity.component.DynamicLight;
 import com.hypixel.hytale.server.core.modules.entity.component.TransformComponent;
@@ -25,6 +25,7 @@ import com.hypixel.hytale.server.core.modules.entitystats.EntityStatMap;
 import com.hypixel.hytale.server.core.modules.entitystats.EntityStatValue;
 import com.hypixel.hytale.server.core.modules.entitystats.asset.DefaultEntityStatTypes;
 import com.hypixel.hytale.server.core.modules.entitystats.asset.EntityStatType;
+import com.hypixel.hytale.server.core.universe.PlayerRef;
 import com.hypixel.hytale.server.core.universe.world.World;
 import com.hypixel.hytale.server.core.universe.world.npc.INonPlayerCharacter;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
@@ -39,6 +40,7 @@ import java.util.List;
 import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
+import org.joml.Vector3d;
 
 /// Detects when a player uses the Vortexstrike (signature ability) while holding the
 /// Necrotic Blade and wearing the Necrotic Crown, then releases captured souls as NPC allies.
@@ -84,7 +86,7 @@ public final class SoulReleaseSystem extends EntityTickingSystem<EntityStore> {
     @Nullable
     @Override
     public Query<EntityStore> getQuery() {
-        return Player.getComponentType();
+        return Query.and(Player.getComponentType(), UUIDComponent.getComponentType());
     }
 
     @Override
@@ -93,14 +95,12 @@ public final class SoulReleaseSystem extends EntityTickingSystem<EntityStore> {
                      @Nonnull Store<EntityStore> store,
                      @Nonnull CommandBuffer<EntityStore> commandBuffer) {
 
-        Player player = archetypeChunk.getComponent(index, Player.getComponentType());
-        if (player == null) return;
-
-        UUID playerUuid = player.getUuid();
-        if (playerUuid == null) return;
-
         Ref<EntityStore> playerRef = archetypeChunk.getReferenceTo(index);
         if (playerRef == null || !playerRef.isValid()) return;
+
+        UUIDComponent uuidComponent = archetypeChunk.getComponent(index, UUIDComponent.getComponentType());
+        UUID playerUuid = uuidComponent != null ? uuidComponent.getUuid() : null;
+        if (playerUuid == null) return;
 
         // ── Resolve SignatureEnergy stat index once ──
         if (signatureEnergyIndex == Integer.MIN_VALUE) {
@@ -137,18 +137,15 @@ public final class SoulReleaseSystem extends EntityTickingSystem<EntityStore> {
                 playerUuid, prevPct * 100, currentPct * 100);
 
         // Check if the player is holding the Necrotic Blade
-        Inventory inventory = player.getInventory();
-        if (inventory == null) return;
-
-        ItemStack heldItem = inventory.getItemInHand();
+        ItemStack heldItem = InventoryComponent.getItemInHand(store, playerRef);
         if (heldItem == null || heldItem.isEmpty()) return;
         if (!SoulStorage.NECROTIC_BLADE_ID.equals(heldItem.getItemId())) return;
 
         // Check if the player is wearing the Necrotic Crown (Head = slot 0)
-        ItemContainer armorContainer = inventory.getArmor();
-        if (armorContainer == null) return;
+        InventoryComponent.Armor armorComponent = store.getComponent(playerRef, InventoryComponent.Armor.getComponentType());
+        if (armorComponent == null) return;
 
-        ItemStack headSlot = armorContainer.getItemStack((short) 0);
+        ItemStack headSlot = armorComponent.getInventory().getItemStack((short) ItemArmorSlot.Head.getValue());
         if (headSlot == null || headSlot.isEmpty()) return;
         if (!SoulStorage.NECROTIC_CROWN_ID.equals(headSlot.getItemId())) return;
 
@@ -158,7 +155,7 @@ public final class SoulReleaseSystem extends EntityTickingSystem<EntityStore> {
         cooldownUntil.put(playerUuid, now + COOLDOWN_MS);
 
         // Release souls
-        releaseSouls(player, playerUuid, playerRef);
+        releaseSouls(store, playerRef);
     }
 
     // ── Shared logic (used by both the event listener and the test command) ──
@@ -166,21 +163,28 @@ public final class SoulReleaseSystem extends EntityTickingSystem<EntityStore> {
     /**
      * Consumes souls from the player's storage and spawns them as NPCs.
      */
-    static void releaseSouls(@Nonnull Player player, @Nonnull UUID playerUuid,
-                             @Nonnull Ref<EntityStore> playerRef) {
+    static void releaseSouls(@Nonnull Store<EntityStore> store, @Nonnull Ref<EntityStore> playerRef) {
+        if (!playerRef.isValid()) return;
+
+        PlayerRef playerRefComponent = store.getComponent(playerRef, PlayerRef.getComponentType());
+        if (playerRefComponent == null) return;
+
+        UUID playerUuid = playerRefComponent.getUuid();
+        if (playerUuid == null) return;
+
         // Consume souls from the crown (3-10, or all if less than 3)
         List<SoulStorage.Soul> soulRoles = SoulStorage.get().consumeSouls(playerUuid);
         if (soulRoles.isEmpty()) {
-            player.sendMessage(Message.translation("server.necros.no_souls").color("#888888"));
+            playerRefComponent.sendMessage(Message.translation("server.necros.no_souls").color("#888888"));
             return;
         }
 
         // Get player world to schedule spawning on the world thread
-        World world = player.getWorld();
+        World world = store.getExternalData().getWorld();
         if (world == null) return;
 
         int soulCount = soulRoles.size();
-        player.sendMessage(Message.translation("server.necros.releasing_souls")
+        playerRefComponent.sendMessage(Message.translation("server.necros.releasing_souls")
                 .param("count", soulCount)
                 .color("#aa00aa")
                 .bold(true));
@@ -188,8 +192,8 @@ public final class SoulReleaseSystem extends EntityTickingSystem<EntityStore> {
         // Schedule NPC spawning incrementally over multiple ticks to avoid frame hitches
         world.execute(() -> {
             try {
-                Store<EntityStore> store = world.getEntityStore().getStore();
-                TransformComponent playerTransform = store.getComponent(playerRef, TransformComponent.getComponentType());
+                Store<EntityStore> worldStore = world.getEntityStore().getStore();
+                TransformComponent playerTransform = worldStore.getComponent(playerRef, TransformComponent.getComponentType());
                 if (playerTransform == null) return;
 
                 AtomicInteger idx = new AtomicInteger(0);
@@ -200,10 +204,10 @@ public final class SoulReleaseSystem extends EntityTickingSystem<EntityStore> {
                         if (i >= soulCount) return;
                         try {
                             if (!playerRef.isValid()) return;
-                            TransformComponent pt = store.getComponent(playerRef, TransformComponent.getComponentType());
+                            TransformComponent pt = worldStore.getComponent(playerRef, TransformComponent.getComponentType());
                             if (pt == null) return;
                             Vector3d playerPosNow = pt.getPosition();
-                            spawnSoulNPC(store, playerPosNow, soulRoles.get(i), i, soulCount, playerRef);
+                            spawnSoulNPC(worldStore, playerPosNow, soulRoles.get(i), i, soulCount, playerRef);
                         } finally {
                             if (idx.get() < soulCount) {
                                 world.execute(this);
@@ -244,21 +248,18 @@ public final class SoulReleaseSystem extends EntityTickingSystem<EntityStore> {
         double offsetX = Math.cos(angle) * SPAWN_RADIUS;
         double offsetZ = Math.sin(angle) * SPAWN_RADIUS;
 
-        int spawnX = (int) (playerPos.getX() + offsetX);
-        int spawnZ = (int) (playerPos.getZ() + offsetZ);
-
         // Simplify: spawn roughly at the player's current Y to avoid heavy surface scans
-        int surfaceY = (int) Math.floor(playerPos.getY());
+        int surfaceY = (int) Math.floor(playerPos.y);
 
         Vector3d spawnPos = new Vector3d(
-                playerPos.getX() + offsetX,
+                playerPos.x + offsetX,
                 surfaceY,
-                playerPos.getZ() + offsetZ
+                playerPos.z + offsetZ
         );
 
         // Face outward from player
         float yaw = (float) Math.toDegrees(Math.atan2(offsetX, offsetZ));
-        Vector3f rotation = new Vector3f(yaw, 0.0f, 0.0f);
+        Rotation3f rotation = new Rotation3f(yaw, 0.0f, 0.0f);
 
         try {
             Pair<Ref<EntityStore>, INonPlayerCharacter> result = null;
@@ -318,7 +319,7 @@ public final class SoulReleaseSystem extends EntityTickingSystem<EntityStore> {
 
                 LOGGER.atFine().log("Spawned soul NPC #%d (%s, appearance=%s) at (%.1f, %.1f, %.1f)",
                         index, soul.roleName(), soul.appearanceName(),
-                        spawnPos.getX(), spawnPos.getY(), spawnPos.getZ());
+                        spawnPos.x, spawnPos.y, spawnPos.z);
             } else {
                 LOGGER.atWarning().log("Failed to spawn soul NPC #%d — role '%s' may not exist", index, SOUL_ROLE);
             }

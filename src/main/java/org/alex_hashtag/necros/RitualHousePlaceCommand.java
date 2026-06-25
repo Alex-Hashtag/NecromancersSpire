@@ -2,9 +2,6 @@ package org.alex_hashtag.necros;
 
 import com.hypixel.hytale.component.Ref;
 import com.hypixel.hytale.component.Store;
-import com.hypixel.hytale.math.vector.Vector3d;
-import com.hypixel.hytale.math.vector.Vector3i;
-import com.hypixel.hytale.protocol.GameMode;
 import com.hypixel.hytale.server.core.Message;
 import com.hypixel.hytale.server.core.command.system.CommandContext;
 import com.hypixel.hytale.server.core.command.system.basecommands.CommandBase;
@@ -13,11 +10,13 @@ import com.hypixel.hytale.server.core.universe.world.World;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
 
 import javax.annotation.Nonnull;
+import org.joml.Vector3d;
+import org.joml.Vector3i;
 
 public final class RitualHousePlaceCommand extends CommandBase {
     public RitualHousePlaceCommand() {
         super("ritualhouse_place", "Debug command: place ritual house prefab near you.");
-        this.setPermissionGroup(GameMode.Creative);
+        this.setPermissionGroups("hytale:WorldEditor");
     }
 
     @Override
@@ -50,7 +49,7 @@ public final class RitualHousePlaceCommand extends CommandBase {
             }
 
             Vector3d pos = transform.getPosition();
-            Vector3i center = new Vector3i((int) Math.floor(pos.getX()), (int) Math.floor(pos.getY()), (int) Math.floor(pos.getZ()));
+            Vector3i center = new Vector3i((int) Math.floor(pos.x), (int) Math.floor(pos.y), (int) Math.floor(pos.z));
 
             boolean placed = RitualHousePlacerSystem.tryPlaceNear(world, center, 60, 60);
             if (placed) {

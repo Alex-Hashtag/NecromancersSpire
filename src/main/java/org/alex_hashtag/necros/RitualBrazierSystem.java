@@ -11,9 +11,7 @@ import com.hypixel.hytale.component.query.Query;
 import com.hypixel.hytale.component.system.EntityEventSystem;
 import com.hypixel.hytale.logger.HytaleLogger;
 import com.hypixel.hytale.math.util.ChunkUtil;
-import com.hypixel.hytale.math.vector.Vector3d;
-import com.hypixel.hytale.math.vector.Vector3f;
-import com.hypixel.hytale.math.vector.Vector3i;
+import com.hypixel.hytale.math.vector.Rotation3f;
 import com.hypixel.hytale.protocol.GameMode;
 import com.hypixel.hytale.protocol.MovementStates;
 import com.hypixel.hytale.server.core.Message;
@@ -29,6 +27,7 @@ import com.hypixel.hytale.server.core.modules.entity.component.TransformComponen
 import com.hypixel.hytale.server.core.modules.entity.item.ItemComponent;
 import com.hypixel.hytale.server.core.modules.physics.component.PhysicsValues;
 import com.hypixel.hytale.server.core.modules.physics.component.Velocity;
+import com.hypixel.hytale.server.core.universe.PlayerRef;
 import com.hypixel.hytale.server.core.universe.world.World;
 import com.hypixel.hytale.server.core.universe.world.chunk.WorldChunk;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
@@ -38,6 +37,8 @@ import javax.annotation.Nullable;
 import java.util.Map;
 import java.util.Objects;
 import java.util.concurrent.ConcurrentHashMap;
+import org.joml.Vector3d;
+import org.joml.Vector3i;
 
 public final class RitualBrazierSystem extends EntityEventSystem<EntityStore, UseBlockEvent.Pre> {
     private static final HytaleLogger LOGGER = HytaleLogger.forEnclosingClass();
@@ -82,15 +83,12 @@ public final class RitualBrazierSystem extends EntityEventSystem<EntityStore, Us
             return;
         }
 
-        Player player = archetypeChunk.getComponent(index, Player.getComponentType());
-        if (player == null) {
-            return;
-        }
-
         Ref<EntityStore> playerRef = archetypeChunk.getReferenceTo(index);
         if (playerRef == null || !playerRef.isValid()) {
             return;
         }
+
+        PlayerRef playerRefComponent = store.getComponent(playerRef, PlayerRef.getComponentType());
 
         World world = store.getExternalData().getWorld();
         if (world == null) {
@@ -112,15 +110,19 @@ public final class RitualBrazierSystem extends EntityEventSystem<EntityStore, Us
         String rewardItemId = PORTAL_KEY_ID;
 
         if (activeRituals.containsKey(keyString) || rewardWatches.containsKey(keyString)) {
-            player.sendMessage(Message.translation("server.necros.ritual.in_progress").color("#ff5555"));
+            if (playerRefComponent != null) {
+                playerRefComponent.sendMessage(Message.translation("server.necros.ritual.in_progress").color("#ff5555"));
+            }
             event.setCancelled(true);
             return;
         }
 
         if (held == null || held.isEmpty() || !requiredItemId.equals(held.getItemId())) {
-            player.sendMessage(Message.translation("server.necros.ritual.requires_item")
-                    .param("item", requiredItemId)
-                    .color("#ff5555"));
+            if (playerRefComponent != null) {
+                playerRefComponent.sendMessage(Message.translation("server.necros.ritual.requires_item")
+                        .param("item", requiredItemId)
+                        .color("#ff5555"));
+            }
             return;
         }
 
@@ -150,7 +152,9 @@ public final class RitualBrazierSystem extends EntityEventSystem<EntityStore, Us
         LOGGER.atInfo().log("[RitualBrazier] Ritual started at %s using %s", keyString, requiredItemId);
         activeRituals.put(keyString, new ActiveRitual(target, requiredItemId, rewardItemId, sacrificeRef, RITUAL_BURN_TICKS));
 
-        player.sendMessage(Message.translation("server.necros.ritual.begun").color("#7fd9c8"));
+        if (playerRefComponent != null) {
+            playerRefComponent.sendMessage(Message.translation("server.necros.ritual.begun").color("#7fd9c8"));
+        }
     }
 
     static void tickSequences(@Nonnull Store<EntityStore> store, @Nonnull CommandBuffer<EntityStore> commandBuffer) {
@@ -222,7 +226,7 @@ public final class RitualBrazierSystem extends EntityEventSystem<EntityStore, Us
                 commandBuffer,
                 new ItemStack(itemId, 1),
                 new Vector3d(target.x + 0.5, target.y + RITUAL_PREVIEW_HEIGHT, target.z + 0.5),
-                Vector3f.ZERO,
+                Rotation3f.ZERO,
                 0.0f,
                 0.0f,
                 0.0f
@@ -264,7 +268,7 @@ public final class RitualBrazierSystem extends EntityEventSystem<EntityStore, Us
                 commandBuffer,
                 new ItemStack(itemId, 1),
                 new Vector3d(target.x + 0.5, target.y + 1.05, target.z + 0.5),
-                Vector3f.ZERO,
+                Rotation3f.ZERO,
                 0.0f,
                 0.0f,
                 0.0f
@@ -300,7 +304,7 @@ public final class RitualBrazierSystem extends EntityEventSystem<EntityStore, Us
                 commandBuffer,
                 new ItemStack(rewardItemId, 1),
                 pos,
-                Vector3f.ZERO,
+                Rotation3f.ZERO,
                 0.0f,
                 0.2f,
                 0.0f

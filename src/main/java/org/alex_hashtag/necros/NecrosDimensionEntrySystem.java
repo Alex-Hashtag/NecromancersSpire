@@ -8,6 +8,7 @@ import com.hypixel.hytale.component.query.Query;
 import com.hypixel.hytale.component.system.tick.EntityTickingSystem;
 import com.hypixel.hytale.logger.HytaleLogger;
 import com.hypixel.hytale.server.core.asset.type.entityeffect.config.EntityEffect;
+import com.hypixel.hytale.server.core.entity.UUIDComponent;
 import com.hypixel.hytale.server.core.entity.effect.EffectControllerComponent;
 import com.hypixel.hytale.server.core.entity.entities.Player;
 import com.hypixel.hytale.server.core.universe.world.World;
@@ -38,7 +39,7 @@ public final class NecrosDimensionEntrySystem extends EntityTickingSystem<Entity
     @Nullable
     @Override
     public Query<EntityStore> getQuery() {
-        return Query.and(Player.getComponentType(), EffectControllerComponent.getComponentType());
+        return Query.and(Player.getComponentType(), EffectControllerComponent.getComponentType(), UUIDComponent.getComponentType());
     }
 
     @Override
@@ -47,13 +48,13 @@ public final class NecrosDimensionEntrySystem extends EntityTickingSystem<Entity
                      @Nonnull Store<EntityStore> store,
                      @Nonnull CommandBuffer<EntityStore> commandBuffer) {
 
-        Player player = archetypeChunk.getComponent(index, Player.getComponentType());
-        if (player == null) return;
+        UUIDComponent uuidComponent = archetypeChunk.getComponent(index, UUIDComponent.getComponentType());
+        if (uuidComponent == null) return;
 
-        UUID playerUuid = player.getUuid();
+        UUID playerUuid = uuidComponent.getUuid();
         if (playerUuid == null) return;
 
-        World world = player.getWorld();
+        World world = store.getExternalData().getWorld();
         if (world == null) return;
 
         String worldName = world.getName();
